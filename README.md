@@ -2,7 +2,7 @@
 
 http://www.bitbang.org
 
-Copyright (C) 2004-2010 Tiago Baptista
+Copyright (C) 2004-2013 Tiago Baptista
 					    Telmo Menezes
 
 This program is free software; you can redistribute it and/or modify
