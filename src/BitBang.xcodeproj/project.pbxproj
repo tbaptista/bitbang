@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		890D26C60E389AF9007BE01E /* BBCSVFileLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 890D26C40E389AF9007BE01E /* BBCSVFileLog.cpp */; };
+		89186BBE106D138F00A5623F /* BBInfluence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89186BBA106D138F00A5623F /* BBInfluence.cpp */; };
+		89186BBF106D138F00A5623F /* BBInfluence.h in Headers */ = {isa = PBXBuildFile; fileRef = 89186BBB106D138F00A5623F /* BBInfluence.h */; };
+		89186BC0106D138F00A5623F /* BBInfluenceMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89186BBC106D138F00A5623F /* BBInfluenceMap.cpp */; };
+		89186BC1106D138F00A5623F /* BBInfluenceMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 89186BBD106D138F00A5623F /* BBInfluenceMap.h */; };
+		892224C10B3809CE0077D329 /* BBVisionReach3DCone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892224BF0B3809CE0077D329 /* BBVisionReach3DCone.cpp */; };
+		893382F313841F9C00D537FC /* BBRandomGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 893382F113841F9C00D537FC /* BBRandomGenerator.h */; };
+		893382F413841F9C00D537FC /* BBRandomGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893382F213841F9C00D537FC /* BBRandomGenerator.cpp */; };
+		89356FB50E017FFE009C9012 /* BBFeatureString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89356FB30E017FFE009C9012 /* BBFeatureString.cpp */; };
+		89356FBE0E0184D3009C9012 /* BBPerceptionFeatureString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89356FBC0E0184D3009C9012 /* BBPerceptionFeatureString.cpp */; };
+		8946476F0A064D7D004FA7D4 /* BBAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8946474F0A064D7D004FA7D4 /* BBAction.cpp */; };
+		894647760A064D7D004FA7D4 /* BBFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647560A064D7D004FA7D4 /* BBFeature.cpp */; };
+		8946477A0A064D7D004FA7D4 /* BBObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8946475A0A064D7D004FA7D4 /* BBObject.cpp */; };
+		8946477D0A064D7D004FA7D4 /* BBPerception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8946475D0A064D7D004FA7D4 /* BBPerception.cpp */; };
+		894647800A064D7D004FA7D4 /* BBRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647600A064D7D004FA7D4 /* BBRule.cpp */; };
+		894647820A064D7D004FA7D4 /* BBRuleCondition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647620A064D7D004FA7D4 /* BBRuleCondition.cpp */; };
+		894647840A064D7D004FA7D4 /* BBRuleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647640A064D7D004FA7D4 /* BBRuleList.cpp */; };
+		894647860A064D7D004FA7D4 /* BBSchedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647660A064D7D004FA7D4 /* BBSchedule.cpp */; };
+		8946478B0A064D7D004FA7D4 /* BBWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8946476B0A064D7D004FA7D4 /* BBWorld.cpp */; };
+		894647F20A064E0A004FA7D4 /* BBFeatureBoolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647B80A064E0A004FA7D4 /* BBFeatureBoolean.cpp */; };
+		894647F40A064E0A004FA7D4 /* BBFeatureNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647BA0A064E0A004FA7D4 /* BBFeatureNumber.cpp */; };
+		894647F60A064E0A004FA7D4 /* BBPerceptionBoolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647BD0A064E0A004FA7D4 /* BBPerceptionBoolean.cpp */; };
+		894647F80A064E0A004FA7D4 /* BBPerceptionFeatureNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647BF0A064E0A004FA7D4 /* BBPerceptionFeatureNumber.cpp */; };
+		894647FA0A064E0A004FA7D4 /* BBPerceptionFixedNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647C10A064E0A004FA7D4 /* BBPerceptionFixedNumber.cpp */; };
+		894647FC0A064E0A004FA7D4 /* BBPerceptionNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647C30A064E0A004FA7D4 /* BBPerceptionNumber.cpp */; };
+		894647FE0A064E0A004FA7D4 /* BBPerceptionRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647C50A064E0A004FA7D4 /* BBPerceptionRandom.cpp */; };
+		894648000A064E0A004FA7D4 /* BBPerceptionReachResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647C70A064E0A004FA7D4 /* BBPerceptionReachResource.cpp */; };
+		894648020A064E0A004FA7D4 /* BBPerceptionSeeResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 894647C90A064E0A004FA7D4 /* BBPerceptionSeeResource.cpp */; };
+		8956A27E0EB661F600464079 /* BBRuleListEditype.h in Headers */ = {isa = PBXBuildFile; fileRef = 8956A27C0EB661F600464079 /* BBRuleListEditype.h */; };
+		8956A27F0EB661F600464079 /* BBRuleListEditype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8956A27D0EB661F600464079 /* BBRuleListEditype.cpp */; };
+		895AB0B40A1A6CF50043B4C3 /* BBOSMacOSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895AB0B30A1A6CF50043B4C3 /* BBOSMacOSX.cpp */; };
+		89698D080E366216001E8BD8 /* BBFileLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89698D060E366216001E8BD8 /* BBFileLog.cpp */; };
+		898219EA0AC2B95C00C706DD /* BBBrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 898219E80AC2B95C00C706DD /* BBBrain.cpp */; };
+		89848A7F0BE0AC88001473DB /* BBRandomRuleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89848A7D0BE0AC88001473DB /* BBRandomRuleList.cpp */; };
+		898F9BCE0EAD6F1C006EF08E /* BBTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8902AE6D0D9ADE5100FC222A /* BBTimer.cpp */; };
+		89B139200EB758E60042B005 /* BBRuleListEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B1391E0EB758E60042B005 /* BBRuleListEditor.h */; };
+		89B139210EB758E60042B005 /* BBRuleListEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89B1391F0EB758E60042B005 /* BBRuleListEditor.cpp */; };
+		89BA42880E036031001FE30F /* BBPerceptionRandomProbability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BA42860E036031001FE30F /* BBPerceptionRandomProbability.cpp */; };
+		89C016400DF4666D00065F2E /* BBPerceptionString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C0163E0DF4666D00065F2E /* BBPerceptionString.cpp */; };
+		89C5B9EC1726A98A00BD6E79 /* BBPerceptionTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C5B9EA1726A98A00BD6E79 /* BBPerceptionTimer.h */; };
+		89C5B9ED1726A98A00BD6E79 /* BBPerceptionTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C5B9EB1726A98A00BD6E79 /* BBPerceptionTimer.cpp */; };
+		89D02E5E0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D02E5C0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.h */; };
+		89D02E5F0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D02E5D0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.cpp */; };
+		89D94F220FCC5B800006DB88 /* BBLogSchedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D94F200FCC5B800006DB88 /* BBLogSchedule.cpp */; };
+		89D94F230FCC5B800006DB88 /* BBLogSchedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D94F210FCC5B800006DB88 /* BBLogSchedule.h */; };
+		89E3BDFB0A6336B900DCA9E9 /* BBScheduleScriptable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89E3BDF90A6336B900DCA9E9 /* BBScheduleScriptable.cpp */; };
+		89E3DD210E34CBE100354FEA /* BBLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89E3DD1F0E34CBE100354FEA /* BBLog.cpp */; };
+		89E498650EB1726D00E48709 /* BBAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647500A064D7D004FA7D4 /* BBAction.h */; };
+		89E498660EB1727300E48709 /* BBBrain.h in Headers */ = {isa = PBXBuildFile; fileRef = 898219E90AC2B95C00C706DD /* BBBrain.h */; };
+		89E498670EB1727800E48709 /* BBCSVFileLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 890D26C30E389AF9007BE01E /* BBCSVFileLog.h */; };
+		89E498680EB1728D00E48709 /* BBSchedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647670A064D7D004FA7D4 /* BBSchedule.h */; };
+		89E498690EB1728E00E48709 /* BBVisionReach3DCone.h in Headers */ = {isa = PBXBuildFile; fileRef = 892224C00B3809CE0077D329 /* BBVisionReach3DCone.h */; };
+		89E4986A0EB1729700E48709 /* BBTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946476A0A064D7D004FA7D4 /* BBTypes.h */; };
+		89E4986B0EB172A200E48709 /* BBFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647570A064D7D004FA7D4 /* BBFeature.h */; };
+		89E4986C0EB172A300E48709 /* BBFeatureBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647B90A064E0A004FA7D4 /* BBFeatureBoolean.h */; };
+		89E4986D0EB172A400E48709 /* BBFeatureNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647BB0A064E0A004FA7D4 /* BBFeatureNumber.h */; };
+		89E4986E0EB172A500E48709 /* BBFeatureString.h in Headers */ = {isa = PBXBuildFile; fileRef = 89356FB20E017FFE009C9012 /* BBFeatureString.h */; };
+		89E4986F0EB172A600E48709 /* BBFileLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 89698D050E366216001E8BD8 /* BBFileLog.h */; };
+		89E498700EB172A600E48709 /* BBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E3DD200E34CBE100354FEA /* BBLog.h */; };
+		89E498710EB172A700E48709 /* BBObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946475B0A064D7D004FA7D4 /* BBObject.h */; };
+		89E498720EB172A800E48709 /* BBOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 895AB0970A1A2A890043B4C3 /* BBOS.h */; };
+		89E498730EB172AB00E48709 /* BBPerception.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946475E0A064D7D004FA7D4 /* BBPerception.h */; };
+		89E498740EB172AC00E48709 /* BBPerceptionBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647BE0A064E0A004FA7D4 /* BBPerceptionBoolean.h */; };
+		89E498750EB172AC00E48709 /* BBPerceptionFeatureNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647C00A064E0A004FA7D4 /* BBPerceptionFeatureNumber.h */; };
+		89E498760EB172AD00E48709 /* BBPerceptionFeatureString.h in Headers */ = {isa = PBXBuildFile; fileRef = 89356FBB0E0184D3009C9012 /* BBPerceptionFeatureString.h */; };
+		89E498770EB172B100E48709 /* BBPerceptionFixedNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647C20A064E0A004FA7D4 /* BBPerceptionFixedNumber.h */; };
+		89E498780EB172B200E48709 /* BBPerceptionFixedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F578050DF5ABB5002D635A /* BBPerceptionFixedString.h */; };
+		89E498790EB172B300E48709 /* BBPerceptionNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647C40A064E0A004FA7D4 /* BBPerceptionNumber.h */; };
+		89E4987A0EB172B400E48709 /* BBPerceptionRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647C60A064E0A004FA7D4 /* BBPerceptionRandom.h */; };
+		89E4987B0EB172B500E48709 /* BBPerceptionRandomProbability.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BA42850E036031001FE30F /* BBPerceptionRandomProbability.h */; };
+		89E4987C0EB172B600E48709 /* BBPerceptionReachResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647C80A064E0A004FA7D4 /* BBPerceptionReachResource.h */; };
+		89E4987D0EB172B700E48709 /* BBPerceptionSeeResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647CA0A064E0A004FA7D4 /* BBPerceptionSeeResource.h */; };
+		89E4987E0EB172B700E48709 /* BBPerceptionSphere.h in Headers */ = {isa = PBXBuildFile; fileRef = 89FB51780B36B2C80057A034 /* BBPerceptionSphere.h */; };
+		89E4987F0EB172B800E48709 /* BBPerceptionString.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C0163D0DF4666D00065F2E /* BBPerceptionString.h */; };
+		89E498800EB172B900E48709 /* BBPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946475F0A064D7D004FA7D4 /* BBPoint.h */; };
+		89E498810EB172BA00E48709 /* BBRandomRuleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 89848A7E0BE0AC88001473DB /* BBRandomRuleList.h */; };
+		89E498820EB172BD00E48709 /* BBRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647610A064D7D004FA7D4 /* BBRule.h */; };
+		89E498830EB172BE00E48709 /* BBRuleCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647630A064D7D004FA7D4 /* BBRuleCondition.h */; };
+		89E498840EB172BF00E48709 /* BBRuleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 894647650A064D7D004FA7D4 /* BBRuleList.h */; };
+		89E498850EB172C000E48709 /* BBScheduleScriptable.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E3BDFA0A6336B900DCA9E9 /* BBScheduleScriptable.h */; };
+		89E498870EB172C200E48709 /* BBTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8902AE6C0D9ADE5100FC222A /* BBTimer.h */; };
+		89E498880EB172C400E48709 /* BBWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946476C0A064D7D004FA7D4 /* BBWorld.h */; };
+		89E4988A0EB172C600E48709 /* BBWorldInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E3DD1D0E34CADA00354FEA /* BBWorldInterface.h */; };
+		89EFE4671388249600834D0F /* SFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 89EFE4661388249600834D0F /* SFMT.c */; };
+		89F4B21111EBDC4D00E8D2B9 /* BBVisionReach2DCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B20F11EBDC4D00E8D2B9 /* BBVisionReach2DCircle.cpp */; };
+		89F4B21211EBDC4D00E8D2B9 /* BBVisionReach2DCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F4B21011EBDC4D00E8D2B9 /* BBVisionReach2DCircle.h */; };
+		89F578080DF5ABB5002D635A /* BBPerceptionFixedString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89F578060DF5ABB5002D635A /* BBPerceptionFixedString.cpp */; };
+		89FB517B0B36B2C80057A034 /* BBPerceptionSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FB51790B36B2C80057A034 /* BBPerceptionSphere.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8902AE6C0D9ADE5100FC222A /* BBTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBTimer.h; path = bitbang/BBTimer.h; sourceTree = "<group>"; };
+		8902AE6D0D9ADE5100FC222A /* BBTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBTimer.cpp; path = bitbang/BBTimer.cpp; sourceTree = "<group>"; };
+		890D26C30E389AF9007BE01E /* BBCSVFileLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBCSVFileLog.h; path = bitbang/BBCSVFileLog.h; sourceTree = "<group>"; };
+		890D26C40E389AF9007BE01E /* BBCSVFileLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBCSVFileLog.cpp; path = bitbang/BBCSVFileLog.cpp; sourceTree = "<group>"; };
+		89186BBA106D138F00A5623F /* BBInfluence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBInfluence.cpp; path = bitbang/BBInfluence.cpp; sourceTree = "<group>"; };
+		89186BBB106D138F00A5623F /* BBInfluence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBInfluence.h; path = bitbang/BBInfluence.h; sourceTree = "<group>"; };
+		89186BBC106D138F00A5623F /* BBInfluenceMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBInfluenceMap.cpp; path = bitbang/BBInfluenceMap.cpp; sourceTree = "<group>"; };
+		89186BBD106D138F00A5623F /* BBInfluenceMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBInfluenceMap.h; path = bitbang/BBInfluenceMap.h; sourceTree = "<group>"; };
+		892224BF0B3809CE0077D329 /* BBVisionReach3DCone.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BBVisionReach3DCone.cpp; path = bitbang/BBVisionReach3DCone.cpp; sourceTree = "<group>"; };
+		892224C00B3809CE0077D329 /* BBVisionReach3DCone.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBVisionReach3DCone.h; path = bitbang/BBVisionReach3DCone.h; sourceTree = "<group>"; };
+		893382F113841F9C00D537FC /* BBRandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBRandomGenerator.h; path = bitbang/BBRandomGenerator.h; sourceTree = "<group>"; };
+		893382F213841F9C00D537FC /* BBRandomGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBRandomGenerator.cpp; path = bitbang/BBRandomGenerator.cpp; sourceTree = "<group>"; };
+		89356FB20E017FFE009C9012 /* BBFeatureString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFeatureString.h; sourceTree = "<group>"; };
+		89356FB30E017FFE009C9012 /* BBFeatureString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBFeatureString.cpp; sourceTree = "<group>"; };
+		89356FBB0E0184D3009C9012 /* BBPerceptionFeatureString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionFeatureString.h; sourceTree = "<group>"; };
+		89356FBC0E0184D3009C9012 /* BBPerceptionFeatureString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFeatureString.cpp; sourceTree = "<group>"; };
+		8946474F0A064D7D004FA7D4 /* BBAction.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBAction.cpp; path = bitbang/BBAction.cpp; sourceTree = "<group>"; };
+		894647500A064D7D004FA7D4 /* BBAction.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBAction.h; path = bitbang/BBAction.h; sourceTree = "<group>"; };
+		894647560A064D7D004FA7D4 /* BBFeature.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBFeature.cpp; path = bitbang/BBFeature.cpp; sourceTree = "<group>"; };
+		894647570A064D7D004FA7D4 /* BBFeature.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBFeature.h; path = bitbang/BBFeature.h; sourceTree = "<group>"; };
+		8946475A0A064D7D004FA7D4 /* BBObject.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBObject.cpp; path = bitbang/BBObject.cpp; sourceTree = "<group>"; };
+		8946475B0A064D7D004FA7D4 /* BBObject.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBObject.h; path = bitbang/BBObject.h; sourceTree = "<group>"; };
+		8946475D0A064D7D004FA7D4 /* BBPerception.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBPerception.cpp; path = bitbang/BBPerception.cpp; sourceTree = "<group>"; };
+		8946475E0A064D7D004FA7D4 /* BBPerception.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBPerception.h; path = bitbang/BBPerception.h; sourceTree = "<group>"; };
+		8946475F0A064D7D004FA7D4 /* BBPoint.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBPoint.h; path = bitbang/BBPoint.h; sourceTree = "<group>"; };
+		894647600A064D7D004FA7D4 /* BBRule.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBRule.cpp; path = bitbang/BBRule.cpp; sourceTree = "<group>"; };
+		894647610A064D7D004FA7D4 /* BBRule.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBRule.h; path = bitbang/BBRule.h; sourceTree = "<group>"; };
+		894647620A064D7D004FA7D4 /* BBRuleCondition.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBRuleCondition.cpp; path = bitbang/BBRuleCondition.cpp; sourceTree = "<group>"; };
+		894647630A064D7D004FA7D4 /* BBRuleCondition.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBRuleCondition.h; path = bitbang/BBRuleCondition.h; sourceTree = "<group>"; };
+		894647640A064D7D004FA7D4 /* BBRuleList.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBRuleList.cpp; path = bitbang/BBRuleList.cpp; sourceTree = "<group>"; };
+		894647650A064D7D004FA7D4 /* BBRuleList.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBRuleList.h; path = bitbang/BBRuleList.h; sourceTree = "<group>"; };
+		894647660A064D7D004FA7D4 /* BBSchedule.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBSchedule.cpp; path = bitbang/BBSchedule.cpp; sourceTree = "<group>"; };
+		894647670A064D7D004FA7D4 /* BBSchedule.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBSchedule.h; path = bitbang/BBSchedule.h; sourceTree = "<group>"; };
+		8946476A0A064D7D004FA7D4 /* BBTypes.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBTypes.h; path = bitbang/BBTypes.h; sourceTree = "<group>"; };
+		8946476B0A064D7D004FA7D4 /* BBWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = BBWorld.cpp; path = bitbang/BBWorld.cpp; sourceTree = "<group>"; };
+		8946476C0A064D7D004FA7D4 /* BBWorld.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = BBWorld.h; path = bitbang/BBWorld.h; sourceTree = "<group>"; };
+		894647B80A064E0A004FA7D4 /* BBFeatureBoolean.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBFeatureBoolean.cpp; sourceTree = "<group>"; };
+		894647B90A064E0A004FA7D4 /* BBFeatureBoolean.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBFeatureBoolean.h; sourceTree = "<group>"; };
+		894647BA0A064E0A004FA7D4 /* BBFeatureNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBFeatureNumber.cpp; sourceTree = "<group>"; };
+		894647BB0A064E0A004FA7D4 /* BBFeatureNumber.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBFeatureNumber.h; sourceTree = "<group>"; };
+		894647BD0A064E0A004FA7D4 /* BBPerceptionBoolean.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionBoolean.cpp; sourceTree = "<group>"; };
+		894647BE0A064E0A004FA7D4 /* BBPerceptionBoolean.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionBoolean.h; sourceTree = "<group>"; };
+		894647BF0A064E0A004FA7D4 /* BBPerceptionFeatureNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFeatureNumber.cpp; sourceTree = "<group>"; };
+		894647C00A064E0A004FA7D4 /* BBPerceptionFeatureNumber.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionFeatureNumber.h; sourceTree = "<group>"; };
+		894647C10A064E0A004FA7D4 /* BBPerceptionFixedNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFixedNumber.cpp; sourceTree = "<group>"; };
+		894647C20A064E0A004FA7D4 /* BBPerceptionFixedNumber.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionFixedNumber.h; sourceTree = "<group>"; };
+		894647C30A064E0A004FA7D4 /* BBPerceptionNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionNumber.cpp; sourceTree = "<group>"; };
+		894647C40A064E0A004FA7D4 /* BBPerceptionNumber.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionNumber.h; sourceTree = "<group>"; };
+		894647C50A064E0A004FA7D4 /* BBPerceptionRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionRandom.cpp; sourceTree = "<group>"; };
+		894647C60A064E0A004FA7D4 /* BBPerceptionRandom.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionRandom.h; sourceTree = "<group>"; };
+		894647C70A064E0A004FA7D4 /* BBPerceptionReachResource.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionReachResource.cpp; sourceTree = "<group>"; };
+		894647C80A064E0A004FA7D4 /* BBPerceptionReachResource.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionReachResource.h; sourceTree = "<group>"; };
+		894647C90A064E0A004FA7D4 /* BBPerceptionSeeResource.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionSeeResource.cpp; sourceTree = "<group>"; };
+		894647CA0A064E0A004FA7D4 /* BBPerceptionSeeResource.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = BBPerceptionSeeResource.h; sourceTree = "<group>"; };
+		8956A27C0EB661F600464079 /* BBRuleListEditype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBRuleListEditype.h; path = bitbang/BBRuleListEditype.h; sourceTree = "<group>"; };
+		8956A27D0EB661F600464079 /* BBRuleListEditype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBRuleListEditype.cpp; path = bitbang/BBRuleListEditype.cpp; sourceTree = "<group>"; };
+		895AB0970A1A2A890043B4C3 /* BBOS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBOS.h; path = bitbang/BBOS.h; sourceTree = "<group>"; };
+		895AB0B30A1A6CF50043B4C3 /* BBOSMacOSX.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BBOSMacOSX.cpp; path = bitbang/BBOSMacOSX.cpp; sourceTree = "<group>"; };
+		89698D050E366216001E8BD8 /* BBFileLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBFileLog.h; path = bitbang/BBFileLog.h; sourceTree = "<group>"; };
+		89698D060E366216001E8BD8 /* BBFileLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBFileLog.cpp; path = bitbang/BBFileLog.cpp; sourceTree = "<group>"; };
+		898219E80AC2B95C00C706DD /* BBBrain.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BBBrain.cpp; path = bitbang/BBBrain.cpp; sourceTree = "<group>"; };
+		898219E90AC2B95C00C706DD /* BBBrain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBBrain.h; path = bitbang/BBBrain.h; sourceTree = "<group>"; };
+		89848A7D0BE0AC88001473DB /* BBRandomRuleList.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BBRandomRuleList.cpp; path = bitbang/BBRandomRuleList.cpp; sourceTree = "<group>"; };
+		89848A7E0BE0AC88001473DB /* BBRandomRuleList.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBRandomRuleList.h; path = bitbang/BBRandomRuleList.h; sourceTree = "<group>"; };
+		89B1391E0EB758E60042B005 /* BBRuleListEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBRuleListEditor.h; path = bitbang/BBRuleListEditor.h; sourceTree = "<group>"; };
+		89B1391F0EB758E60042B005 /* BBRuleListEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBRuleListEditor.cpp; path = bitbang/BBRuleListEditor.cpp; sourceTree = "<group>"; };
+		89BA42850E036031001FE30F /* BBPerceptionRandomProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionRandomProbability.h; sourceTree = "<group>"; };
+		89BA42860E036031001FE30F /* BBPerceptionRandomProbability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionRandomProbability.cpp; sourceTree = "<group>"; };
+		89C0163D0DF4666D00065F2E /* BBPerceptionString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionString.h; sourceTree = "<group>"; };
+		89C0163E0DF4666D00065F2E /* BBPerceptionString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionString.cpp; sourceTree = "<group>"; };
+		89C5B9EA1726A98A00BD6E79 /* BBPerceptionTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionTimer.h; sourceTree = "<group>"; };
+		89C5B9EB1726A98A00BD6E79 /* BBPerceptionTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionTimer.cpp; sourceTree = "<group>"; };
+		89D02E5C0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionFeatureBoolean.h; sourceTree = "<group>"; };
+		89D02E5D0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFeatureBoolean.cpp; sourceTree = "<group>"; };
+		89D94F200FCC5B800006DB88 /* BBLogSchedule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBLogSchedule.cpp; sourceTree = "<group>"; };
+		89D94F210FCC5B800006DB88 /* BBLogSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLogSchedule.h; sourceTree = "<group>"; };
+		89E3BDF90A6336B900DCA9E9 /* BBScheduleScriptable.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = BBScheduleScriptable.cpp; sourceTree = "<group>"; };
+		89E3BDFA0A6336B900DCA9E9 /* BBScheduleScriptable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BBScheduleScriptable.h; sourceTree = "<group>"; };
+		89E3DD1D0E34CADA00354FEA /* BBWorldInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBWorldInterface.h; path = bitbang/BBWorldInterface.h; sourceTree = "<group>"; };
+		89E3DD1F0E34CBE100354FEA /* BBLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBLog.cpp; path = bitbang/BBLog.cpp; sourceTree = "<group>"; };
+		89E3DD200E34CBE100354FEA /* BBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBLog.h; path = bitbang/BBLog.h; sourceTree = "<group>"; };
+		89EFE4661388249600834D0F /* SFMT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SFMT.c; path = sfmt/SFMT.c; sourceTree = "<group>"; };
+		89EFE468138824B000834D0F /* SFMT-alti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-alti.h"; path = "sfmt/SFMT-alti.h"; sourceTree = "<group>"; };
+		89EFE469138824B000834D0F /* SFMT-params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params.h"; path = "sfmt/SFMT-params.h"; sourceTree = "<group>"; };
+		89EFE46A138824B000834D0F /* SFMT-params607.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params607.h"; path = "sfmt/SFMT-params607.h"; sourceTree = "<group>"; };
+		89EFE46B138824B000834D0F /* SFMT-params1279.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params1279.h"; path = "sfmt/SFMT-params1279.h"; sourceTree = "<group>"; };
+		89EFE46C138824B000834D0F /* SFMT-params2281.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params2281.h"; path = "sfmt/SFMT-params2281.h"; sourceTree = "<group>"; };
+		89EFE46D138824B000834D0F /* SFMT-params4253.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params4253.h"; path = "sfmt/SFMT-params4253.h"; sourceTree = "<group>"; };
+		89EFE46E138824B000834D0F /* SFMT-params11213.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params11213.h"; path = "sfmt/SFMT-params11213.h"; sourceTree = "<group>"; };
+		89EFE46F138824B000834D0F /* SFMT-params19937.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params19937.h"; path = "sfmt/SFMT-params19937.h"; sourceTree = "<group>"; };
+		89EFE470138824B000834D0F /* SFMT-params44497.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params44497.h"; path = "sfmt/SFMT-params44497.h"; sourceTree = "<group>"; };
+		89EFE471138824B000834D0F /* SFMT-params86243.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params86243.h"; path = "sfmt/SFMT-params86243.h"; sourceTree = "<group>"; };
+		89EFE472138824B000834D0F /* SFMT-params132049.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params132049.h"; path = "sfmt/SFMT-params132049.h"; sourceTree = "<group>"; };
+		89EFE473138824B000834D0F /* SFMT-params216091.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-params216091.h"; path = "sfmt/SFMT-params216091.h"; sourceTree = "<group>"; };
+		89EFE474138824B000834D0F /* SFMT-sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-sse2.h"; path = "sfmt/SFMT-sse2.h"; sourceTree = "<group>"; };
+		89EFE475138824B000834D0F /* SFMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFMT.h; path = sfmt/SFMT.h; sourceTree = "<group>"; };
+		89F4B20F11EBDC4D00E8D2B9 /* BBVisionReach2DCircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBVisionReach2DCircle.cpp; path = bitbang/BBVisionReach2DCircle.cpp; sourceTree = "<group>"; };
+		89F4B21011EBDC4D00E8D2B9 /* BBVisionReach2DCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBVisionReach2DCircle.h; path = bitbang/BBVisionReach2DCircle.h; sourceTree = "<group>"; };
+		89F578050DF5ABB5002D635A /* BBPerceptionFixedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionFixedString.h; sourceTree = "<group>"; };
+		89F578060DF5ABB5002D635A /* BBPerceptionFixedString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFixedString.cpp; sourceTree = "<group>"; };
+		89FB51780B36B2C80057A034 /* BBPerceptionSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBPerceptionSphere.h; path = bitbang/BBPerceptionSphere.h; sourceTree = "<group>"; };
+		89FB51790B36B2C80057A034 /* BBPerceptionSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBPerceptionSphere.cpp; path = bitbang/BBPerceptionSphere.cpp; sourceTree = "<group>"; };
+		D2AAC06F0554671400DB518D /* libBitBang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBitBang.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC06D0554671400DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC06F0554671400DB518D /* libBitBang.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* BitBang */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ACFE841707C02AAC07 /* Source */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = BitBang;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				89EFE4651388244D00834D0F /* SFMT */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				89186BB9106D137700A5623F /* utils */,
+				89E4985F0EB14E7700E48709 /* nn */,
+				891371A60E33966E00E7E748 /* logging */,
+				89F735AA0AF9EE4000F07210 /* rulelist */,
+				894648090A065117004FA7D4 /* core */,
+				894647B70A064E0A004FA7D4 /* features */,
+				894647BC0A064E0A004FA7D4 /* perceptions */,
+				894647CB0A064E0A004FA7D4 /* schedules */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		891371A60E33966E00E7E748 /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				89E3DD1F0E34CBE100354FEA /* BBLog.cpp */,
+				89E3DD200E34CBE100354FEA /* BBLog.h */,
+				89698D050E366216001E8BD8 /* BBFileLog.h */,
+				89698D060E366216001E8BD8 /* BBFileLog.cpp */,
+				890D26C30E389AF9007BE01E /* BBCSVFileLog.h */,
+				890D26C40E389AF9007BE01E /* BBCSVFileLog.cpp */,
+			);
+			name = logging;
+			sourceTree = "<group>";
+		};
+		89186BB9106D137700A5623F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				89186BBA106D138F00A5623F /* BBInfluence.cpp */,
+				89186BBB106D138F00A5623F /* BBInfluence.h */,
+				89186BBC106D138F00A5623F /* BBInfluenceMap.cpp */,
+				89186BBD106D138F00A5623F /* BBInfluenceMap.h */,
+				893382F113841F9C00D537FC /* BBRandomGenerator.h */,
+				893382F213841F9C00D537FC /* BBRandomGenerator.cpp */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		894647B70A064E0A004FA7D4 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				894647B80A064E0A004FA7D4 /* BBFeatureBoolean.cpp */,
+				894647B90A064E0A004FA7D4 /* BBFeatureBoolean.h */,
+				894647BA0A064E0A004FA7D4 /* BBFeatureNumber.cpp */,
+				894647BB0A064E0A004FA7D4 /* BBFeatureNumber.h */,
+				89356FB20E017FFE009C9012 /* BBFeatureString.h */,
+				89356FB30E017FFE009C9012 /* BBFeatureString.cpp */,
+			);
+			name = features;
+			path = bitbang/features;
+			sourceTree = "<group>";
+		};
+		894647BC0A064E0A004FA7D4 /* perceptions */ = {
+			isa = PBXGroup;
+			children = (
+				894647BD0A064E0A004FA7D4 /* BBPerceptionBoolean.cpp */,
+				894647BE0A064E0A004FA7D4 /* BBPerceptionBoolean.h */,
+				894647BF0A064E0A004FA7D4 /* BBPerceptionFeatureNumber.cpp */,
+				894647C00A064E0A004FA7D4 /* BBPerceptionFeatureNumber.h */,
+				894647C10A064E0A004FA7D4 /* BBPerceptionFixedNumber.cpp */,
+				894647C20A064E0A004FA7D4 /* BBPerceptionFixedNumber.h */,
+				894647C30A064E0A004FA7D4 /* BBPerceptionNumber.cpp */,
+				894647C40A064E0A004FA7D4 /* BBPerceptionNumber.h */,
+				894647C50A064E0A004FA7D4 /* BBPerceptionRandom.cpp */,
+				894647C60A064E0A004FA7D4 /* BBPerceptionRandom.h */,
+				894647C70A064E0A004FA7D4 /* BBPerceptionReachResource.cpp */,
+				894647C80A064E0A004FA7D4 /* BBPerceptionReachResource.h */,
+				894647C90A064E0A004FA7D4 /* BBPerceptionSeeResource.cpp */,
+				894647CA0A064E0A004FA7D4 /* BBPerceptionSeeResource.h */,
+				89C0163D0DF4666D00065F2E /* BBPerceptionString.h */,
+				89C0163E0DF4666D00065F2E /* BBPerceptionString.cpp */,
+				89F578050DF5ABB5002D635A /* BBPerceptionFixedString.h */,
+				89F578060DF5ABB5002D635A /* BBPerceptionFixedString.cpp */,
+				89356FBB0E0184D3009C9012 /* BBPerceptionFeatureString.h */,
+				89356FBC0E0184D3009C9012 /* BBPerceptionFeatureString.cpp */,
+				89BA42850E036031001FE30F /* BBPerceptionRandomProbability.h */,
+				89BA42860E036031001FE30F /* BBPerceptionRandomProbability.cpp */,
+				89D02E5C0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.h */,
+				89D02E5D0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.cpp */,
+				89C5B9EA1726A98A00BD6E79 /* BBPerceptionTimer.h */,
+				89C5B9EB1726A98A00BD6E79 /* BBPerceptionTimer.cpp */,
+			);
+			name = perceptions;
+			path = bitbang/perceptions;
+			sourceTree = "<group>";
+		};
+		894647CB0A064E0A004FA7D4 /* schedules */ = {
+			isa = PBXGroup;
+			children = (
+				89D94F200FCC5B800006DB88 /* BBLogSchedule.cpp */,
+				89D94F210FCC5B800006DB88 /* BBLogSchedule.h */,
+				89E3BDF90A6336B900DCA9E9 /* BBScheduleScriptable.cpp */,
+				89E3BDFA0A6336B900DCA9E9 /* BBScheduleScriptable.h */,
+			);
+			name = schedules;
+			path = bitbang/schedules;
+			sourceTree = "<group>";
+		};
+		894648090A065117004FA7D4 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				89F4B20F11EBDC4D00E8D2B9 /* BBVisionReach2DCircle.cpp */,
+				89F4B21011EBDC4D00E8D2B9 /* BBVisionReach2DCircle.h */,
+				89E3DD1D0E34CADA00354FEA /* BBWorldInterface.h */,
+				892224BF0B3809CE0077D329 /* BBVisionReach3DCone.cpp */,
+				892224C00B3809CE0077D329 /* BBVisionReach3DCone.h */,
+				898219E80AC2B95C00C706DD /* BBBrain.cpp */,
+				898219E90AC2B95C00C706DD /* BBBrain.h */,
+				895AB0B30A1A6CF50043B4C3 /* BBOSMacOSX.cpp */,
+				895AB0970A1A2A890043B4C3 /* BBOS.h */,
+				8946475E0A064D7D004FA7D4 /* BBPerception.h */,
+				8946475F0A064D7D004FA7D4 /* BBPoint.h */,
+				894647660A064D7D004FA7D4 /* BBSchedule.cpp */,
+				894647670A064D7D004FA7D4 /* BBSchedule.h */,
+				8946476A0A064D7D004FA7D4 /* BBTypes.h */,
+				8946476B0A064D7D004FA7D4 /* BBWorld.cpp */,
+				8946476C0A064D7D004FA7D4 /* BBWorld.h */,
+				8946474F0A064D7D004FA7D4 /* BBAction.cpp */,
+				894647500A064D7D004FA7D4 /* BBAction.h */,
+				894647560A064D7D004FA7D4 /* BBFeature.cpp */,
+				894647570A064D7D004FA7D4 /* BBFeature.h */,
+				8946475A0A064D7D004FA7D4 /* BBObject.cpp */,
+				8946475B0A064D7D004FA7D4 /* BBObject.h */,
+				8946475D0A064D7D004FA7D4 /* BBPerception.cpp */,
+				89FB51780B36B2C80057A034 /* BBPerceptionSphere.h */,
+				89FB51790B36B2C80057A034 /* BBPerceptionSphere.cpp */,
+				8902AE6C0D9ADE5100FC222A /* BBTimer.h */,
+				8902AE6D0D9ADE5100FC222A /* BBTimer.cpp */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		89E4985F0EB14E7700E48709 /* nn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = nn;
+			sourceTree = "<group>";
+		};
+		89EFE4651388244D00834D0F /* SFMT */ = {
+			isa = PBXGroup;
+			children = (
+				89EFE468138824B000834D0F /* SFMT-alti.h */,
+				89EFE469138824B000834D0F /* SFMT-params.h */,
+				89EFE46A138824B000834D0F /* SFMT-params607.h */,
+				89EFE46B138824B000834D0F /* SFMT-params1279.h */,
+				89EFE46C138824B000834D0F /* SFMT-params2281.h */,
+				89EFE46D138824B000834D0F /* SFMT-params4253.h */,
+				89EFE46E138824B000834D0F /* SFMT-params11213.h */,
+				89EFE46F138824B000834D0F /* SFMT-params19937.h */,
+				89EFE470138824B000834D0F /* SFMT-params44497.h */,
+				89EFE471138824B000834D0F /* SFMT-params86243.h */,
+				89EFE472138824B000834D0F /* SFMT-params132049.h */,
+				89EFE473138824B000834D0F /* SFMT-params216091.h */,
+				89EFE474138824B000834D0F /* SFMT-sse2.h */,
+				89EFE475138824B000834D0F /* SFMT.h */,
+				89EFE4661388249600834D0F /* SFMT.c */,
+			);
+			name = SFMT;
+			sourceTree = "<group>";
+		};
+		89F735AA0AF9EE4000F07210 /* rulelist */ = {
+			isa = PBXGroup;
+			children = (
+				89848A7D0BE0AC88001473DB /* BBRandomRuleList.cpp */,
+				89848A7E0BE0AC88001473DB /* BBRandomRuleList.h */,
+				894647600A064D7D004FA7D4 /* BBRule.cpp */,
+				894647610A064D7D004FA7D4 /* BBRule.h */,
+				894647620A064D7D004FA7D4 /* BBRuleCondition.cpp */,
+				894647630A064D7D004FA7D4 /* BBRuleCondition.h */,
+				894647640A064D7D004FA7D4 /* BBRuleList.cpp */,
+				894647650A064D7D004FA7D4 /* BBRuleList.h */,
+				8956A27C0EB661F600464079 /* BBRuleListEditype.h */,
+				8956A27D0EB661F600464079 /* BBRuleListEditype.cpp */,
+				89B1391E0EB758E60042B005 /* BBRuleListEditor.h */,
+				89B1391F0EB758E60042B005 /* BBRuleListEditor.cpp */,
+			);
+			name = rulelist;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC06B0554671400DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E498650EB1726D00E48709 /* BBAction.h in Headers */,
+				89E498660EB1727300E48709 /* BBBrain.h in Headers */,
+				89E498670EB1727800E48709 /* BBCSVFileLog.h in Headers */,
+				89E498680EB1728D00E48709 /* BBSchedule.h in Headers */,
+				89E498690EB1728E00E48709 /* BBVisionReach3DCone.h in Headers */,
+				89E4986A0EB1729700E48709 /* BBTypes.h in Headers */,
+				89E4986B0EB172A200E48709 /* BBFeature.h in Headers */,
+				89E4986C0EB172A300E48709 /* BBFeatureBoolean.h in Headers */,
+				89E4986D0EB172A400E48709 /* BBFeatureNumber.h in Headers */,
+				89E4986E0EB172A500E48709 /* BBFeatureString.h in Headers */,
+				89E4986F0EB172A600E48709 /* BBFileLog.h in Headers */,
+				89E498700EB172A600E48709 /* BBLog.h in Headers */,
+				89E498710EB172A700E48709 /* BBObject.h in Headers */,
+				89E498720EB172A800E48709 /* BBOS.h in Headers */,
+				89E498730EB172AB00E48709 /* BBPerception.h in Headers */,
+				89E498740EB172AC00E48709 /* BBPerceptionBoolean.h in Headers */,
+				89E498750EB172AC00E48709 /* BBPerceptionFeatureNumber.h in Headers */,
+				89E498760EB172AD00E48709 /* BBPerceptionFeatureString.h in Headers */,
+				89E498770EB172B100E48709 /* BBPerceptionFixedNumber.h in Headers */,
+				89E498780EB172B200E48709 /* BBPerceptionFixedString.h in Headers */,
+				89E498790EB172B300E48709 /* BBPerceptionNumber.h in Headers */,
+				89E4987A0EB172B400E48709 /* BBPerceptionRandom.h in Headers */,
+				89E4987B0EB172B500E48709 /* BBPerceptionRandomProbability.h in Headers */,
+				89E4987C0EB172B600E48709 /* BBPerceptionReachResource.h in Headers */,
+				89E4987D0EB172B700E48709 /* BBPerceptionSeeResource.h in Headers */,
+				89E4987E0EB172B700E48709 /* BBPerceptionSphere.h in Headers */,
+				89E4987F0EB172B800E48709 /* BBPerceptionString.h in Headers */,
+				89E498800EB172B900E48709 /* BBPoint.h in Headers */,
+				89E498810EB172BA00E48709 /* BBRandomRuleList.h in Headers */,
+				89E498820EB172BD00E48709 /* BBRule.h in Headers */,
+				89E498830EB172BE00E48709 /* BBRuleCondition.h in Headers */,
+				89E498840EB172BF00E48709 /* BBRuleList.h in Headers */,
+				89E498850EB172C000E48709 /* BBScheduleScriptable.h in Headers */,
+				89E498870EB172C200E48709 /* BBTimer.h in Headers */,
+				89E498880EB172C400E48709 /* BBWorld.h in Headers */,
+				89E4988A0EB172C600E48709 /* BBWorldInterface.h in Headers */,
+				8956A27E0EB661F600464079 /* BBRuleListEditype.h in Headers */,
+				89B139200EB758E60042B005 /* BBRuleListEditor.h in Headers */,
+				89D02E5E0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.h in Headers */,
+				89D94F230FCC5B800006DB88 /* BBLogSchedule.h in Headers */,
+				89186BBF106D138F00A5623F /* BBInfluence.h in Headers */,
+				89186BC1106D138F00A5623F /* BBInfluenceMap.h in Headers */,
+				89F4B21211EBDC4D00E8D2B9 /* BBVisionReach2DCircle.h in Headers */,
+				893382F313841F9C00D537FC /* BBRandomGenerator.h in Headers */,
+				89C5B9EC1726A98A00BD6E79 /* BBPerceptionTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC06E0554671400DB518D /* BitBang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB920108733DBB0010E9CD /* Build configuration list for PBXNativeTarget "BitBang" */;
+			buildPhases = (
+				D2AAC06B0554671400DB518D /* Headers */,
+				D2AAC06C0554671400DB518D /* Sources */,
+				D2AAC06D0554671400DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitBang;
+			productName = BitBang;
+			productReference = D2AAC06F0554671400DB518D /* libBitBang.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 1DEB920508733DBB0010E9CD /* Build configuration list for PBXProject "BitBang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* BitBang */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC06E0554671400DB518D /* BitBang */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC06C0554671400DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8946476F0A064D7D004FA7D4 /* BBAction.cpp in Sources */,
+				894647760A064D7D004FA7D4 /* BBFeature.cpp in Sources */,
+				8946477A0A064D7D004FA7D4 /* BBObject.cpp in Sources */,
+				8946477D0A064D7D004FA7D4 /* BBPerception.cpp in Sources */,
+				894647800A064D7D004FA7D4 /* BBRule.cpp in Sources */,
+				894647820A064D7D004FA7D4 /* BBRuleCondition.cpp in Sources */,
+				894647840A064D7D004FA7D4 /* BBRuleList.cpp in Sources */,
+				894647860A064D7D004FA7D4 /* BBSchedule.cpp in Sources */,
+				8946478B0A064D7D004FA7D4 /* BBWorld.cpp in Sources */,
+				894647F20A064E0A004FA7D4 /* BBFeatureBoolean.cpp in Sources */,
+				894647F40A064E0A004FA7D4 /* BBFeatureNumber.cpp in Sources */,
+				894647F60A064E0A004FA7D4 /* BBPerceptionBoolean.cpp in Sources */,
+				894647F80A064E0A004FA7D4 /* BBPerceptionFeatureNumber.cpp in Sources */,
+				894647FA0A064E0A004FA7D4 /* BBPerceptionFixedNumber.cpp in Sources */,
+				894647FC0A064E0A004FA7D4 /* BBPerceptionNumber.cpp in Sources */,
+				894647FE0A064E0A004FA7D4 /* BBPerceptionRandom.cpp in Sources */,
+				894648000A064E0A004FA7D4 /* BBPerceptionReachResource.cpp in Sources */,
+				894648020A064E0A004FA7D4 /* BBPerceptionSeeResource.cpp in Sources */,
+				895AB0B40A1A6CF50043B4C3 /* BBOSMacOSX.cpp in Sources */,
+				89E3BDFB0A6336B900DCA9E9 /* BBScheduleScriptable.cpp in Sources */,
+				898219EA0AC2B95C00C706DD /* BBBrain.cpp in Sources */,
+				89FB517B0B36B2C80057A034 /* BBPerceptionSphere.cpp in Sources */,
+				892224C10B3809CE0077D329 /* BBVisionReach3DCone.cpp in Sources */,
+				89848A7F0BE0AC88001473DB /* BBRandomRuleList.cpp in Sources */,
+				89C016400DF4666D00065F2E /* BBPerceptionString.cpp in Sources */,
+				89F578080DF5ABB5002D635A /* BBPerceptionFixedString.cpp in Sources */,
+				89356FB50E017FFE009C9012 /* BBFeatureString.cpp in Sources */,
+				89356FBE0E0184D3009C9012 /* BBPerceptionFeatureString.cpp in Sources */,
+				89BA42880E036031001FE30F /* BBPerceptionRandomProbability.cpp in Sources */,
+				89E3DD210E34CBE100354FEA /* BBLog.cpp in Sources */,
+				89698D080E366216001E8BD8 /* BBFileLog.cpp in Sources */,
+				890D26C60E389AF9007BE01E /* BBCSVFileLog.cpp in Sources */,
+				898F9BCE0EAD6F1C006EF08E /* BBTimer.cpp in Sources */,
+				8956A27F0EB661F600464079 /* BBRuleListEditype.cpp in Sources */,
+				89B139210EB758E60042B005 /* BBRuleListEditor.cpp in Sources */,
+				89D02E5F0EF1538200E99DB8 /* BBPerceptionFeatureBoolean.cpp in Sources */,
+				89D94F220FCC5B800006DB88 /* BBLogSchedule.cpp in Sources */,
+				89186BBE106D138F00A5623F /* BBInfluence.cpp in Sources */,
+				89186BC0106D138F00A5623F /* BBInfluenceMap.cpp in Sources */,
+				89F4B21111EBDC4D00E8D2B9 /* BBVisionReach2DCircle.cpp in Sources */,
+				893382F413841F9C00D537FC /* BBRandomGenerator.cpp in Sources */,
+				89EFE4671388249600834D0F /* SFMT.c in Sources */,
+				89C5B9ED1726A98A00BD6E79 /* BBPerceptionTimer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB920208733DBB0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BitBang_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = BitBang;
+				SDKROOT = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB920308733DBB0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BitBang_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = BitBang;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		1DEB920608733DBB0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MEXP=19937",
+					MACOSX,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./bitbang;
+				OBJROOT = build;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = ../lib/MacOSX;
+			};
+			name = Debug;
+		};
+		1DEB920708733DBB0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MEXP=19937",
+					MACOSX,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./bitbang;
+				OBJROOT = build;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				SYMROOT = ../lib/MacOSX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB920108733DBB0010E9CD /* Build configuration list for PBXNativeTarget "BitBang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB920208733DBB0010E9CD /* Debug */,
+				1DEB920308733DBB0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB920508733DBB0010E9CD /* Build configuration list for PBXProject "BitBang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB920608733DBB0010E9CD /* Debug */,
+				1DEB920708733DBB0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
