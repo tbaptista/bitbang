@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{6627462c-a8b7-4994-b2a7-6612d05e2e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actions">
+      <UniqueIdentifier>{c23aebea-37ca-4183-83da-786568b4cae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perceptions">
+      <UniqueIdentifier>{699cfe86-e136-44d2-bb34-61a3ffb29771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="schedules">
+      <UniqueIdentifier>{7db323d4-6a7b-46fe-983c-ac6a7c3249c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{321b75c1-0fa7-4d5e-89d6-0f84d05664e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="brains">
+      <UniqueIdentifier>{f0bf0104-556c-43d6-9a0a-f0d03a9c681e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="brains\Rule List">
+      <UniqueIdentifier>{d19fa8df-4017-470a-acfc-b05847394c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logs">
+      <UniqueIdentifier>{81606722-f611-4ced-b136-05e93d7e9d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SFMT">
+      <UniqueIdentifier>{592613a6-7419-4d0b-a404-39bb1ffa1119}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bitbang\BBAction.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBBrain.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBFeature.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBObject.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBOSWin32.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBPerception.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBPerceptionSphere.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRandomGenerator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBSchedule.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBTimer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBVisionReach3DCone.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBWorld.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BitBang.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionBoolean.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFeatureBoolean.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFeatureNumber.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFeatureString.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFixedNumber.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFixedString.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionNumber.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionRandom.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionRandomNumber.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionRandomProbability.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionReachResource.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionSeeResource.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\perceptions\BBPerceptionString.cpp">
+      <Filter>perceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\features\BBFeatureBoolean.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\features\BBFeatureNumber.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\features\BBFeatureString.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRandomRuleList.cpp">
+      <Filter>brains\Rule List</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRule.cpp">
+      <Filter>brains\Rule List</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRuleCondition.cpp">
+      <Filter>brains\Rule List</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRuleList.cpp">
+      <Filter>brains\Rule List</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRuleListEditor.cpp">
+      <Filter>brains\Rule List</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBRuleListEditype.cpp">
+      <Filter>brains\Rule List</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBCSVFileLog.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBFileLog.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\BBLog.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbang\schedules\BBLogSchedule.cpp">
+      <Filter>logs</Filter>
+    </ClCompile>
+    <ClCompile Include="sfmt\SFMT.c">
+      <Filter>SFMT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitbang\BBAction.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBBrain.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBFeature.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBObject.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBObjectType.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBOS.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBPerception.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBPerceptionSphere.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBPoint.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRandomGenerator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBSchedule.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBTimer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBTypes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBVisionReach3DCone.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBWorld.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBWorldInterface.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BitBang.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionBoolean.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFeatureBoolean.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFeatureNumber.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFeatureString.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFixedNumber.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFixedString.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionNumber.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionRandom.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionRandomNumber.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionRandomProbability.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionReachResource.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionSeeResource.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\perceptions\BBPerceptionString.h">
+      <Filter>perceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\features\BBFeatureBoolean.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\features\BBFeatureNumber.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\features\BBFeatureString.h">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRandomRuleList.h">
+      <Filter>brains\Rule List</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRule.h">
+      <Filter>brains\Rule List</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRuleCondition.h">
+      <Filter>brains\Rule List</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRuleList.h">
+      <Filter>brains\Rule List</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRuleListEditor.h">
+      <Filter>brains\Rule List</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBRuleListEditype.h">
+      <Filter>brains\Rule List</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBCSVFileLog.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBFileLog.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\BBLog.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbang\schedules\BBLogSchedule.h">
+      <Filter>logs</Filter>
+    </ClInclude>
+    <ClInclude Include="sfmt\SFMT.h">
+      <Filter>SFMT</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

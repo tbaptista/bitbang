@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>bitbang_lib</ProjectName>
+    <ProjectGuid>{B11E6386-CB1D-4BEF-92E0-F81F822CEAE3}</ProjectGuid>
+    <RootNamespace>bitbang_lib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug_lib\</OutDir>
+    <IntDir>Debug_lib\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release_lib\</OutDir>
+    <IntDir>Release_lib\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>sfmt;bitbang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>./lib/bitbangd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>sfmt;bitbang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>./lib/bitbang.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitbang\BBAction.cpp" />
+    <ClCompile Include="bitbang\BBBrain.cpp" />
+    <ClCompile Include="bitbang\BBFeature.cpp" />
+    <ClCompile Include="bitbang\BBObject.cpp" />
+    <ClCompile Include="bitbang\BBOSWin32.cpp" />
+    <ClCompile Include="bitbang\BBPerception.cpp" />
+    <ClCompile Include="bitbang\BBPerceptionSphere.cpp" />
+    <ClCompile Include="bitbang\BBRandomGenerator.cpp" />
+    <ClCompile Include="bitbang\BBSchedule.cpp" />
+    <ClCompile Include="bitbang\BBTimer.cpp" />
+    <ClCompile Include="bitbang\BBVisionReach3DCone.cpp" />
+    <ClCompile Include="bitbang\BBWorld.cpp" />
+    <ClCompile Include="bitbang\BitBang.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionBoolean.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFeatureBoolean.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFeatureNumber.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFeatureString.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFixedNumber.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionFixedString.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionNumber.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionRandom.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionRandomNumber.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionRandomProbability.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionReachResource.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionSeeResource.cpp" />
+    <ClCompile Include="bitbang\perceptions\BBPerceptionString.cpp" />
+    <ClCompile Include="bitbang\features\BBFeatureBoolean.cpp" />
+    <ClCompile Include="bitbang\features\BBFeatureNumber.cpp" />
+    <ClCompile Include="bitbang\features\BBFeatureString.cpp" />
+    <ClCompile Include="bitbang\BBRandomRuleList.cpp" />
+    <ClCompile Include="bitbang\BBRule.cpp" />
+    <ClCompile Include="bitbang\BBRuleCondition.cpp" />
+    <ClCompile Include="bitbang\BBRuleList.cpp" />
+    <ClCompile Include="bitbang\BBRuleListEditor.cpp" />
+    <ClCompile Include="bitbang\BBRuleListEditype.cpp" />
+    <ClCompile Include="bitbang\BBCSVFileLog.cpp" />
+    <ClCompile Include="bitbang\BBFileLog.cpp" />
+    <ClCompile Include="bitbang\BBLog.cpp" />
+    <ClCompile Include="bitbang\schedules\BBLogSchedule.cpp" />
+    <ClCompile Include="sfmt\SFMT.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitbang\BBAction.h" />
+    <ClInclude Include="bitbang\BBBrain.h" />
+    <ClInclude Include="bitbang\BBFeature.h" />
+    <ClInclude Include="bitbang\BBObject.h" />
+    <ClInclude Include="bitbang\BBObjectType.h" />
+    <ClInclude Include="bitbang\BBOS.h" />
+    <ClInclude Include="bitbang\BBPerception.h" />
+    <ClInclude Include="bitbang\BBPerceptionSphere.h" />
+    <ClInclude Include="bitbang\BBPoint.h" />
+    <ClInclude Include="bitbang\BBRandomGenerator.h" />
+    <ClInclude Include="bitbang\BBSchedule.h" />
+    <ClInclude Include="bitbang\BBTimer.h" />
+    <ClInclude Include="bitbang\BBTypes.h" />
+    <ClInclude Include="bitbang\BBVisionReach3DCone.h" />
+    <ClInclude Include="bitbang\BBWorld.h" />
+    <ClInclude Include="bitbang\BBWorldInterface.h" />
+    <ClInclude Include="bitbang\BitBang.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionBoolean.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFeatureBoolean.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFeatureNumber.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFeatureString.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFixedNumber.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionFixedString.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionNumber.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionRandom.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionRandomNumber.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionRandomProbability.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionReachResource.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionSeeResource.h" />
+    <ClInclude Include="bitbang\perceptions\BBPerceptionString.h" />
+    <ClInclude Include="bitbang\features\BBFeatureBoolean.h" />
+    <ClInclude Include="bitbang\features\BBFeatureNumber.h" />
+    <ClInclude Include="bitbang\features\BBFeatureString.h" />
+    <ClInclude Include="bitbang\BBRandomRuleList.h" />
+    <ClInclude Include="bitbang\BBRule.h" />
+    <ClInclude Include="bitbang\BBRuleCondition.h" />
+    <ClInclude Include="bitbang\BBRuleList.h" />
+    <ClInclude Include="bitbang\BBRuleListEditor.h" />
+    <ClInclude Include="bitbang\BBRuleListEditype.h" />
+    <ClInclude Include="bitbang\BBCSVFileLog.h" />
+    <ClInclude Include="bitbang\BBFileLog.h" />
+    <ClInclude Include="bitbang\BBLog.h" />
+    <ClInclude Include="bitbang\schedules\BBLogSchedule.h" />
+    <ClInclude Include="sfmt\SFMT.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

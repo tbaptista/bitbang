@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4219c18c-4138-4ca6-8514-2d1cfa6e6361}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bitbangse\CDefaultEventHandler.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CEventHandler.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CFileConfig.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CIrrMotionState.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CObjectLabel.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CPhysicsObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CSimObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CTimedLabel.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbangse\CWorld.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitbangse\CDefaultEventHandler.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CEventHandler.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CFileConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CIrrMotionState.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CObjectLabel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CPhysicsObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CSimObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CTimedLabel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\CWorld.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbangse\types.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

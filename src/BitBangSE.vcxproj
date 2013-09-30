@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E8FF402-873D-4F1B-B3FC-ECB9AA035167}</ProjectGuid>
+    <RootNamespace>BitBangSE</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>irrlicht\include;bitbang;bullet\include;bitbangse\simpleopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>bitbangd.lib;Irrlicht.lib;libbulletdynamics_d.lib;libbulletcollision_d.lib;libbulletmath_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\lib\bitbangsed.lib</OutputFile>
+      <AdditionalLibraryDirectories>bullet\lib\Win32-VisualStudio;irrlicht\lib\Win32-VisualStudio;lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>irrlicht\include;bitbang;bullet\include;bitbangse\simpleopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>bitbang.lib;Irrlicht.lib;libbulletdynamics.lib;libbulletcollision.lib;libbulletmath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\lib\bitbangse.lib</OutputFile>
+      <AdditionalLibraryDirectories>bullet\lib\Win32-VisualStudio;irrlicht\lib\Win32-VisualStudio;lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitbangse\CDefaultEventHandler.cpp" />
+    <ClCompile Include="bitbangse\CEventHandler.cpp" />
+    <ClCompile Include="bitbangse\CFileConfig.cpp" />
+    <ClCompile Include="bitbangse\CIrrMotionState.cpp" />
+    <ClCompile Include="bitbangse\CObjectLabel.cpp" />
+    <ClCompile Include="bitbangse\CPhysicsObject.cpp" />
+    <ClCompile Include="bitbangse\CSimObject.cpp" />
+    <ClCompile Include="bitbangse\CTimedLabel.cpp" />
+    <ClCompile Include="bitbangse\CWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitbangse\CDefaultEventHandler.h" />
+    <ClInclude Include="bitbangse\CEventHandler.h" />
+    <ClInclude Include="bitbangse\CFileConfig.h" />
+    <ClInclude Include="bitbangse\CIrrMotionState.h" />
+    <ClInclude Include="bitbangse\CObjectLabel.h" />
+    <ClInclude Include="bitbangse\CPhysicsObject.h" />
+    <ClInclude Include="bitbangse\CSimObject.h" />
+    <ClInclude Include="bitbangse\CTimedLabel.h" />
+    <ClInclude Include="bitbangse\CWorld.h" />
+    <ClInclude Include="bitbangse\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="bitbanglib.vcxproj">
+      <Project>{b11e6386-cb1d-4bef-92e0-f81f822ceae3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
