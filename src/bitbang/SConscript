@@ -1,0 +1,111 @@
+#
+# BitBang (http://www.bitbang.org)
+# Copyright (C) 2012 Tiago Baptista
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the version 2 of the GNU General Public License
+# as published by the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+import platform
+
+#Source Files
+src_core = '''
+BBAction.cpp
+BBBrain.cpp
+BBFeature.cpp
+BBObject.cpp
+BBPerception.cpp
+BBPerceptionSphere.cpp
+BBSchedule.cpp
+BBTimer.cpp
+BBVisionReach2DCircle.cpp
+BBVisionReach3DCone.cpp
+BBWorld.cpp
+'''.split()
+
+src_rulelist = '''
+BBRandomRuleList.cpp
+BBRule.cpp
+BBRuleCondition.cpp
+BBRuleList.cpp
+BBRuleListEditor.cpp
+BBRuleListEditype.cpp
+'''.split()
+
+src_features = '''
+features/BBFeatureBoolean.cpp
+features/BBFeatureNumber.cpp
+features/BBFeatureString.cpp
+'''.split()
+
+src_perceptions = '''
+perceptions/BBPerceptionBoolean.cpp
+perceptions/BBPerceptionFeatureBoolean.cpp
+perceptions/BBPerceptionFeatureNumber.cpp
+perceptions/BBPerceptionFeatureString.cpp
+perceptions/BBPerceptionFixedNumber.cpp
+perceptions/BBPerceptionFixedString.cpp
+perceptions/BBPerceptionNumber.cpp
+perceptions/BBPerceptionRandom.cpp
+perceptions/BBPerceptionRandomProbability.cpp
+perceptions/BBPerceptionReachResource.cpp
+perceptions/BBPerceptionSeeResource.cpp
+perceptions/BBPerceptionString.cpp
+'''.split()
+
+src_schedules = '''
+schedules/BBLogSchedule.cpp
+'''.split()
+
+src_logging = '''
+BBCSVFileLog.cpp
+BBFileLog.cpp
+BBLog.cpp
+'''.split()
+
+src_utils = '''
+BBRandomGenerator.cpp
+'''.split()
+
+src_sfmt = '''
+../sfmt/SFMT.c
+'''.split()
+
+all_sources = src_core + src_rulelist + src_features + src_perceptions +\
+    src_schedules + src_logging + src_utils + src_sfmt
+    
+#Add os dependent sources
+if platform.system() == 'Linux':
+    all_sources.append('BBOSLinux.cpp')
+elif platform.system() == 'Darwin':
+    all_sources.append('BBOSMacOSX.cpp')
+elif platform.system() == 'Windows':
+    all_sources.append('BBOSWin32.cpp')
+    
+#Header files
+
+#Include Folders
+include = ['.', '../sfmt']
+
+#Compiler definitions
+defines = {'MEXP': '19937', 'HAVE_SSE2':None}
+
+#Compiler flags
+flags = ['-msse2']
+
+#Build universal binary on MacOSX
+if platform.system() == 'Darwin':
+    flags.extend(['-arch','i386', '-arch', 'x86_64'])
+
+env = Environment(CPPPATH = include, CPPDEFINES = defines, CCFLAGS = flags)
+env.StaticLibrary('BitBang', source = all_sources)
