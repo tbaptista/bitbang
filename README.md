@@ -1,4 +1,4 @@
-#BitBang Core Engine
+#BitBang Framework
 
 http://www.bitbang.org
 
