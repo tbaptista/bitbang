@@ -21,7 +21,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 * * *
 
 BitBang Framework uses the following third-party libraries:
-    * SFMT (http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/)
-	* Irrlicht (http://irrlicht.sourceforge.net)
-	* Bullet Physics Library (http://www.bulletphysics.com)
-	* SimpleOpt (http://code.jellycan.com/simpleopt/)
+
+* SFMT (http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/)
+* Irrlicht (http://irrlicht.sourceforge.net)
+* Bullet Physics Library (http://www.bulletphysics.com)
+* SimpleOpt (http://code.jellycan.com/simpleopt/)
