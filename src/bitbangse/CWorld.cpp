@@ -27,6 +27,7 @@
 #include "BBRandomGenerator.h"
 
 #include "irrlicht.h"
+#include "btBulletDynamicsCommon.h"
 
 using namespace bitbang;
 
