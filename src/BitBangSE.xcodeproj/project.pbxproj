@@ -118,7 +118,6 @@
 		89CB9BAB103D6436004FF38B /* CIrrMotionState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CB9BA9103D6436004FF38B /* CIrrMotionState.cpp */; };
 		89CD47B817FF42370054B1C5 /* BulletCollision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B417FF42370054B1C5 /* BulletCollision.framework */; };
 		89CD47B917FF42370054B1C5 /* BulletDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B517FF42370054B1C5 /* BulletDynamics.framework */; };
-		89CD47BA17FF42370054B1C5 /* BulletSoftBody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B617FF42370054B1C5 /* BulletSoftBody.framework */; };
 		89CD47BB17FF42370054B1C5 /* LinearMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B717FF42370054B1C5 /* LinearMath.framework */; };
 		89CD47CC17FF886A0054B1C5 /* IrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47CB17FF886A0054B1C5 /* IrrFramework.framework */; };
 		89D02E670EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D02E650EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.cpp */; };
@@ -248,7 +247,6 @@
 		89CB9BA9103D6436004FF38B /* CIrrMotionState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CIrrMotionState.cpp; path = bitbangse/CIrrMotionState.cpp; sourceTree = "<group>"; };
 		89CD47B417FF42370054B1C5 /* BulletCollision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletCollision.framework; path = bullet/lib/MacOSX/BulletCollision.framework; sourceTree = "<group>"; };
 		89CD47B517FF42370054B1C5 /* BulletDynamics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletDynamics.framework; path = bullet/lib/MacOSX/BulletDynamics.framework; sourceTree = "<group>"; };
-		89CD47B617FF42370054B1C5 /* BulletSoftBody.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletSoftBody.framework; path = bullet/lib/MacOSX/BulletSoftBody.framework; sourceTree = "<group>"; };
 		89CD47B717FF42370054B1C5 /* LinearMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LinearMath.framework; path = bullet/lib/MacOSX/LinearMath.framework; sourceTree = "<group>"; };
 		89CD47CB17FF886A0054B1C5 /* IrrFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IrrFramework.framework; path = irrlicht/lib/MacOSX/IrrFramework.framework; sourceTree = "<group>"; };
 		89D02E650EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFeatureBoolean.cpp; sourceTree = "<group>"; };
@@ -271,7 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CD47B917FF42370054B1C5 /* BulletDynamics.framework in Frameworks */,
-				89CD47BA17FF42370054B1C5 /* BulletSoftBody.framework in Frameworks */,
 				89CD47B817FF42370054B1C5 /* BulletCollision.framework in Frameworks */,
 				89CD47CC17FF886A0054B1C5 /* IrrFramework.framework in Frameworks */,
 				89CD47BB17FF42370054B1C5 /* LinearMath.framework in Frameworks */,
@@ -451,7 +448,6 @@
 				89CD47CB17FF886A0054B1C5 /* IrrFramework.framework */,
 				89CD47B417FF42370054B1C5 /* BulletCollision.framework */,
 				89CD47B517FF42370054B1C5 /* BulletDynamics.framework */,
-				89CD47B617FF42370054B1C5 /* BulletSoftBody.framework */,
 				89CD47B717FF42370054B1C5 /* LinearMath.framework */,
 				896E4C1F13897F0D003E5147 /* SFMT */,
 			);
@@ -718,7 +714,7 @@
 				OBJROOT = build;
 				ONLY_ACTIVE_ARCH = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = lib/MacOSX;
+				SYMROOT = ../lib/MacOSX;
 			};
 			name = Debug;
 		};
@@ -734,7 +730,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "";
 				OBJROOT = build;
-				SYMROOT = lib/MacOSX;
+				SYMROOT = ../lib/MacOSX;
 			};
 			name = Release;
 		};
