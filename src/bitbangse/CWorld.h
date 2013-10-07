@@ -25,8 +25,6 @@
 #include "BBWorld.h"
 #include "BBTypes.h"
 
-#include "btBulletDynamicsCommon.h"
-
 #ifdef GetObject
 #undef GetObject
 #endif
@@ -48,6 +46,13 @@ namespace irr{
 		class IGUIStaticText;
 	}
 }
+
+class btDefaultCollisionConfiguration;
+class btDispatcher;
+class btBroadphaseInterface;
+class btConstraintSolver;
+class btDiscreteDynamicsWorld;
+
 
 class CEventHandler;
 class CSimObject;

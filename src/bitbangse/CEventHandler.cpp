@@ -76,6 +76,9 @@ bool CEventHandler::OnEvent(const SEvent& event)
 			case irr::EMIE_MOUSE_WHEEL:
 				return OnMouseWheel(event.MouseInput.Wheel);
 				break;
+            default:
+                return false;
+                break;
 		}
 	}
 	

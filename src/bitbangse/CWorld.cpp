@@ -27,6 +27,7 @@
 #include "BBRandomGenerator.h"
 
 #include "irrlicht.h"
+#include "btBulletDynamicsCommon.h"
 
 using namespace bitbang;
 
@@ -100,7 +101,7 @@ void CWorld::Init()
 	{
 		eDevice = irr::video::EDT_NULL;
 	}
-	m_pDevice = irr::createDevice(eDevice, irr::core::dimension2d<irr::u32>(m_nWindowWidth, m_nWindowHeight), 16, false, false, false, NULL);
+	m_pDevice = irr::createDevice(eDevice, irr::core::dimension2d<irr::u32>(m_nWindowWidth, m_nWindowHeight), 16, false, false, false, 0);
 
 	m_pDevice->setWindowCaption(L"BitBang Simulation Engine");
 
@@ -108,7 +109,7 @@ void CWorld::Init()
 	m_pSmgr = m_pDevice->getSceneManager();
 	m_pGuiEnv = m_pDevice->getGUIEnvironment();
  
-	irr::scene::ICameraSceneNode* pCamera = m_pSmgr->addCameraSceneNodeMaya();
+	m_pSmgr->addCameraSceneNodeMaya();
 	m_pSmgr->addLightSceneNode(0, irr::core::vector3df(0, 10000.0f, 0), irr::video::SColorf(1.0f, 1.0f, 1.0f), 50000.0f);
 	
 	// create skybox
