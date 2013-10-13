@@ -8,3 +8,6 @@ src/Release/
 src/Debug_lib/
 src/Debug/
 src/BitBangSE.vcxproj.user
+src/BitBangSE.sdf
+src/BitBangSE.v11.suo
+src/bitbanglib.vcxproj.user

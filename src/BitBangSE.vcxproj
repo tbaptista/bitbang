@@ -62,7 +62,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>bitbangd.lib;Irrlicht.lib;bulletdynamics.lib;bulletcollision.lib;linearmath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>bitbangd.lib;Irrlicht.lib;bulletdynamics_debug.lib;bulletcollision_debug.lib;linearmath_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\lib\bitbangsed.lib</OutputFile>
       <AdditionalLibraryDirectories>bullet\lib\Win32-VisualStudio;irrlicht\lib\Win32-VisualStudio;lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
