@@ -5,7 +5,8 @@
 #include "BBBrain.h"
 #include "BBAction.h"
 #include "BBPerception.h"
-
+#include "perceptions\BBPerceptionBoolean.h"
+#include "perceptions\BBPerceptionNumber.h"
 
 using namespace std;
 
@@ -34,7 +35,7 @@ private:
 public:
 	BBNeuralNetwork();
 	BBNeuralNetwork(int n_hidden_layers, int hidden_neurons, 
-		int n_output_neurons, int n_input_neurons,
+		int n_output_neurons,
 		BBActionList& action_list, BBPerceptionList& perception_list);
 	//TODO Possibility of know nNeurons from list sizes??
 	BBNeuralNetwork(int n_hidden_layers, 
@@ -45,7 +46,9 @@ public:
 	void InitializeWeights();
 	inline double SigmoidFunction(double d_value);
 	void FeedForward();
+	void FeedForward(BBPerceptionList& perception_list);
 	void MutateWeights(float f_probability);
+
 	~BBNeuralNetwork(void);
 	string HumanReadable();
 };
