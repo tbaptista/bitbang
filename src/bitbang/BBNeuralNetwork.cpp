@@ -4,7 +4,10 @@
 #include "perceptions\BBPerceptionReachResource.h"
 #include "perceptions\BBPerceptionSeeResource.h"
 #include "perceptions\BBPerceptionResourceLocation.h"
+#include "perceptions\BBPerceptionFeatureNumber.h"
+
 #include <string.h>
+
 
 namespace bitbang
 {
@@ -14,10 +17,10 @@ namespace bitbang
 	}
 
 	BBNeuralNetwork::BBNeuralNetwork(int n_hidden_layers, int hidden_neurons, int n_output_neurons,
-		BBActionList& action_list, BBPerceptionList& perception_list ){
+		BBActionList& action_list, BBPerceptionList& perception_list){
 			//TODO put this dynamic to detect perceptions who need more than one neuron
-			n_input_neurons = perception_list.size + 2; 
-
+			n_input_neurons = perception_list.size() + 2; 
+			//initial_energy = initial_energy; //TODO to remove and read from Config
 			//Array Initialization
 			memset(input_neurons, 0, sizeof(double)*n_input_neurons);
 			memset(output_neurons, 0, sizeof(double)*n_output_neurons); 
@@ -46,7 +49,7 @@ namespace bitbang
 			weight_output_neurons[i] = new (double[n_output_neurons]);
 			for (int j = 0; j < n_output_neurons; j++)
 			{
-				weight_input_neurons[i][j] = (float) rand();
+				weight_output_neurons[i][j] = (float) rand();
 			}
 		}	
 
@@ -59,22 +62,34 @@ namespace bitbang
 	void BBNeuralNetwork::FeedForward(){
 	}
 
+	void Clone(BBActionList& target_action_list, BBPerceptionList& target_perception_list){
+	}
+
 	void BBNeuralNetwork::FeedForward(BBPerceptionList& perception_list){
 		//set input neurons to input values
 		int i = 0, j, k;
 		string pType;
 		BBPerceptionList::iterator iPerception;
+
+		int initial_energy = 10; //TODO Change this to read from config
+
 		for(iPerception = perception_list.begin();
 			iPerception != perception_list.end(); iPerception++ ){
 				pType = (*iPerception)->GetName(); 
+
 				if(!pType.compare("Reaching Resource")){
-					input_neurons[i] = (*iPerception)->GetOpCount;
+					BBPerceptionReachResource* pRR;
+					pRR = dynamic_cast<BBPerceptionReachResource*>(*iPerception);
+					//input_neurons[i] = pRR->m_bValue; //TODO FIX
 					i++;
 				}	
 
 				else if(!pType.compare("Resource Location")){
+					int n_res_loc;
+					BBPerceptionResourceLocation* pRL;
+					pRL = dynamic_cast<BBPerceptionResourceLocation*>(*iPerception);
+					n_res_loc = pRL->GetValue();
 
-					int n_res_loc = (*iPerception)->GetOpCount;
 					if(n_res_loc == 0){//no resource near agent
 						input_neurons[i] = 0;
 						input_neurons[i+1] = 0;
@@ -94,20 +109,26 @@ namespace bitbang
 					i+=2;
 
 				}
+
 				else if(!pType.compare("Feature energy")){//check if it isnt Energy
-					if((*iPerception)->GetOpCount >= 10*0.75){//TODO change to inital Energy
+					BBPerceptionFeatureNumber* pFN;
+					pFN = dynamic_cast<BBPerceptionFeatureNumber*>(*iPerception);
+
+
+					if(pFN->GetValue() >= initial_energy*0.75){//TODO change to inital Energy from Config
 						input_neurons[i] = 1;
 						input_neurons[i+1] = 1;
 					}
-					else if((*iPerception)->GetOpCount >= 10*0.50){//change to inital Energy	
+					else if(pFN->GetValue() >= initial_energy*0.50){//change to inital Energy	
 						input_neurons[i] = 1;
 						input_neurons[i+1] = 0;
 					}
-					else if((*iPerception)->GetOpCount >= 10*0.25){//change to inital Energy	
+
+					else if(pFN->GetValue() >= initial_energy*0.25){//change to inital Energy	
 						input_neurons[i] = 0;
 						input_neurons[i+1] = 1;
 					}
-					else if((*iPerception)->GetOpCount < 10*0.25){//change to inital Energy	
+					else if(pFN->GetValue() < initial_energy*0.25){//change to inital Energy	
 						input_neurons[i] = 0;
 						input_neurons[i+1] = 0;
 					}
@@ -128,7 +149,7 @@ namespace bitbang
 
 				//Calculating Output Layer values
 				for(k=0; k < n_output_neurons; k++){
-					
+
 					output_neurons[k] = 0;		
 					//get weighted sum
 					for(j=0; j <= n_hidden_neurons; j++ ){
@@ -137,6 +158,12 @@ namespace bitbang
 
 					//set to result of sigmoid
 					output_neurons[k] = SigmoidFunction( output_neurons[k] );
+					//Test purposes only////
+					for(int m=0; m < n_output_neurons; m++){
+						cout << "Output Neuron " << m << " value: " << output_neurons[m];
+					}
+					/////////////////////
+					ClamOutput();
 
 					Think();
 				}
@@ -146,19 +173,44 @@ namespace bitbang
 	BBNeuralNetwork::~BBNeuralNetwork(void)
 	{
 	}
-	/*!
-	* \brief Destructor.
-	*
-	*/
-	BBNeuralNetwork::~BBNeuralNetwork(void)
-	{
+
+	void BBNeuralNetwork::ClamOutput(){
+		for(int i = 0; i < n_output_neurons; i++){
+			if(output_neurons[i] < 0.5){
+				output_neurons[i] = 0;
+			}
+			else{
+				output_neurons[i] = 1;
+			}
+		}
 	}
 
 	list<BBAction*> BBNeuralNetwork::Think()
 	{
-		//Clam output and choose according actions 
+		list<BBAction*> outputList;
 		for(int k=0; k < n_output_neurons; k++){
-			cout << "Output Neuron " << k << " value: " << output_neurons[k];
+			/*if(output_neurons[k] == 1){
+			outputList.push_back(output_neurons[k]);
+			}*/
 		}
+		/*
+		for(int k=0; k < n_output_neurons; k++){
+		cout << "Output Neuron " << k << " value: " << output_neurons[k];
+		}
+		*/
+		return outputList;
 	}
+	string BBNeuralNetwork::HumanReadable()
+	{
+		for (int i = 0; i <  n_hidden_neurons; i++)
+		{
+			cout << "\n";
+			for (int j = 0; j < n_output_neurons; j++)
+			{
+				cout << "Weight output neuron " << i << " " << j <<  weight_output_neurons[i][j];
+			}
+		}
+		return "";
+	}
+
 }
