@@ -16,8 +16,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#if !defined(EA_8F4E83DF_7E10_437c_B14A_55FB0329E76B__INCLUDED_)
-#define EA_8F4E83DF_7E10_437c_B14A_55FB0329E76B__INCLUDED_
+#ifndef _BBRULELIST_H_
+#define _BBRULELIST_H_
 
 #include <list>
 #include <string>
@@ -31,7 +31,6 @@ using namespace std;
 namespace bitbang
 {
 
-class BBBrain;
 class BBRule;
 typedef list<BBRule*> BBRuleListType;
 
@@ -75,5 +74,5 @@ public:
 }
 
 
+#endif // _BBRULELIST_H_
 
-#endif // !defined(EA_8F4E83DF_7E10_437c_B14A_55FB0329E76B__INCLUDED_)
