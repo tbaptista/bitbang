@@ -1,6 +1,6 @@
 /*
  * BitBang (http://www.bitbang.org)
- * Copyright (C) 2004-2009 Tiago Baptista
+ * Copyright (C) 2004-2014 Tiago Baptista
  *						   Telmo Menezes
  *
  * This program is free software; you can redistribute it and/or modify
@@ -16,8 +16,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#if !defined(EA_CF604AD1_52E2_4686_9F32_878BAB8EDB60__INCLUDED_)
-#define EA_CF604AD1_52E2_4686_9F32_878BAB8EDB60__INCLUDED_
+#ifndef BBWORLD_H_
+#define BBWORLD_H_
 
 #include <list>
 #include <map>
@@ -81,7 +81,7 @@ public:
 	virtual void LogDynamicStats() {};
 	
 protected:
-	void UpdateObjects();
+	void UpdateObjects(double d_elapsed_time);
 	
 	BBObjectMap m_ObjectMap;
 	BBObjectIDList m_DeadAgentsList;
@@ -91,4 +91,4 @@ protected:
 	BBCSVFileLog m_WorldDynamicLog;
 };
 }
-#endif // !defined(EA_CF604AD1_52E2_4686_9F32_878BAB8EDB60__INCLUDED_)
+#endif // BBWORLD_H_

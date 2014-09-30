@@ -1,6 +1,6 @@
 /*
  * BitBang (http://www.bitbang.org)
- * Copyright (C) 2004-2008 Tiago Baptista
+ * Copyright (C) 2004-2014 Tiago Baptista
  *						   Telmo Menezes
  *
  * This program is free software; you can redistribute it and/or modify
@@ -273,14 +273,14 @@ BBObjectMap* BBWorld::GetObjectMap()
  *
  * \see BBObject::OnObjectUpdate
  */
-void BBWorld::UpdateObjects()
+void BBWorld::UpdateObjects(double d_elapsed_time)
 {
 	BBObjectMap::iterator iObject;
 	
 	for (iObject = m_ObjectMap.begin(); iObject != m_ObjectMap.end(); iObject++)
 	{
 		BBObject* pObject = iObject->second;
-		pObject->OnObjectUpdate();
+		pObject->OnObjectUpdate(d_elapsed_time);
 	}
 }
 

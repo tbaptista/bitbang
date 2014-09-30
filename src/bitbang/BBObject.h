@@ -1,6 +1,6 @@
 /*
  * BitBang (http://www.bitbang.org)
- * Copyright (C) 2004-2011 Tiago Baptista
+ * Copyright (C) 2004-2014 Tiago Baptista
  *						   Telmo Menezes
  *
  * This program is free software; you can redistribute it and/or modify
@@ -85,7 +85,7 @@ public:
 	bool IsType(int n_type){return (m_nType == n_type);};
 	BBTime GetTime();
 	
-	virtual void OnObjectUpdate(){};
+	virtual void OnObjectUpdate(double d_elapsed_time = 0){};
 	
 	BBFeature* GetFeature(string str_name);
 	
