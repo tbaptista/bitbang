@@ -1,6 +1,6 @@
 /*
  * BitBang (http://www.bitbang.org)
- * Copyright (C) 2004-2008 Tiago Baptista
+ * Copyright (C) 2004-2014 Tiago Baptista
  *						   Telmo Menezes
  *
  * This program is free software; you can redistribute it and/or modify
@@ -20,24 +20,15 @@
 #ifndef CEVENTHANDLER_H_
 #define CEVENTHANDLER_H_
 
-#include <irrlicht.h>
-
 /*!
  * \brief This class defines the interface for a keyboard / mouse event handler.
  *
- * \version 1.0
- * BitBang Simulation Engine
- *
- * \date 2005-10-28
- *
  */
-class CEventHandler : public irr::IEventReceiver
+class CEventHandler
 {
 public:
 	CEventHandler();
 	virtual ~CEventHandler();
-	
-	bool OnEvent(const irr::SEvent& event);
 	
 	virtual bool OnKeyDown(int n_key_code, int c_char, bool b_control, bool b_shift){return false;};
 	virtual bool OnKeyUp(int n_key_code, int c_char, bool b_control, bool b_shift){return false;};

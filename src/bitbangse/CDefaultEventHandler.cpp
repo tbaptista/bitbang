@@ -21,6 +21,8 @@
 #include "CWorld.h"
 #include "CSimObject.h"
 
+#include "irrlicht.h"
+
 #include <stdio.h>
 
 using namespace bitbang;

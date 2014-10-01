@@ -108,7 +108,7 @@ bool CSimObject::Init()
  *
  */
 bool CSimObject::CreateGraphics()
-{	
+{
 	if (m_nNodeType == NODETYPE_CUBE)
 	{
 		m_pNode = m_pSmgr->addCubeSceneNode(1);

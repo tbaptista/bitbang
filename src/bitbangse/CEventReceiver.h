@@ -1,6 +1,6 @@
 /*
  * BitBang (http://www.bitbang.org)
- * Copyright (C) 2004-2008 Tiago Baptista
+ * Copyright (C) 2004-2014 Tiago Baptista
  *						   Telmo Menezes
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,14 +17,26 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include "CEventHandler.h"
+#ifndef __BitBangSE__CEventReceiver__
+#define __BitBangSE__CEventReceiver__
 
+#include "irrlicht.h"
 
-CEventHandler::CEventHandler()
+using namespace irr;
+
+class CEventHandler;
+
+class CEventReceiver: public IEventReceiver
 {
-}
+public:
+    CEventReceiver(CEventHandler* pHandler);
+    
+    virtual bool OnEvent(const SEvent& event);
+    
+    void SetEventHandler(CEventHandler* pHandler) {m_pEventHandler = pHandler;};
+    
+private:
+    CEventHandler* m_pEventHandler;
+};
 
-CEventHandler::~CEventHandler()
-{
-}
-
+#endif /* defined(__BitBangSE__CEventReceiver__) */

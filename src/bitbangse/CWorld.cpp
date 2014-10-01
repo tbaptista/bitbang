@@ -23,6 +23,7 @@
 #include "BBOS.h"
 #include "SimpleOpt.h"
 #include "CDefaultEventHandler.h"
+#include "CEventReceiver.h"
 #include "CPhysicsObject.h"
 #include "BBRandomGenerator.h"
 
@@ -60,6 +61,7 @@ CWorld::CWorld()
 	m_strConfigFile = "Resources/config.txt";
 	m_TimeLimit = 0;
 	m_pDefaultEventHandler = NULL;
+    m_pEventReceiver = NULL;
 	m_nSeedIndex = -1;
 	
 	m_bUsePhysics = false;
@@ -136,7 +138,8 @@ void CWorld::Init()
 	
 	//Set default event handler
 	m_pDefaultEventHandler = new CDefaultEventHandler(this);
-	SetEventHandler(m_pDefaultEventHandler);
+    m_pEventReceiver = new CEventReceiver(m_pDefaultEventHandler);
+    m_pDevice->setEventReceiver(m_pEventReceiver);
 	
 	//Bullet init
 	if (m_bUsePhysics)
@@ -198,7 +201,7 @@ void CWorld::Run()
 			m_pDriver->endScene();
 		}
 
-		UpdateObjects();
+		UpdateObjects(m_dElapsedTime);
 		
 		//Stop the simulation if the time limit was reached
 		if (m_TimeLimit != 0)
@@ -398,7 +401,7 @@ void CWorld::SetFont(std::string str_font_file)
  */
 void CWorld::SetEventHandler(CEventHandler* p_handler)
 {
-	m_pDevice->setEventReceiver(p_handler);
+    m_pEventReceiver->SetEventHandler(p_handler);
 }
 
 /*!

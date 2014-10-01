@@ -55,6 +55,7 @@ class btDiscreteDynamicsWorld;
 
 
 class CEventHandler;
+class CEventReceiver;
 class CSimObject;
 class CPhysicsObject;
 
@@ -157,6 +158,7 @@ private:
 	bool m_bUseSkyDome;
 	string m_strSkyDome;
 	CEventHandler* m_pDefaultEventHandler;
+    CEventReceiver* m_pEventReceiver;
 	
 	bool m_bUsePhysics;
 	btDefaultCollisionConfiguration* m_pCollisionConfiguration;
