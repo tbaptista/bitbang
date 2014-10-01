@@ -107,6 +107,12 @@
 		896E4C3B13897F22003E5147 /* SFMT-sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = 896E4C2C13897F22003E5147 /* SFMT-sse2.h */; };
 		896E4C3C13897F22003E5147 /* SFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 896E4C2D13897F22003E5147 /* SFMT.c */; };
 		896E4C3D13897F22003E5147 /* SFMT.h in Headers */ = {isa = PBXBuildFile; fileRef = 896E4C2E13897F22003E5147 /* SFMT.h */; };
+		899931B719DB128D00ECAF58 /* CEventReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 899931B519DB128D00ECAF58 /* CEventReceiver.cpp */; };
+		899931B819DB128D00ECAF58 /* CEventReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 899931B619DB128D00ECAF58 /* CEventReceiver.h */; };
+		899931BA19DB1CD900ECAF58 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931B919DB1CD900ECAF58 /* libIrrlicht.a */; };
+		899931C619DC464A00ECAF58 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931C319DC464A00ECAF58 /* libBulletCollision.a */; };
+		899931C719DC464A00ECAF58 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931C419DC464A00ECAF58 /* libBulletDynamics.a */; };
+		899931C819DC464A00ECAF58 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931C519DC464A00ECAF58 /* libLinearMath.a */; };
 		89A8AE320D7F17C200A8B5C6 /* CDefaultEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A8AE300D7F17C200A8B5C6 /* CDefaultEventHandler.cpp */; };
 		89B8683C0EBA1EAA00B89FE7 /* BBRandomRuleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89B868360EBA1EAA00B89FE7 /* BBRandomRuleList.cpp */; };
 		89B8683D0EBA1EAA00B89FE7 /* BBRandomRuleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B868370EBA1EAA00B89FE7 /* BBRandomRuleList.h */; };
@@ -116,10 +122,6 @@
 		89B868410EBA1EAA00B89FE7 /* BBRuleListEditype.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B8683B0EBA1EAA00B89FE7 /* BBRuleListEditype.h */; };
 		89CB9BAA103D6436004FF38B /* CIrrMotionState.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CB9BA8103D6436004FF38B /* CIrrMotionState.h */; };
 		89CB9BAB103D6436004FF38B /* CIrrMotionState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CB9BA9103D6436004FF38B /* CIrrMotionState.cpp */; };
-		89CD47B817FF42370054B1C5 /* BulletCollision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B417FF42370054B1C5 /* BulletCollision.framework */; };
-		89CD47B917FF42370054B1C5 /* BulletDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B517FF42370054B1C5 /* BulletDynamics.framework */; };
-		89CD47BB17FF42370054B1C5 /* LinearMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47B717FF42370054B1C5 /* LinearMath.framework */; };
-		89CD47CC17FF886A0054B1C5 /* IrrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD47CB17FF886A0054B1C5 /* IrrFramework.framework */; };
 		89D02E670EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D02E650EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.cpp */; };
 		89D02E680EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D02E660EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.h */; };
 		89D94F440FCC5FCB0006DB88 /* BBLogSchedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89D94F420FCC5FCB0006DB88 /* BBLogSchedule.cpp */; };
@@ -235,6 +237,12 @@
 		896E4C2C13897F22003E5147 /* SFMT-sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-sse2.h"; path = "sfmt/SFMT-sse2.h"; sourceTree = "<group>"; };
 		896E4C2D13897F22003E5147 /* SFMT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SFMT.c; path = sfmt/SFMT.c; sourceTree = "<group>"; };
 		896E4C2E13897F22003E5147 /* SFMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFMT.h; path = sfmt/SFMT.h; sourceTree = "<group>"; };
+		899931B519DB128D00ECAF58 /* CEventReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CEventReceiver.cpp; path = bitbangse/CEventReceiver.cpp; sourceTree = "<group>"; };
+		899931B619DB128D00ECAF58 /* CEventReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEventReceiver.h; path = bitbangse/CEventReceiver.h; sourceTree = "<group>"; };
+		899931B919DB1CD900ECAF58 /* libIrrlicht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht.a; path = irrlicht/lib/MacOSX/libIrrlicht.a; sourceTree = "<group>"; };
+		899931C319DC464A00ECAF58 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = bullet/lib/MacOSX/libBulletCollision.a; sourceTree = "<group>"; };
+		899931C419DC464A00ECAF58 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = bullet/lib/MacOSX/libBulletDynamics.a; sourceTree = "<group>"; };
+		899931C519DC464A00ECAF58 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = bullet/lib/MacOSX/libLinearMath.a; sourceTree = "<group>"; };
 		89A8AE2F0D7F17C200A8B5C6 /* CDefaultEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDefaultEventHandler.h; path = bitbangse/CDefaultEventHandler.h; sourceTree = "<group>"; };
 		89A8AE300D7F17C200A8B5C6 /* CDefaultEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CDefaultEventHandler.cpp; path = bitbangse/CDefaultEventHandler.cpp; sourceTree = "<group>"; };
 		89B868360EBA1EAA00B89FE7 /* BBRandomRuleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBRandomRuleList.cpp; path = bitbang/BBRandomRuleList.cpp; sourceTree = "<group>"; };
@@ -245,10 +253,6 @@
 		89B8683B0EBA1EAA00B89FE7 /* BBRuleListEditype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBRuleListEditype.h; path = bitbang/BBRuleListEditype.h; sourceTree = "<group>"; };
 		89CB9BA8103D6436004FF38B /* CIrrMotionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIrrMotionState.h; path = bitbangse/CIrrMotionState.h; sourceTree = "<group>"; };
 		89CB9BA9103D6436004FF38B /* CIrrMotionState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CIrrMotionState.cpp; path = bitbangse/CIrrMotionState.cpp; sourceTree = "<group>"; };
-		89CD47B417FF42370054B1C5 /* BulletCollision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletCollision.framework; path = bullet/lib/MacOSX/BulletCollision.framework; sourceTree = "<group>"; };
-		89CD47B517FF42370054B1C5 /* BulletDynamics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletDynamics.framework; path = bullet/lib/MacOSX/BulletDynamics.framework; sourceTree = "<group>"; };
-		89CD47B717FF42370054B1C5 /* LinearMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LinearMath.framework; path = bullet/lib/MacOSX/LinearMath.framework; sourceTree = "<group>"; };
-		89CD47CB17FF886A0054B1C5 /* IrrFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IrrFramework.framework; path = irrlicht/lib/MacOSX/IrrFramework.framework; sourceTree = "<group>"; };
 		89D02E650EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBPerceptionFeatureBoolean.cpp; sourceTree = "<group>"; };
 		89D02E660EF156AF00E99DB8 /* BBPerceptionFeatureBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPerceptionFeatureBoolean.h; sourceTree = "<group>"; };
 		89D94F420FCC5FCB0006DB88 /* BBLogSchedule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBLogSchedule.cpp; path = ../../../src/bitbang/schedules/BBLogSchedule.cpp; sourceTree = "<group>"; };
@@ -268,10 +272,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89CD47B917FF42370054B1C5 /* BulletDynamics.framework in Frameworks */,
-				89CD47B817FF42370054B1C5 /* BulletCollision.framework in Frameworks */,
-				89CD47CC17FF886A0054B1C5 /* IrrFramework.framework in Frameworks */,
-				89CD47BB17FF42370054B1C5 /* LinearMath.framework in Frameworks */,
+				899931C619DC464A00ECAF58 /* libBulletCollision.a in Frameworks */,
+				899931BA19DB1CD900ECAF58 /* libIrrlicht.a in Frameworks */,
+				899931C819DC464A00ECAF58 /* libLinearMath.a in Frameworks */,
+				899931C719DC464A00ECAF58 /* libBulletDynamics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,10 +449,10 @@
 		893253750D5A18AB00C922D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				89CD47CB17FF886A0054B1C5 /* IrrFramework.framework */,
-				89CD47B417FF42370054B1C5 /* BulletCollision.framework */,
-				89CD47B517FF42370054B1C5 /* BulletDynamics.framework */,
-				89CD47B717FF42370054B1C5 /* LinearMath.framework */,
+				899931C319DC464A00ECAF58 /* libBulletCollision.a */,
+				899931C419DC464A00ECAF58 /* libBulletDynamics.a */,
+				899931C519DC464A00ECAF58 /* libLinearMath.a */,
+				899931B919DB1CD900ECAF58 /* libIrrlicht.a */,
 				896E4C1F13897F0D003E5147 /* SFMT */,
 			);
 			name = Frameworks;
@@ -476,6 +480,8 @@
 				89F5C6E30F4B4073000E1E8A /* CTimedLabel.cpp */,
 				89CB9BA8103D6436004FF38B /* CIrrMotionState.h */,
 				89CB9BA9103D6436004FF38B /* CIrrMotionState.cpp */,
+				899931B519DB128D00ECAF58 /* CEventReceiver.cpp */,
+				899931B619DB128D00ECAF58 /* CEventReceiver.h */,
 			);
 			name = SE;
 			sourceTree = "<group>";
@@ -537,6 +543,7 @@
 				8924B2FB0EAEC9EB0093A069 /* BBVisionReach3DCone.h in Headers */,
 				8924B2FD0EAEC9EB0093A069 /* BBWorld.h in Headers */,
 				8924B2FF0EAEC9EB0093A069 /* BBFeatureBoolean.h in Headers */,
+				899931B819DB128D00ECAF58 /* CEventReceiver.h in Headers */,
 				8924B3010EAEC9EB0093A069 /* BBFeatureNumber.h in Headers */,
 				8924B3030EAEC9EB0093A069 /* BBFeatureString.h in Headers */,
 				8924B3050EAEC9EB0093A069 /* BBPerceptionBoolean.h in Headers */,
@@ -615,7 +622,7 @@
 		8932534B0D5A159D00C922D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = 8932534E0D5A159D00C922D6 /* Build configuration list for PBXProject "BitBangSE" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -669,6 +676,7 @@
 				8924B3000EAEC9EB0093A069 /* BBFeatureNumber.cpp in Sources */,
 				8924B3020EAEC9EB0093A069 /* BBFeatureString.cpp in Sources */,
 				8924B3040EAEC9EB0093A069 /* BBPerceptionBoolean.cpp in Sources */,
+				899931B719DB128D00ECAF58 /* CEventReceiver.cpp in Sources */,
 				8924B3060EAEC9EB0093A069 /* BBPerceptionFeatureNumber.cpp in Sources */,
 				8924B3080EAEC9EB0093A069 /* BBPerceptionFeatureString.cpp in Sources */,
 				8924B30A0EAEC9EB0093A069 /* BBPerceptionFixedNumber.cpp in Sources */,
@@ -703,7 +711,6 @@
 		8932534C0D5A159D00C922D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HAVE_SSE2,
@@ -712,7 +719,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "";
 				OBJROOT = build;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = ../lib/MacOSX;
 			};
@@ -721,7 +728,6 @@
 		8932534D0D5A159D00C922D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HAVE_SSE2,
@@ -737,6 +743,7 @@
 		8932544C0D5A19BA00C922D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,9 +763,13 @@
 					bitbang,
 				);
 				INSTALL_PATH = /usr/local/lib;
+				KEEP_PRIVATE_EXTERNS = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/tbaptista/Documents/DEI/Research/BitBang\\ Framework/src/irrlicht/lib/MacOSX",
+					/Users/tbaptista/Documents/DEI/Research/BitBang,
+					Framework/src/irrlicht/lib/MacOSX,
+					"$(PROJECT_DIR)/irrlicht/lib/MacOSX",
+					"$(PROJECT_DIR)/bullet/lib/MacOSX",
 				);
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
@@ -770,6 +781,7 @@
 		8932544D0D5A19BA00C922D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -790,9 +802,13 @@
 					bitbang,
 				);
 				INSTALL_PATH = /usr/local/lib;
+				KEEP_PRIVATE_EXTERNS = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/tbaptista/Documents/DEI/Research/BitBang\\ Framework/src/irrlicht/lib/MacOSX",
+					/Users/tbaptista/Documents/DEI/Research/BitBang,
+					Framework/src/irrlicht/lib/MacOSX,
+					"$(PROJECT_DIR)/irrlicht/lib/MacOSX",
+					"$(PROJECT_DIR)/bullet/lib/MacOSX",
 				);
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
