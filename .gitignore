@@ -12,3 +12,4 @@ src/BitBangSE.sdf
 src/BitBangSE.v11.suo
 src/bitbanglib.vcxproj.user
 external
+lib
