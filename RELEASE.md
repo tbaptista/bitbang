@@ -4,21 +4,21 @@
 
     * Update VERSION in source
     * Update changelog
+    * Commit to repository
+    * Create tag for release version in repository
 
 2. Generate new API documentation
 
 3. Create source release
-	* Clone from git to a fresh directory named bitbang_xx.yy
-	* Delete .git directory
-	* Create zip archive
+	* Get zip archive from repository (tagged version)
 
 4. Build binaries
 
     4.1. Build Mac binary release
 
     * Clone from git to a fresh directory
-    * Build libraries using *Release* configuration
-    * Create release directory named bitbang_xx.yy_win32
+    * Build libraries using XCode with *Release* configuration
+    * Create release directory named bitbang_xx.yy_mac_universal
     * Copy files to new directory
     * Create zip archive
 
