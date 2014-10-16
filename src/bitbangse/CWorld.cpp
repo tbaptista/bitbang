@@ -522,6 +522,7 @@ bool CWorld::ProcessArguments(int argc, char* argv[])
 						if ((ss >> m_nSeedIndex).fail())
 						{
 							cout << "Error in -seedindex argument." << endl;
+                            cout << "Received: " << ss << endl;
 							ShowUsage();
 							return false;
 						}
@@ -552,7 +553,7 @@ bool CWorld::ProcessArguments(int argc, char* argv[])
 
 void CWorld::ShowUsage()
 {
-	cout << "Usage: SimulationEngine [-console] [-config FILE] [-run ID] [-?] [--help]" << endl;
+	cout << "Usage: SimulationEngine [-console] [-config FILE] [-run ID] [-seedindex ID] [-?] [--help]" << endl;
 }
 
 /*!
