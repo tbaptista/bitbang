@@ -467,5 +467,19 @@ string BBRuleCondition::HumanReadable()
 	
 	return strResult.str();
 }
+    
+bool BBRuleCondition::HasPerception(const std::string& str_perception_name)
+{
+    if (str_perception_name.compare(m_pPerception1->GetName()) == 0)
+    {
+        return true;
+    }
+    else if (m_pPerception2 != NULL && str_perception_name.compare(m_pPerception2->GetName()) == 0)
+    {
+        return true;
+    }
+    
+    return false;
+}
 
 }

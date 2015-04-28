@@ -66,10 +66,15 @@ public:
 	void MutateRules(float f_probability, BBActionList& action_list, BBPerceptionList& perception_list);
 	void MutateOrder(float f_probability);
 	void MutateOrder2(float f_probability);
-	int GetSize();
+    
+    string HumanReadable();
+	
+    // Stats
+    int GetSize();
 	int GetSizeRules();
 	int GetUsedRules();
-	string HumanReadable();
+    int GetRulesWithAction(const std::string& str_action_name);
+    int GetRulesWithPerception(const std::string& str_perception_name);
 };
 }
 

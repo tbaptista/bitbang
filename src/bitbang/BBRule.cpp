@@ -325,5 +325,33 @@ int BBRule::GetSize()
 {
 	return (int)m_RuleConditionList.size();
 }
+    
+bool BBRule::HasAction(const std::string& str_action_name)
+{
+    if (str_action_name.compare(m_pAction->GetName()) == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool BBRule::HasPerception(const std::string& str_perception_name)
+{
+    bool bResult = false;
+    
+    BBRuleConditionList::iterator iCondition;
+    for (iCondition = m_RuleConditionList.begin(); iCondition != m_RuleConditionList.end(); iCondition++)
+    {
+        if ((*iCondition)->HasPerception(str_perception_name))
+        {
+            bResult = true;
+        }
+    }
+    
+    return bResult;
+}
 
 }

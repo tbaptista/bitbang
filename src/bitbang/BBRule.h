@@ -71,7 +71,11 @@ public:
 	void SetDeleteAction(bool b_set) {m_bDeleteAction = b_set;};
 	string HumanReadable();
 	int GetSize();
+    
+    // Stats
 	bool IsUsed() {return m_bUsed;};
+    bool HasAction(const std::string& str_action_name);
+    bool HasPerception(const std::string& str_perception_name);
 };
 }
 

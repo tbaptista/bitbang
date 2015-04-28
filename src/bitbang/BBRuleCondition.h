@@ -78,6 +78,9 @@ public:
 	bool Matches(BBRuleCondition& condition_to_match);
 	bool Matches(BBPerception& perception, int n_op);
 	string HumanReadable();
+    
+    // Stats
+    bool HasPerception(const std::string& str_perception_name);
 };
 }
 #endif // !defined(EA_CF604AD1_62A2_4636_9DA2_872BA485DBD0__INCLUDED_)

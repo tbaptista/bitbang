@@ -336,5 +336,41 @@ string BBRuleList::HumanReadable()
 	
 	return strReturn.str();
 }
+    
+
+int BBRuleList::GetRulesWithAction(const std::string& str_action_name)
+{
+    int nCount = 0;
+    
+    BBRuleListType::iterator iRule;
+    
+    for (iRule = m_RuleList.begin(); iRule != m_RuleList.end(); iRule++)
+    {
+        if ((*iRule)->HasAction(str_action_name))
+        {
+            nCount++;
+        }
+    }
+    
+    return nCount;
+}
+    
+    
+int BBRuleList::GetRulesWithPerception(const std::string& str_perception_name)
+{
+    int nCount = 0;
+    
+    BBRuleListType::iterator iRule;
+    
+    for (iRule = m_RuleList.begin(); iRule != m_RuleList.end(); iRule++)
+    {
+        if ((*iRule)->HasPerception(str_perception_name))
+        {
+            nCount++;
+        }
+    }
+    
+    return nCount;
+}
 
 }
