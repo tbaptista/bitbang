@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>660B60CE-9C66-44A3-A417-E95BC19E1677</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BitBangSE</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB</key>
-		<string>ssh://bitbucket.org/tbaptista/bitbang.git</string>
+		<string>https://bitbucket.org/tbaptista/bitbang.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>src/BitBangSE.xcodeproj/project.xcworkspace</string>
+	<string>src/BitBangSE.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://bitbucket.org/tbaptista/bitbang.git</string>
+	<string>https://bitbucket.org/tbaptista/bitbang.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BitBang%20Framework</string>
+			<string>bitbang</string>
 		</dict>
 	</array>
 </dict>

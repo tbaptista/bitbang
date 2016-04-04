@@ -53,6 +53,7 @@ protected:
 	int m_nOpCount;
 	string m_strName;
 	bool m_bOwnedByList;
+    bool m_bModifiedByNonTerminalActions;
 
 public:
 	BBPerception();
@@ -65,9 +66,10 @@ public:
 	int GetType() {return m_nType;};
 	bool IsOwnedByList() {return m_bOwnedByList;};
 	void SetOwnedByList(bool b_owned_by_list) {m_bOwnedByList = b_owned_by_list;};
+    bool IsModifiedByNonTerminalActions() { return m_bModifiedByNonTerminalActions; };
+    void SetModifiedByNonTerminalActions(bool b_modified_non_terminal) { m_bModifiedByNonTerminalActions = b_modified_non_terminal; };
 	virtual void UpdateName(){};
 
-	
 	/*!
 	 * \brief Get the human readable string for this perception.
 	 *

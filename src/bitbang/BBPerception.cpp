@@ -37,6 +37,7 @@ BBPerception::BBPerception()
 	m_strName = "unnamed";
 	m_nType = -1;
 	m_bOwnedByList = false;
+    m_bModifiedByNonTerminalActions = false;
 }
 
 

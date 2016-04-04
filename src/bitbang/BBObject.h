@@ -105,7 +105,7 @@ public:
 	
 	//Agent
 	bool Execute();
-	void Think();
+	virtual void Think();
 	void MandatoryThink();
 	
 	void SetName(string str_name){m_strName = str_name;};
@@ -146,6 +146,9 @@ protected:
 	BBLog* m_pDeathLog;
 	ofstream* m_pBrainLog;
 	
+    //Agent
+    void UpdatePerceptionSpheres();
+    void UpdatePerceptionsInfluencedByNonTerminal();
 	
 	virtual void LogDeath();
 	
@@ -153,9 +156,6 @@ private:
 	//Base
 	static int m_nCurrentID;
 	BBFeatureMap m_FeatureMap;
-	
-	//Agent
-	void UpdatePerceptionSpheres();
 	
 	BBActionList m_ActionList;
 	BBPerceptionList m_PerceptionList;

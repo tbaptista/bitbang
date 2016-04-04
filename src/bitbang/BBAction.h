@@ -54,6 +54,7 @@ protected:
 	bool m_bStarted;
 	bool m_bOwnedByList;
 	bool m_bOwnedByAgent;
+    bool m_bIsTerminal;
 
 private:
 	BBTime m_StartTime;
@@ -80,6 +81,7 @@ public:
 	bool IsOwnedByAgent() {return m_bOwnedByAgent;};
 	void SetOwnedByList(bool b_owned_by_list) {m_bOwnedByList = b_owned_by_list;};
 	void SetOwnedByAgent(bool b_owned_by_agent) {m_bOwnedByAgent = b_owned_by_agent;};
+    bool IsTerminal() { return m_bIsTerminal; };
 
 	/*!
 	 * \brief Virtual method to be executed when the action is started.

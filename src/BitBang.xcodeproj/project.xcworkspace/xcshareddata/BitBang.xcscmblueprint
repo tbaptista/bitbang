@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB" : 0,
+    "8A87E0C2-EA29-4685-B128-C44E1A3DBFD4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "790DA853-8FC3-4BDC-A001-7F05E5964A6A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB" : "BitBang%20Framework",
+    "8A87E0C2-EA29-4685-B128-C44E1A3DBFD4" : "BitBang Framework"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BitBang",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "src\/BitBang.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/tbaptista\/bitbang.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A87E0C2-EA29-4685-B128-C44E1A3DBFD4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/tbaptista\/bitbang.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E08DB93E99D2156AC5B2138A9BDF4C43AC0330DB"
+    }
+  ]
+}

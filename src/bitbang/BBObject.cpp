@@ -799,6 +799,19 @@ void BBObject::UpdatePerceptionSpheres()
 		m_PerceptionSphereVector[i]->Update(m_Position, m_Rotation);
 	}
 }
+
+void BBObject::UpdatePerceptionsInfluencedByNonTerminal()
+{
+    if (m_PerceptionList.size() != 0)
+    {
+        BBPerceptionList::iterator iPerception;
+        for (iPerception = m_PerceptionList.begin(); iPerception != m_PerceptionList.end(); iPerception++)
+        {
+            if ((*iPerception)->IsModifiedByNonTerminalActions())
+                (*iPerception)->Update(*this);
+        }
+    }
+}
 	
 /*!
  * \brief Outputs stats to the death log.
