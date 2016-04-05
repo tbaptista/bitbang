@@ -622,7 +622,7 @@
 		8932534B0D5A159D00C922D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 8932534E0D5A159D00C922D6 /* Build configuration list for PBXProject "BitBangSE" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -712,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HAVE_SSE2,
 					"MEXP=19937",
