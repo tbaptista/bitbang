@@ -1,4 +1,4 @@
-/*
+ /*
  * BitBang (http://www.bitbang.org)
  * Copyright (C) 2004-2012 Tiago Baptista
  *						   Telmo Menezes

@@ -123,6 +123,9 @@ public:
 	static wchar_t* String2wchar(string str_string);
 	
 	void SetGravity(float f_gravity){m_fGravity = f_gravity;};
+
+protected:
+    int m_nSeedIndex;
 	
 private:
 	virtual std::string GetInfoText();
@@ -138,7 +141,6 @@ private:
 	std::string m_strRunID;
 	std::string m_strConfigFile;
 	static std::string m_strBasePath;
-	int m_nSeedIndex;
 	
 	irr::IrrlichtDevice *m_pDevice;
 	irr::video::IVideoDriver* m_pDriver;
