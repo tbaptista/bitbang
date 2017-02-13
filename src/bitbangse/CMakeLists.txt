@@ -20,20 +20,28 @@ INCLUDE (${CMAKE_ROOT}/Modules/FindOpenGL.cmake)
 
 # Main source files
 SET (BBSE_SRCS CDefaultEventHandler.cpp CEventHandler.cpp CEventReceiver.cpp  CPhysicsObject.cpp CSimObject.cpp CWorld.cpp CFileConfig.cpp CObjectLabel.cpp CTimedLabel.cpp CIrrMotionState.cpp)
+SET (BBSE_INSTALL_LIBDIR lib)
 
 INCLUDE_DIRECTORIES (. ../bitbang ../irrlicht/include ../bullet/include simpleopt)
 
 IF (WIN32)
 	SET (IRRLICHT_LINK ../irrlicht/lib/Win32-gcc)
+	SET (BBSE_INSTALL_LIBDIR lib/Win32)
 ENDIF (WIN32)
 IF (UNIX)
 	IF (APPLE)
 		SET (IRRLICHT_LINK ../irrlicht/lib/MacOSX)
 		SET (BULLET_LINK ../bullet/lib/MacOSX)
 		SET (OPENGL_LIBRARIES ${OPENGL_LIBRARIES} "-framework Cocoa -framework Carbon -framework IOKit")
+		SET (BBSE_INSTALL_LIBDIR lib/MaxOSX)
 	ELSE (APPLE)
 		SET (IRRLICHT_LINK ../irrlicht/lib/Linux ../irrlicht/lib/Linux64)
 		SET (BULLET_LINK ../bullet/lib/Linux ../bullet/lib/Linux64)
+		IF (${CMAKE_SIZEOF_VOID_P} EQUAL 8)
+			SET (BBSE_INSTALL_LIBDIR lib/Linux64)
+		ELSEIF (${CMAKE_SIZEOF_VOID_P} EQUAL 4)
+			SET (BBSE_INSTALL_LIBDIR lib/Linux)
+		ENDIF ()
 	ENDIF (APPLE)
 ENDIF (UNIX)
 
@@ -44,3 +52,6 @@ ADD_LIBRARY (BitBangSE STATIC ${BBSE_SRCS})
 ADD_DEPENDENCIES (BitBangSE BitBang)
 
 TARGET_LINK_LIBRARIES (BitBangSE BitBang Irrlicht BulletDynamics BulletCollision LinearMath ${OPENGL_LIBRARIES})
+
+install (TARGETS BitBangSE ARCHIVE DESTINATION "bitbang/${BBSE_INSTALL_LIBDIR}")
+install (DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/" DESTINATION "bitbang/include" FILES_MATCHING PATTERN "*.h")
