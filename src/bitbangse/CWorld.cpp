@@ -465,7 +465,14 @@ bool CWorld::ProcessArguments(int argc, char* argv[])
 	string strFullPath = argv[0];
 #ifdef __APPLE__
 	string strBasePath = strFullPath.substr(0, strFullPath.find_last_of('/'));
-	strBasePath = strBasePath.substr(0, strBasePath.find_last_of('/') + 1);
+    if (strBasePath.substr(strBasePath.find_last_of('/') + 1).compare("MacOS") == 0)
+    {
+        strBasePath = strBasePath.substr(0, strBasePath.find_last_of('/') + 1);
+    }
+    else
+    {
+        strBasePath += '/';
+    }
 	string strExecutableName = strFullPath.substr(strFullPath.find_last_of('/') + 1);
 #else
 	string strBasePath = "./";
