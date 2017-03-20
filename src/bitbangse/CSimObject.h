@@ -23,6 +23,7 @@
 #include <string>
 #include <map>
 #include <list>
+#include <irrTypes.h>
 
 #include "BBObject.h"
 
@@ -89,6 +90,7 @@ public:
 	virtual void SetPosition(float f_x, float f_y, float f_z);
 	virtual void SetRotation(float f_x, float f_y, float f_z);
 	virtual void SetScale(float f_x, float f_y, float f_z);
+	virtual void ScaleToGivenSize(float sizeX, float sizeY, float sizeZ);
 
 	void SetFrameLoop(int n_start, int n_end);
 	void SetAnimationSpeed(int n_speed);

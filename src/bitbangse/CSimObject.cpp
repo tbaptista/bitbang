@@ -380,3 +380,32 @@ void CSimObject::OnDeselect()
 {
 	m_pNode->setMaterialFlag(irr::video::EMF_LIGHTING, true);
 }
+
+void CSimObject::ScaleToGivenSize(float sizeX, float sizeY, float sizeZ)
+{
+    irr::scene::ISceneNode* mesh = m_pNode;
+
+    if (mesh == NULL)
+    {
+        return;
+    }
+
+    irr::core::vector3d<irr::f32>* edges = new irr::core::vector3d<irr::f32>[8];
+    irr::core::aabbox3d<irr::f32> boundingBox = mesh->getTransformedBoundingBox();
+
+    boundingBox.getEdges(edges);
+
+    irr::f32 height = edges[1].Y - edges[0].Y;
+    irr::f32 width = edges[5].X - edges[1].X;
+    irr::f32 depth = edges[2].Z - edges[0].Z;
+
+    irr::f32 factorX = sizeX/width;
+    irr::f32 factorY = sizeY/height;
+    irr::f32 factorZ = sizeZ/depth;
+
+    m_fScaleX = factorX;
+    m_fScaleY = factorY;
+    m_fScaleZ = factorZ;
+
+    mesh->setScale(irr::core::vector3df(factorX,factorY,factorZ));
+}

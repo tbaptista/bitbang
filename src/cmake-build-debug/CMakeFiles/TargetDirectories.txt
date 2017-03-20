@@ -1,0 +1,8 @@
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/build/CMakeFiles/edit_cache.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/build/CMakeFiles/rebuild_cache.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/build/CMakeFiles/BitBang.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/build/CMakeFiles/edit_cache.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/build/CMakeFiles/rebuild_cache.dir
+/Users/jbsimoes/Documents/bitbang/src/cmake-build-debug/build/CMakeFiles/BitBangSEGfx.dir

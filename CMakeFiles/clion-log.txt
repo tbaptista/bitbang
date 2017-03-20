@@ -1,0 +1,97 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /Users/jbsimoes/Documents/bitbang/src
+-- The C compiler identification is AppleClang 7.0.2.7000181
+-- The CXX compiler identification is AppleClang 7.0.2.7000181
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:20 (add_subdirectory):
+  Policy CMP0013 is not set: Duplicate binary directories are not allowed.
+  Run "cmake --help-policy CMP0013" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The binary directory
+
+    /Users/jbsimoes/Documents/bitbang/build
+
+  is already used to build a source directory.  This command uses it to build
+  source directory
+
+    /Users/jbsimoes/Documents/bitbang/src/bitbangse
+
+  which can generate conflicting build files.  CMake does not support this
+  use case but it used to work accidentally and is being allowed for
+  compatibility.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenGL: /System/Library/Frameworks/OpenGL.framework  
+CMake Warning (dev) at bitbangse/CMakeLists.txt:42 (LINK_DIRECTORIES):
+  This command specifies the relative path
+
+    ../irrlicht/lib/MacOSX
+
+  as a link directory.
+
+  Policy CMP0015 is not set: link_directories() treats paths relative to the
+  source dir.  Run "cmake --help-policy CMP0015" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at bitbangse/CMakeLists.txt:42 (LINK_DIRECTORIES):
+  This command specifies the relative path
+
+    ../bullet/lib/MacOSX
+
+  as a link directory.
+
+  Policy CMP0015 is not set: link_directories() treats paths relative to the
+  source dir.  Run "cmake --help-policy CMP0015" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.6)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+CMake Warning (dev) at bitbangse/CMakeLists.txt:44 (ADD_LIBRARY):
+  Policy CMP0003 should be set before this line.  Add code such as
+
+    if(COMMAND cmake_policy)
+      cmake_policy(SET CMP0003 NEW)
+    endif(COMMAND cmake_policy)
+
+  as early as possible but after the most recent call to
+  cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+  because target "BitBangSEGfx" links to some libraries for which the linker
+  must search:
+
+    Irrlicht, BulletDynamics, BulletCollision, LinearMath
+
+  and other libraries with known full path:
+
+    /Users/jbsimoes/Documents/bitbang/build/libBitBang.a
+
+  CMake is adding directories in the second list to the linker search path in
+  case they are needed to find libraries from the first list (for backwards
+  compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+  or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+  more information.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: /Users/jbsimoes/Documents/bitbang

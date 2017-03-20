@@ -90,7 +90,9 @@ CWorld::~CWorld()
  *
  */
 void CWorld::Init()
-{	
+{
+    cerr << "Initializing world!" << endl;
+
 	//Re-seed random number generator
 	if (m_nSeedIndex != -1)
 	{
@@ -140,10 +142,11 @@ void CWorld::Init()
 	m_pDefaultEventHandler = new CDefaultEventHandler(this);
     m_pEventReceiver = new CEventReceiver(m_pDefaultEventHandler);
     m_pDevice->setEventReceiver(m_pEventReceiver);
-	
+
 	//Bullet init
 	if (m_bUsePhysics)
 	{
+		cout << "Initializing bullet configurations..." <<  endl;
 		m_pCollisionConfiguration = new btDefaultCollisionConfiguration();
 		m_pDispatcher = new btCollisionDispatcher(m_pCollisionConfiguration);
 		m_pPairCache = new btDbvtBroadphase();
@@ -180,7 +183,7 @@ void CWorld::Run()
 		
 		if (m_bUsePhysics)
 		{
-			m_pDynamicsWorld->stepSimulation(m_dElapsedTime * 0.001f);
+			m_pDynamicsWorld->stepSimulation(m_dElapsedTime);
 		}
 		
 		if (m_pDevice->isWindowActive() && m_bDrawGraphics)
@@ -655,4 +658,9 @@ void CWorld::CreateGroundPlane(float f_size_x, float f_size_y)
 		cout << "Error trying to access uninitialized m_pSmgr!" << endl;
 	}
 
+}
+
+void CWorld::AddConstraint(btTypedConstraint *constraint)
+{
+    m_pDynamicsWorld->addConstraint(constraint, false);
 }

@@ -1,0 +1,8 @@
+/Users/jbsimoes/Documents/bitbang/CMakeFiles/edit_cache.dir
+/Users/jbsimoes/Documents/bitbang/CMakeFiles/rebuild_cache.dir
+/Users/jbsimoes/Documents/bitbang/build/CMakeFiles/edit_cache.dir
+/Users/jbsimoes/Documents/bitbang/build/CMakeFiles/rebuild_cache.dir
+/Users/jbsimoes/Documents/bitbang/build/CMakeFiles/BitBang.dir
+/Users/jbsimoes/Documents/bitbang/build/CMakeFiles/edit_cache.dir
+/Users/jbsimoes/Documents/bitbang/build/CMakeFiles/rebuild_cache.dir
+/Users/jbsimoes/Documents/bitbang/build/CMakeFiles/BitBangSEGfx.dir

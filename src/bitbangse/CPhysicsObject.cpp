@@ -54,13 +54,16 @@ CPhysicsObject::~CPhysicsObject()
  */
 bool CPhysicsObject::Init()
 {
+    cerr << "Initializing " << GetName() << " object..." << endl;
+
 	if (!CSimObject::Init())
 	{
+        cerr << "Error while initializing object" << endl;
 		return false;
 	}
 	
 	//Create MotionState
-	CIrrMotionState* MotionState = new CIrrMotionState(m_pNode);
+	CIrrMotionState* MotionState = new CIrrMotionState(m_pNode, this);
 	btCollisionShape* Shape = NULL;
 	
 	//Create the shape
@@ -80,13 +83,53 @@ bool CPhysicsObject::Init()
 	{
 		return false;
 	}
-	
+
 	//Add mass
 	btVector3 LocalInertia;
-	Shape->calculateLocalInertia(m_dMass, LocalInertia);
-	
+	Shape->calculateLocalInertia((btScalar) m_dMass, LocalInertia);
+
+    cerr << "Creating rigid body..." << endl;
 	//Create the rigid body
-	m_pRigidBody = new btRigidBody(m_dMass, MotionState, Shape, LocalInertia);
+	m_pRigidBody = new btRigidBody((btScalar) m_dMass, MotionState, Shape, LocalInertia);
+
+    cerr << "Rigid body created!" << endl;
 
 	return true;
+}
+
+void CPhysicsObject::ApplyConstantForce(float x, float y, float z)
+{
+	m_pRigidBody->applyCentralForce(btVector3((btScalar) x, (btScalar) y, (btScalar) z));
+}
+
+void CPhysicsObject::ScaleToGivenSize(float sizeX, float sizeY, float sizeZ)
+{
+	irr::scene::ISceneNode* mesh = m_pNode;
+
+	if (mesh == NULL)
+	{
+		return;
+	}
+
+	irr::core::vector3d<irr::f32>* edges = new irr::core::vector3d<irr::f32>[8];
+	irr::core::aabbox3d<irr::f32> boundingBox = mesh->getTransformedBoundingBox();
+
+	boundingBox.getEdges(edges);
+
+	irr::f32 height = edges[1].Y - edges[0].Y;
+	irr::f32 width = edges[5].X - edges[1].X;
+	irr::f32 depth = edges[2].Z - edges[0].Z;
+
+	irr::f32 factorX = sizeX/width;
+	irr::f32 factorY = sizeY/height;
+	irr::f32 factorZ = sizeZ/depth;
+
+	m_fScaleX = factorX;
+	m_fScaleY = factorY;
+	m_fScaleZ = factorZ;
+
+	btCollisionShape* collisionShape = m_pRigidBody->getCollisionShape();
+	collisionShape->setLocalScaling(btVector3(m_fScaleX, m_fScaleY, m_fScaleZ));
+
+	mesh->setScale(irr::core::vector3df(factorX,factorY,factorZ));
 }

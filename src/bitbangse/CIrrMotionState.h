@@ -18,6 +18,7 @@
  */
 
 #include "btBulletDynamicsCommon.h"
+#include "CPhysicsObject.h"
 
 namespace irr{
 namespace scene {
@@ -28,8 +29,8 @@ class ISceneNode;
 class CIrrMotionState :  public btDefaultMotionState
 {
 public:
-	CIrrMotionState(irr::scene::ISceneNode* p_node);
-	
+	CIrrMotionState(irr::scene::ISceneNode* p_node, CPhysicsObject* p_object);
+
 	virtual void getWorldTransform(btTransform& center_of_mass_world_trans) const;
 	virtual void setWorldTransform(const btTransform& center_of_mass_world_trans);
 	
@@ -37,5 +38,7 @@ public:
 	
 private:
 	irr::scene::ISceneNode* m_pNode;
+
+    CPhysicsObject* m_pObject;
 };
 

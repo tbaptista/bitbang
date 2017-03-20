@@ -51,6 +51,7 @@ class btDefaultCollisionConfiguration;
 class btDispatcher;
 class btBroadphaseInterface;
 class btConstraintSolver;
+class btTypedConstraint;
 class btDiscreteDynamicsWorld;
 
 
@@ -123,6 +124,7 @@ public:
 	static wchar_t* String2wchar(string str_string);
 	
 	void SetGravity(float f_gravity){m_fGravity = f_gravity;};
+	void AddConstraint(btTypedConstraint* constraint);
 
 protected:
     int m_nSeedIndex;

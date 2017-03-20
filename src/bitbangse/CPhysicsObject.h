@@ -46,12 +46,15 @@ public:
 	virtual ~CPhysicsObject();
 	
 	virtual bool Init();
-	
+
 	btRigidBody* GetRigidBody(){return m_pRigidBody;};
 	double GetMass(){return m_dMass;};
 	void SetMass(double d_mass){m_dMass = d_mass;};
 
-	
+    virtual void ScaleToGivenSize(float sizeX, float sizeY, float sizeZ);
+
+    void ApplyConstantForce(float x, float y, float z);
+
 private:
 	btRigidBody* m_pRigidBody;
 	

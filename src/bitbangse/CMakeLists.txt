@@ -19,9 +19,11 @@
 INCLUDE (${CMAKE_ROOT}/Modules/FindOpenGL.cmake)
 
 # Main source files
-SET (BBSE_SRCS CDefaultEventHandler.cpp CEventHandler.cpp CPhysicsObject.cpp CSimObject.cpp CWorld.cpp CFileConfig.cpp CObjectLabel.cpp CTimedLabel.cpp CIrrMotionState.cpp)
+SET (BBSE_SRCS CDefaultEventHandler.cpp CEventHandler.cpp CEventReceiver.cpp CPhysicsObject.cpp CSimObject.cpp CWorld.cpp CFileConfig.cpp CObjectLabel.cpp CTimedLabel.cpp CIrrMotionState.cpp)
 
 INCLUDE_DIRECTORIES (. ../bitbang ../irrlicht/include ../bullet/include simpleopt)
+
+SET(CMAKE_BUILD_TYPE Debug)
 
 IF (WIN32)
 	SET (IRRLICHT_LINK ../irrlicht/lib/Win32-gcc)
@@ -39,8 +41,10 @@ ENDIF (UNIX)
 
 LINK_DIRECTORIES (${IRRLICHT_LINK} ${BULLET_LINK})
 
-ADD_LIBRARY (BitBangSE STATIC ${BBSE_SRCS})
+ADD_LIBRARY (BitBangSEGfx STATIC ${BBSE_SRCS})
 
-ADD_DEPENDENCIES (BitBangSE BitBang)
+#ADD_CUSTOM_COMMAND(TARGET BitBangSE POST_BUILD COMMAND libtool -static -o libBitBangSE.a libBitBang.a libBitBangSEGfx.a)
 
-TARGET_LINK_LIBRARIES (BitBangSE BitBang Irrlicht BulletDynamics BulletCollision LinearMath ${OPENGL_LIBRARIES})
+ADD_DEPENDENCIES (BitBangSEGfx BitBang)
+
+TARGET_LINK_LIBRARIES (BitBangSEGfx BitBang Irrlicht BulletDynamics BulletCollision LinearMath ${OPENGL_LIBRARIES})
