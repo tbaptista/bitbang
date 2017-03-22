@@ -16,12 +16,14 @@ public:
 	
 	void SetSeedbyIndex(int n_seed_index);
 	int GetSeedbyIndex(int n_seed_index);
+    int GetUsedSeed() {return m_nUsedSeed;};
 	int RandInt();
 	int RandInt(unsigned int n_max);
 	double RandProb();
 	
 private:
 	static int RandomSeeds[];
+    int m_nUsedSeed;
 };
 
 extern BBRandomGenerator g_RandomGenerator;

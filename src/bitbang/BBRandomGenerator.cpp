@@ -21,13 +21,13 @@ namespace bitbang
 	
 	BBRandomGenerator::BBRandomGenerator()
 	{
-		int nSeed = BBOS::GetRandomSeed();
-		init_gen_rand(nSeed);
+		m_nUsedSeed = BBOS::GetRandomSeed();
+		init_gen_rand(m_nUsedSeed);
 		
 		//Also seed the system standard random generator
-		srand(nSeed);
+		srand(m_nUsedSeed);
 		
-		cout << "Random number generator initialized with seed: " << nSeed << endl;
+		cout << "Random number generator initialized with seed: " << m_nUsedSeed << endl;
 	}
 	
 	BBRandomGenerator::BBRandomGenerator(int n_seed_index)
@@ -51,6 +51,7 @@ namespace bitbang
 	{
 		if ((n_seed_index < 100) && (n_seed_index >= 0))
 		{
+            m_nUsedSeed = RandomSeeds[n_seed_index];
 			init_gen_rand(RandomSeeds[n_seed_index]);
 			
 			//Also seed the system standard random generator
@@ -77,7 +78,7 @@ namespace bitbang
 		}
 
 	}
-	
+    
 	int BBRandomGenerator::RandInt()
 	{
 		return gen_rand32();
