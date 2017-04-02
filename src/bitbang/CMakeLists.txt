@@ -44,7 +44,7 @@ add_definitions(-DMEXP=19937)
 add_definitions(-DHAVE_SSE2)
 add_definitions(-msse2)
 
-include_directories (. features perceptions ../sfmt)
+include_directories (. features perceptions ${BITBANG_SOURCE_DIR}/sfmt)
 
 add_library (BitBang STATIC ${BITBANG_SRCS})
 
