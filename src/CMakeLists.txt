@@ -1,6 +1,6 @@
 #
 # BitBang (http://www.bitbang.org)
-# Copyright (C) 2004-2008 Tiago Baptista
+# Copyright (C) 2004-2017 Tiago Baptista
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the version 2 of the GNU General Public License
@@ -15,6 +15,9 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
+
+cmake_minimum_required (VERSION 2.6)
+project (BITBANG)
 
 add_subdirectory (bitbang build/bitbang)
 add_subdirectory (bitbangse build/bitbangse)
