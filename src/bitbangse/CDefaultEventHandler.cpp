@@ -46,6 +46,7 @@ CDefaultEventHandler::~CDefaultEventHandler()
 
 bool CDefaultEventHandler::OnKeyDown(int n_key_code, int c_char, bool b_control, bool b_shift)
 {
+	cerr << "Executing!" << endl;
 	switch (n_key_code)
 	{
 		case irr::KEY_SPACE:						//Pause the simulation
@@ -92,6 +93,15 @@ bool CDefaultEventHandler::OnKeyDown(int n_key_code, int c_char, bool b_control,
 			}
 			return true;
 			break;
+		case irr::KEY_KEY_D:
+			if (m_pWorld->GetDrawPhysicsDebug())
+			{
+				m_pWorld->SetDrawPhysicsDebug(false);
+			}
+			else
+			{
+				m_pWorld->SetDrawPhysicsDebug(true);
+			}
 			
 		default:
 			return false;
@@ -125,4 +135,17 @@ bool CDefaultEventHandler::OnLeftMouseDown(int n_x, int n_y)
 	}
 	
 	return false;
+}
+
+bool CDefaultEventHandler::OnMiddleMouseDown(int n_x, int n_y)
+{
+	if (m_pWorld->IsPaused())
+	{
+		m_pWorld->Resume();
+	}
+	else
+	{
+		m_pWorld->Pause();
+	}
+	return true;
 }

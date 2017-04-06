@@ -21,6 +21,7 @@
 #define C_WORLD_H
 
 #include <string>
+#include <SMaterial.h>
 
 #include "BBWorld.h"
 #include "BBTypes.h"
@@ -39,6 +40,7 @@ namespace irr{
 	namespace video{
 		class IVideoDriver;
 		class SColor;
+		class SMaterial;
 	}
 	namespace gui{
 		class IGUIEnvironment;
@@ -59,6 +61,8 @@ class CEventHandler;
 class CEventReceiver;
 class CSimObject;
 class CPhysicsObject;
+
+class DebugDraw;
 
 /*!
  * \brief This class encapsulates the BitBang, Irrlicht and the Bullet worlds.
@@ -87,6 +91,8 @@ public:
 	void SetSkyBox(std::string str_up, std::string str_down, std::string str_left, std::string str_right, std::string str_front, std::string str_back);
 	void SetSkyDome(std::string str_skydome_file);
 	void SetUsePhysics(bool b_use_physics) {m_bUsePhysics = b_use_physics;};
+	void SetDrawPhysicsDebug(bool b_draw_physics_debug) { m_bDrawPhysicsDebug = b_draw_physics_debug; };
+	bool GetDrawPhysicsDebug() { return m_bDrawPhysicsDebug; };
 	void SetFont(std::string str_font_file);
 	void SetDrawGraphics(bool b_draw){m_bDrawGraphics = b_draw;};
 	void SetShowInfo(bool b_show_info);
@@ -143,11 +149,13 @@ private:
 	std::string m_strRunID;
 	std::string m_strConfigFile;
 	static std::string m_strBasePath;
-	
+
 	irr::IrrlichtDevice *m_pDevice;
 	irr::video::IVideoDriver* m_pDriver;
 	irr::scene::ISceneManager* m_pSmgr;
 	irr::gui::IGUIEnvironment* m_pGuiEnv;
+	irr::video::SMaterial m_pDebugMaterial;
+	DebugDraw* m_pDebugDraw;
 	int m_nWindowWidth;
 	int m_nWindowHeight;
 	irr::gui::IGUIFont* m_pFont;
@@ -170,6 +178,7 @@ private:
 	btBroadphaseInterface* m_pPairCache;
 	btConstraintSolver* m_pConstraintSolver;
 	btDiscreteDynamicsWorld* m_pDynamicsWorld;
+	bool m_bDrawPhysicsDebug;
 	float m_fGravity;
 };
 #endif

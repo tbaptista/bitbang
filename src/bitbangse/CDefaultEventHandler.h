@@ -46,7 +46,7 @@ public:
 	virtual bool OnKeyUp(int n_key_code, int c_char, bool b_control, bool b_shift){return false;};
 	virtual bool OnLeftMouseDown(int n_x, int n_y);
 	virtual bool OnRightMouseDown(int n_x, int n_y){return false;};
-	virtual bool OnMiddleMouseDown(int n_x, int n_y){return false;};
+	virtual bool OnMiddleMouseDown(int n_x, int n_y);
 	virtual bool OnLeftMouseUp(int n_x, int n_y){return false;};
 	virtual bool OnRightMouseUp(int n_x, int n_y){return false;};
 	virtual bool OnMiddleMouseUp(int n_x, int n_y){return false;};

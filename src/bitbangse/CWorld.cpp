@@ -29,8 +29,9 @@
 
 #include "irrlicht.h"
 #include "btBulletDynamicsCommon.h"
+#include "DebugDraw.h"
 
-using namespace bitbang;
+ using namespace bitbang;
 
 double CWorld::m_dElapsedTime = 0;
 string CWorld::m_strBasePath = "./";
@@ -65,12 +66,15 @@ CWorld::CWorld()
 	m_nSeedIndex = -1;
 	
 	m_bUsePhysics = false;
+	m_bDrawPhysicsDebug = false;
 	m_pCollisionConfiguration = NULL;
 	m_pDispatcher = NULL;
 	m_pPairCache = NULL;
 	m_pConstraintSolver = NULL;
 	m_pDynamicsWorld = NULL;
 	m_fGravity = 0;
+
+	m_pDebugDraw = NULL;
 }
 
 /*!
@@ -78,11 +82,16 @@ CWorld::CWorld()
  *
  */
 CWorld::~CWorld()
-{
-	if (m_pDefaultEventHandler != NULL)
-	{
-		delete m_pDefaultEventHandler;
-	}
+ {
+	 if (m_pDefaultEventHandler != NULL)
+	 {
+		 delete m_pDefaultEventHandler;
+	 }
+
+	 if (m_pDebugDraw != NULL)
+	 {
+		 delete m_pDebugDraw;
+	 }
 }
 
 /*!
@@ -131,7 +140,7 @@ void CWorld::Init()
 
 		m_pDriver->setTextureCreationFlag(irr::video::ETCF_CREATE_MIP_MAPS, true);
 	}
-	
+
 	// create skydome
 	if (m_bUseSkyDome)
 	{
@@ -155,6 +164,20 @@ void CWorld::Init()
 		
 		//Set gravity
 		m_pDynamicsWorld->setGravity(btVector3(0, m_fGravity, 0));
+
+		m_pDebugDraw = new DebugDraw(GetDevice());
+        m_pDebugDraw->setDebugMode(
+                btIDebugDraw::DBG_DrawWireframe |
+                btIDebugDraw::DBG_DrawAabb |
+                btIDebugDraw::DBG_DrawContactPoints |
+                //btIDebugDraw::DBG_DrawText |
+                //btIDebugDraw::DBG_DrawConstraintLimits |
+                btIDebugDraw::DBG_DrawConstraints //|
+        );
+
+        m_pDynamicsWorld->setDebugDrawer(m_pDebugDraw);
+
+		m_pDebugMaterial.Lighting = false;
 	}
 }
 
@@ -200,7 +223,14 @@ void CWorld::Run()
 			
 			m_pSmgr->drawAll();
 			m_pGuiEnv->drawAll();
-			
+
+			if (m_bDrawPhysicsDebug)
+			{
+				m_pDriver->setMaterial(m_pDebugMaterial);
+				m_pDriver->setTransform(irr::video::ETS_WORLD, irr::core::IdentityMatrix);
+				m_pDynamicsWorld->debugDrawWorld();
+			}
+
 			m_pDriver->endScene();
 		}
 
