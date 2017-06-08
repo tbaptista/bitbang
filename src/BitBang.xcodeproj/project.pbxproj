@@ -13,6 +13,7 @@
 		89186BC0106D138F00A5623F /* BBInfluenceMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89186BBC106D138F00A5623F /* BBInfluenceMap.cpp */; };
 		89186BC1106D138F00A5623F /* BBInfluenceMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 89186BBD106D138F00A5623F /* BBInfluenceMap.h */; };
 		892224C10B3809CE0077D329 /* BBVisionReach3DCone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892224BF0B3809CE0077D329 /* BBVisionReach3DCone.cpp */; };
+		892276071EE95B7B00F67E2E /* SFMT-common.h in Headers */ = {isa = PBXBuildFile; fileRef = 892276061EE95B7B00F67E2E /* SFMT-common.h */; };
 		893382F313841F9C00D537FC /* BBRandomGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 893382F113841F9C00D537FC /* BBRandomGenerator.h */; };
 		893382F413841F9C00D537FC /* BBRandomGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893382F213841F9C00D537FC /* BBRandomGenerator.cpp */; };
 		89356FB50E017FFE009C9012 /* BBFeatureString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89356FB30E017FFE009C9012 /* BBFeatureString.cpp */; };
@@ -108,6 +109,7 @@
 		89186BBD106D138F00A5623F /* BBInfluenceMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBInfluenceMap.h; path = bitbang/BBInfluenceMap.h; sourceTree = "<group>"; };
 		892224BF0B3809CE0077D329 /* BBVisionReach3DCone.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BBVisionReach3DCone.cpp; path = bitbang/BBVisionReach3DCone.cpp; sourceTree = "<group>"; };
 		892224C00B3809CE0077D329 /* BBVisionReach3DCone.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BBVisionReach3DCone.h; path = bitbang/BBVisionReach3DCone.h; sourceTree = "<group>"; };
+		892276061EE95B7B00F67E2E /* SFMT-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-common.h"; path = "sfmt/SFMT-common.h"; sourceTree = "<group>"; };
 		893382F113841F9C00D537FC /* BBRandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBRandomGenerator.h; path = bitbang/BBRandomGenerator.h; sourceTree = "<group>"; };
 		893382F213841F9C00D537FC /* BBRandomGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBRandomGenerator.cpp; path = bitbang/BBRandomGenerator.cpp; sourceTree = "<group>"; };
 		89356FB20E017FFE009C9012 /* BBFeatureString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFeatureString.h; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 		89EFE4651388244D00834D0F /* SFMT */ = {
 			isa = PBXGroup;
 			children = (
+				892276061EE95B7B00F67E2E /* SFMT-common.h */,
 				89EFE468138824B000834D0F /* SFMT-alti.h */,
 				89EFE469138824B000834D0F /* SFMT-params.h */,
 				89EFE46A138824B000834D0F /* SFMT-params607.h */,
@@ -439,6 +442,7 @@
 				89E4986B0EB172A200E48709 /* BBFeature.h in Headers */,
 				89E4986C0EB172A300E48709 /* BBFeatureBoolean.h in Headers */,
 				89E4986D0EB172A400E48709 /* BBFeatureNumber.h in Headers */,
+				892276071EE95B7B00F67E2E /* SFMT-common.h in Headers */,
 				89E4986E0EB172A500E48709 /* BBFeatureString.h in Headers */,
 				89E4986F0EB172A600E48709 /* BBFileLog.h in Headers */,
 				89E498700EB172A600E48709 /* BBLog.h in Headers */,
@@ -590,6 +594,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BitBang_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SFMT_MEXP=19937",
+					MACOSX,
+				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = BitBang;
 				SDKROOT = "";
@@ -604,6 +612,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BitBang_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SFMT_MEXP=19937",
+					MACOSX,
+				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = BitBang;
 				SDKROOT = "";
