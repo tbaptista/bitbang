@@ -768,14 +768,14 @@
 				HEADER_SEARCH_PATHS = (
 					../external/bullet/include/bullet,
 					bitbangse/simpleopt,
-					irrlicht/include,
+					../external/irrlicht/include,
 					bitbang,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				KEEP_PRIVATE_EXTERNS = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/irrlicht/lib/MacOSX",
+					"$(PROJECT_DIR)/../external/irrlicht/lib/MacOSX",
 					"$(PROJECT_DIR)/../external/bullet/lib",
 				);
 				OTHER_LDFLAGS = "";
@@ -809,14 +809,14 @@
 				HEADER_SEARCH_PATHS = (
 					../external/bullet/include/bullet,
 					bitbangse/simpleopt,
-					irrlicht/include,
+					../external/irrlicht/include,
 					bitbang,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				KEEP_PRIVATE_EXTERNS = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/irrlicht/lib/MacOSX",
+					"$(PROJECT_DIR)/../external/irrlicht/lib/MacOSX",
 					"$(PROJECT_DIR)/../external/bullet/lib",
 				);
 				OTHER_LDFLAGS = "";
