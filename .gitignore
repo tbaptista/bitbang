@@ -11,7 +11,8 @@ src/BitBangSE.vcxproj.user
 src/BitBangSE.sdf
 src/BitBangSE.v11.suo
 src/bitbanglib.vcxproj.user
-external
+external/**
+!external/README.md
 lib
 tbaptista.pbxuser
 tbaptista.mode1v3

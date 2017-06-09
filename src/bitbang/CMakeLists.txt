@@ -40,7 +40,7 @@ IF (UNIX)
 	ENDIF (APPLE)
 ENDIF (UNIX)
 
-add_definitions(-DMEXP=19937)
+add_definitions(-DSFMT_MEXP=19937)
 add_definitions(-DHAVE_SSE2)
 add_definitions(-msse2)
 

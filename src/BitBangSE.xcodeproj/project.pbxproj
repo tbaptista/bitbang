@@ -107,12 +107,13 @@
 		896E4C3B13897F22003E5147 /* SFMT-sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = 896E4C2C13897F22003E5147 /* SFMT-sse2.h */; };
 		896E4C3C13897F22003E5147 /* SFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 896E4C2D13897F22003E5147 /* SFMT.c */; };
 		896E4C3D13897F22003E5147 /* SFMT.h in Headers */ = {isa = PBXBuildFile; fileRef = 896E4C2E13897F22003E5147 /* SFMT.h */; };
+		8988F0C31EEAB19300DB8456 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8988F0BF1EEAB19300DB8456 /* libBulletCollision.a */; };
+		8988F0C41EEAB19300DB8456 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8988F0C01EEAB19300DB8456 /* libBulletDynamics.a */; };
+		8988F0C51EEAB19300DB8456 /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8988F0C11EEAB19300DB8456 /* libBulletSoftBody.a */; };
+		8988F0C61EEAB19300DB8456 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8988F0C21EEAB19300DB8456 /* libLinearMath.a */; };
 		899931B719DB128D00ECAF58 /* CEventReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 899931B519DB128D00ECAF58 /* CEventReceiver.cpp */; };
 		899931B819DB128D00ECAF58 /* CEventReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 899931B619DB128D00ECAF58 /* CEventReceiver.h */; };
 		899931BA19DB1CD900ECAF58 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931B919DB1CD900ECAF58 /* libIrrlicht.a */; };
-		899931C619DC464A00ECAF58 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931C319DC464A00ECAF58 /* libBulletCollision.a */; };
-		899931C719DC464A00ECAF58 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931C419DC464A00ECAF58 /* libBulletDynamics.a */; };
-		899931C819DC464A00ECAF58 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 899931C519DC464A00ECAF58 /* libLinearMath.a */; };
 		89A8AE320D7F17C200A8B5C6 /* CDefaultEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A8AE300D7F17C200A8B5C6 /* CDefaultEventHandler.cpp */; };
 		89B8683C0EBA1EAA00B89FE7 /* BBRandomRuleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89B868360EBA1EAA00B89FE7 /* BBRandomRuleList.cpp */; };
 		89B8683D0EBA1EAA00B89FE7 /* BBRandomRuleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B868370EBA1EAA00B89FE7 /* BBRandomRuleList.h */; };
@@ -237,12 +238,13 @@
 		896E4C2C13897F22003E5147 /* SFMT-sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFMT-sse2.h"; path = "sfmt/SFMT-sse2.h"; sourceTree = "<group>"; };
 		896E4C2D13897F22003E5147 /* SFMT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SFMT.c; path = sfmt/SFMT.c; sourceTree = "<group>"; };
 		896E4C2E13897F22003E5147 /* SFMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFMT.h; path = sfmt/SFMT.h; sourceTree = "<group>"; };
+		8988F0BF1EEAB19300DB8456 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = ../external/bullet/lib/libBulletCollision.a; sourceTree = "<group>"; };
+		8988F0C01EEAB19300DB8456 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = ../external/bullet/lib/libBulletDynamics.a; sourceTree = "<group>"; };
+		8988F0C11EEAB19300DB8456 /* libBulletSoftBody.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletSoftBody.a; path = ../external/bullet/lib/libBulletSoftBody.a; sourceTree = "<group>"; };
+		8988F0C21EEAB19300DB8456 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = ../external/bullet/lib/libLinearMath.a; sourceTree = "<group>"; };
 		899931B519DB128D00ECAF58 /* CEventReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CEventReceiver.cpp; path = bitbangse/CEventReceiver.cpp; sourceTree = "<group>"; };
 		899931B619DB128D00ECAF58 /* CEventReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEventReceiver.h; path = bitbangse/CEventReceiver.h; sourceTree = "<group>"; };
 		899931B919DB1CD900ECAF58 /* libIrrlicht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht.a; path = irrlicht/lib/MacOSX/libIrrlicht.a; sourceTree = "<group>"; };
-		899931C319DC464A00ECAF58 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = bullet/lib/MacOSX/libBulletCollision.a; sourceTree = "<group>"; };
-		899931C419DC464A00ECAF58 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = bullet/lib/MacOSX/libBulletDynamics.a; sourceTree = "<group>"; };
-		899931C519DC464A00ECAF58 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = bullet/lib/MacOSX/libLinearMath.a; sourceTree = "<group>"; };
 		89A8AE2F0D7F17C200A8B5C6 /* CDefaultEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDefaultEventHandler.h; path = bitbangse/CDefaultEventHandler.h; sourceTree = "<group>"; };
 		89A8AE300D7F17C200A8B5C6 /* CDefaultEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CDefaultEventHandler.cpp; path = bitbangse/CDefaultEventHandler.cpp; sourceTree = "<group>"; };
 		89B868360EBA1EAA00B89FE7 /* BBRandomRuleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBRandomRuleList.cpp; path = bitbang/BBRandomRuleList.cpp; sourceTree = "<group>"; };
@@ -272,10 +274,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899931C619DC464A00ECAF58 /* libBulletCollision.a in Frameworks */,
+				8988F0C31EEAB19300DB8456 /* libBulletCollision.a in Frameworks */,
 				899931BA19DB1CD900ECAF58 /* libIrrlicht.a in Frameworks */,
-				899931C819DC464A00ECAF58 /* libLinearMath.a in Frameworks */,
-				899931C719DC464A00ECAF58 /* libBulletDynamics.a in Frameworks */,
+				8988F0C61EEAB19300DB8456 /* libLinearMath.a in Frameworks */,
+				8988F0C41EEAB19300DB8456 /* libBulletDynamics.a in Frameworks */,
+				8988F0C51EEAB19300DB8456 /* libBulletSoftBody.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,9 +452,10 @@
 		893253750D5A18AB00C922D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				899931C319DC464A00ECAF58 /* libBulletCollision.a */,
-				899931C419DC464A00ECAF58 /* libBulletDynamics.a */,
-				899931C519DC464A00ECAF58 /* libLinearMath.a */,
+				8988F0BF1EEAB19300DB8456 /* libBulletCollision.a */,
+				8988F0C01EEAB19300DB8456 /* libBulletDynamics.a */,
+				8988F0C11EEAB19300DB8456 /* libBulletSoftBody.a */,
+				8988F0C21EEAB19300DB8456 /* libLinearMath.a */,
 				899931B919DB1CD900ECAF58 /* libIrrlicht.a */,
 				896E4C1F13897F0D003E5147 /* SFMT */,
 			);
@@ -762,7 +766,7 @@
 					"SFMT_MEXP=19937",
 				);
 				HEADER_SEARCH_PATHS = (
-					bullet/include,
+					../external/bullet/include/bullet,
 					bitbangse/simpleopt,
 					irrlicht/include,
 					bitbang,
@@ -771,10 +775,8 @@
 				KEEP_PRIVATE_EXTERNS = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/tbaptista/Documents/DEI/Research/BitBang,
-					Framework/src/irrlicht/lib/MacOSX,
 					"$(PROJECT_DIR)/irrlicht/lib/MacOSX",
-					"$(PROJECT_DIR)/bullet/lib/MacOSX",
+					"$(PROJECT_DIR)/../external/bullet/lib",
 				);
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
@@ -805,7 +807,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = (
-					bullet/include,
+					../external/bullet/include/bullet,
 					bitbangse/simpleopt,
 					irrlicht/include,
 					bitbang,
@@ -814,10 +816,8 @@
 				KEEP_PRIVATE_EXTERNS = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/tbaptista/Documents/DEI/Research/BitBang,
-					Framework/src/irrlicht/lib/MacOSX,
 					"$(PROJECT_DIR)/irrlicht/lib/MacOSX",
-					"$(PROJECT_DIR)/bullet/lib/MacOSX",
+					"$(PROJECT_DIR)/../external/bullet/lib",
 				);
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
