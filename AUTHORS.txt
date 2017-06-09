@@ -1,0 +1,9 @@
+The BitBang Framework was created by Tiago Baptista and Telmo Menezes, with contributions from:
+
+Tiago Baptista
+Telmo Menezes
+Flávio Saraiva
+António Simões
+João Simões
+
+If your name is missing, please file an issue at https://github.com/tbaptista/bitbang.

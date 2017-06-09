@@ -2,8 +2,7 @@
 
 http://www.bitbang.org
 
-Copyright (C) 2004-2014 Tiago Baptista
-					    Telmo Menezes
+Copyright (C) 2004-2017 Tiago Baptista and Telmo Menezes
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the version 2 of the GNU General Public License
@@ -24,5 +23,5 @@ BitBang Framework uses the following third-party libraries:
 
 * SFMT (http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/)
 * Irrlicht (http://irrlicht.sourceforge.net)
-* Bullet Physics Library (http://www.bulletphysics.com)
+* Bullet Physics Library (http://bulletphysics.org)
 * SimpleOpt (http://code.jellycan.com/simpleopt/)
