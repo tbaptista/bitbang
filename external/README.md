@@ -4,8 +4,8 @@ The BitBang Framework uses external libraries, some in source form, and some in 
 
 The needed libraries are:
 
-* [Irrlicht](http://irrlicht.sourceforge.net)
-* [Bullet Physics](http://bulletphysics.org)
+* [Irrlicht](http://irrlicht.sourceforge.net) (tested with version 1.8.4)
+* [Bullet Physics](http://bulletphysics.org) (tested with version 2.86.1)
 
 The expected directory structure is this:
 ```
