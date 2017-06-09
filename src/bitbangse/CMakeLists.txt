@@ -1,6 +1,6 @@
 #
 # BitBang (http://www.bitbang.org)
-# Copyright (C) 2004-2009 Tiago Baptista
+# Copyright (C) 2004-2017 Tiago Baptista
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the version 2 of the GNU General Public License
@@ -22,21 +22,21 @@ INCLUDE (${CMAKE_ROOT}/Modules/FindOpenGL.cmake)
 SET (BBSE_SRCS CDefaultEventHandler.cpp CEventHandler.cpp CEventReceiver.cpp  CPhysicsObject.cpp CSimObject.cpp CWorld.cpp CFileConfig.cpp CObjectLabel.cpp CTimedLabel.cpp CIrrMotionState.cpp)
 SET (BBSE_INSTALL_LIBDIR lib)
 
-INCLUDE_DIRECTORIES (. ../bitbang ../irrlicht/include ../bullet/include simpleopt)
+INCLUDE_DIRECTORIES (. ${BITBANG_SOURCE_DIR}/bitbang ${BITBANG_SOURCE_DIR}/irrlicht/include ${BITBANG_SOURCE_DIR}/bullet/include simpleopt)
 
 IF (WIN32)
-	SET (IRRLICHT_LINK ../irrlicht/lib/Win32-gcc)
+	SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/irrlicht/lib/Win32-gcc)
 	SET (BBSE_INSTALL_LIBDIR lib/Win32)
 ENDIF (WIN32)
 IF (UNIX)
 	IF (APPLE)
-		SET (IRRLICHT_LINK ../irrlicht/lib/MacOSX)
-		SET (BULLET_LINK ../bullet/lib/MacOSX)
+		SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/irrlicht/lib/MacOSX)
+		SET (BULLET_LINK ${BITBANG_SOURCE_DIR}/bullet/lib/MacOSX)
 		SET (OPENGL_LIBRARIES ${OPENGL_LIBRARIES} "-framework Cocoa -framework Carbon -framework IOKit")
 		SET (BBSE_INSTALL_LIBDIR lib/MaxOSX)
 	ELSE (APPLE)
-		SET (IRRLICHT_LINK ../irrlicht/lib/Linux ../irrlicht/lib/Linux64)
-		SET (BULLET_LINK ../bullet/lib/Linux ../bullet/lib/Linux64)
+		SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/irrlicht/lib/Linux ${BITBANG_SOURCE_DIR}/irrlicht/lib/Linux64)
+		SET (BULLET_LINK ${BITBANG_SOURCE_DIR}/bullet/lib/Linux ${BITBANG_SOURCE_DIR}/bullet/lib/Linux64)
 		IF (${CMAKE_SIZEOF_VOID_P} EQUAL 8)
 			SET (BBSE_INSTALL_LIBDIR lib/Linux64)
 		ELSEIF (${CMAKE_SIZEOF_VOID_P} EQUAL 4)

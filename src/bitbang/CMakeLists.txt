@@ -1,6 +1,6 @@
 #
 # BitBang (http://www.bitbang.org)
-# Copyright (C) 2004-2008 Tiago Baptista
+# Copyright (C) 2004-2017 Tiago Baptista
 #						  Telmo Menezes
 #
 # This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,8 @@
 #
 
 
-SET (BITBANG_SRCS BBAction.cpp BBBrain.cpp BBFeature.cpp BBObject.cpp BBPerception.cpp BBPerceptionSphere.cpp BBRule.cpp BBRuleCondition.cpp BBRuleList.cpp BBRandomRuleList.cpp BBRuleListEditype.cpp BBRuleListEditor.cpp BBSchedule.cpp BBTimer.cpp BBVisionReach3DCone.cpp BBVisionReach2DCircle.cpp BBWorld.cpp BBCSVFileLog.cpp  BBFileLog.cpp BBLog.cpp features/BBFeatureBoolean.cpp features/BBFeatureNumber.cpp features/BBFeatureString.cpp perceptions/BBPerceptionBoolean.cpp perceptions/BBPerceptionFeatureNumber.cpp perceptions/BBPerceptionFixedNumber.cpp perceptions/BBPerceptionNumber.cpp perceptions/BBPerceptionString.cpp perceptions/BBPerceptionFixedString.cpp perceptions/BBPerceptionFeatureString.cpp perceptions/BBPerceptionFeatureBoolean.cpp perceptions/BBPerceptionRandom.cpp perceptions/BBPerceptionRandomNumber.cpp perceptions/BBPerceptionRandomProbability.cpp perceptions/BBPerceptionReachResource.cpp perceptions/BBPerceptionSeeResource.cpp schedules/BBLogSchedule.cpp BBRandomGenerator.cpp ../sfmt/SFMT.c)
+SET (BITBANG_SRCS BBAction.cpp BBBrain.cpp BBFeature.cpp BBObject.cpp BBPerception.cpp BBPerceptionSphere.cpp BBRule.cpp BBRuleCondition.cpp BBRuleList.cpp BBRandomRuleList.cpp BBRuleListEditype.cpp BBRuleListEditor.cpp BBSchedule.cpp BBTimer.cpp BBVisionReach3DCone.cpp BBVisionReach2DCircle.cpp BBWorld.cpp BBCSVFileLog.cpp  BBFileLog.cpp BBLog.cpp features/BBFeatureBoolean.cpp features/BBFeatureNumber.cpp features/BBFeatureString.cpp perceptions/BBPerceptionBoolean.cpp perceptions/BBPerceptionFeatureNumber.cpp perceptions/BBPerceptionFixedNumber.cpp perceptions/BBPerceptionNumber.cpp perceptions/BBPerceptionString.cpp perceptions/BBPerceptionFixedString.cpp perceptions/BBPerceptionFeatureString.cpp perceptions/BBPerceptionFeatureBoolean.cpp perceptions/BBPerceptionRandom.cpp perceptions/BBPerceptionRandomNumber.cpp perceptions/BBPerceptionRandomProbability.cpp perceptions/BBPerceptionReachResource.cpp perceptions/BBPerceptionSeeResource.cpp schedules/BBLogSchedule.cpp BBRandomGenerator.cpp ${BITBANG_SOURCE_DIR}/sfmt/SFMT.c)
+
 SET (BITBANG_INSTALL_LIBDIR lib)
 
 IF (WIN32)
@@ -43,7 +44,7 @@ add_definitions(-DMEXP=19937)
 add_definitions(-DHAVE_SSE2)
 add_definitions(-msse2)
 
-include_directories (. features perceptions ../sfmt)
+include_directories (. features perceptions ${BITBANG_SOURCE_DIR}/sfmt)
 
 add_library (BitBang STATIC ${BITBANG_SRCS})
 
