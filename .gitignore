@@ -1,20 +1,78 @@
-src/build
-src/CMakeCache.txt
-src/cmake_install.cmake
-src/CMakeFiles
-Makefile
-src/Release_lib/
-src/Release/
-src/Debug_lib/
-src/Debug/
-src/BitBangSE.vcxproj.user
-src/BitBangSE.sdf
-src/BitBangSE.v11.suo
-src/bitbanglib.vcxproj.user
+#Project specific
 external/**
 !external/README.md
-lib
-tbaptista.pbxuser
-tbaptista.mode1v3
-src/BitBangSE.xcodeproj/project.xcworkspace/xcuserdata/tbaptista.xcuserdatad
-src/BitBang.xcodeproj/project.xcworkspace/xcuserdata/tbaptista.xcuserdatad
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+#macos
+# General
+*.DS_Store
+.AppleDouble
+.LSOverride
+
