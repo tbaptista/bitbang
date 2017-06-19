@@ -49,7 +49,7 @@ if(APPLE)
 	set(IRRLICHT_INSTALL_CMD mkdir -p <INSTALL_DIR>/lib && cp <SOURCE_DIR>/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a <INSTALL_DIR>/lib && cp -r <SOURCE_DIR>/include <INSTALL_DIR>/)
 else()
 	set(IRRLICHT_BUILD_CMD cd <SOURCE_DIR>/source/Irrlicht && make NDEBUG=1)
-	set(IRRLICHT_INSTALL_CMD mkdir -p <INSTALL_DIR>/lib && cp libIrrlicht.a <INSTALL_DIR>/lib && cp -r <SOURCE_DIR>/include <INSTALL_DIR>/)
+	set(IRRLICHT_INSTALL_CMD mkdir -p <INSTALL_DIR>/lib && cp <SOURCE_DIR>/lib/Linux/libIrrlicht.a <INSTALL_DIR>/lib && cp -r <SOURCE_DIR>/include <INSTALL_DIR>/)
 endif()
 
 ExternalProject_Add(irrlicht
