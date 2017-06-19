@@ -1,0 +1,11 @@
+--- source/Irrlicht/MacOSX/CIrrDeviceMacOSX.mm	2017-06-19 20:47:30.000000000 +0100
++++ source/Irrlicht/MacOSX/CIrrDeviceMacOSX.mm.new	2017-06-19 20:45:23.000000000 +0100
+@@ -496,7 +496,7 @@
+ 		{
+ 			[[NSAutoreleasePool alloc] init];
+ 			[NSApplication sharedApplication];
+-			[NSApp setDelegate:(id<NSFileManagerDelegate>)[[[AppDelegate alloc] initWithDevice:this] autorelease]];
++			[NSApp setDelegate:(id<NSApplicationDelegate>)[[[AppDelegate alloc] initWithDevice:this] autorelease]];
+ 			[NSBundle loadNibNamed:@"MainMenu" owner:[NSApp delegate]];
+ 			[NSApp finishLaunching];
+ 		}
