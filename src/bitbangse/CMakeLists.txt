@@ -49,7 +49,7 @@ LINK_DIRECTORIES (${IRRLICHT_LINK} ${BULLET_LINK})
 
 ADD_LIBRARY (BitBangSE STATIC ${BBSE_SRCS})
 
-ADD_DEPENDENCIES (BitBangSE BitBang)
+ADD_DEPENDENCIES (BitBangSE BitBang irrlicht bullet)
 
 TARGET_LINK_LIBRARIES (BitBangSE BitBang Irrlicht BulletDynamics BulletCollision LinearMath ${OPENGL_LIBRARIES})
 
