@@ -1,5 +1,7 @@
 # BitBang Framework
 
+[![Build Status](https://travis-ci.org/tbaptista/bitbang.svg?branch=master)](https://travis-ci.org/tbaptista/bitbang)
+
 http://www.bitbang.org
 
 Copyright (C) 2004-2017 Tiago Baptista and Telmo Menezes
