@@ -9,8 +9,3 @@ script:
   - cd build
   - cmake ..
   - make -j8
-cache:
-  directories:
-    - build/external
-    - external/bullet
-    - external/irrlicht
