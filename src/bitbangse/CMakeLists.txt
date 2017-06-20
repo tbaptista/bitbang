@@ -30,12 +30,12 @@ IF (WIN32)
 ENDIF (WIN32)
 IF (UNIX)
 	IF (APPLE)
-		SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/../external/irrlicht/lib/MacOSX)
+		SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/../external/irrlicht/lib)
 		SET (BULLET_LINK ${BITBANG_SOURCE_DIR}/../external/bullet/lib)
 		SET (OPENGL_LIBRARIES ${OPENGL_LIBRARIES} "-framework Cocoa -framework Carbon -framework IOKit")
 		SET (BBSE_INSTALL_LIBDIR lib/MaxOSX)
 	ELSE (APPLE)
-		SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/../external/irrlicht/lib/Linux ${BITBANG_SOURCE_DIR}/irrlicht/lib/Linux64)
+		SET (IRRLICHT_LINK ${BITBANG_SOURCE_DIR}/../external/irrlicht/lib)
 		SET (BULLET_LINK ${BITBANG_SOURCE_DIR}/../external/bullet/lib)
 		IF (${CMAKE_SIZEOF_VOID_P} EQUAL 8)
 			SET (BBSE_INSTALL_LIBDIR lib/Linux64)
@@ -49,7 +49,7 @@ LINK_DIRECTORIES (${IRRLICHT_LINK} ${BULLET_LINK})
 
 ADD_LIBRARY (BitBangSE STATIC ${BBSE_SRCS})
 
-ADD_DEPENDENCIES (BitBangSE BitBang)
+ADD_DEPENDENCIES (BitBangSE BitBang irrlicht bullet)
 
 TARGET_LINK_LIBRARIES (BitBangSE BitBang Irrlicht BulletDynamics BulletCollision LinearMath ${OPENGL_LIBRARIES})
 

@@ -1,6 +1,8 @@
 #Project specific
 external/**
 !external/README.md
+!external/CMakeLists.*
+!external/*.patch
 
 # Prerequisites
 *.d

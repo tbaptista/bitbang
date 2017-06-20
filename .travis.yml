@@ -1,0 +1,11 @@
+language: cpp
+sudo: false
+dist: trusty
+os:
+  - linux
+  - osx
+script: 
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make -j8
