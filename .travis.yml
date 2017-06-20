@@ -12,3 +12,5 @@ script:
 cache:
   directories:
     - build/external
+    - external/bullet
+    - external/irrlicht
