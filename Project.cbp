@@ -8,48 +8,48 @@
 		<Option virtualFolders="CMake Files\;CMake Files\bitbang\;CMake Files\bitbangse\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BitBang">
-				<Option output="/Users/jbsimoes/Documents/bitbang/build/libBitBang.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang/build"/>
+				<Option output="/Users/jbsimoes/Documents/PhD/Project/bitbang/build/libBitBang.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang/build"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add option="-DMEXP=19937"/>
 					<Add option="-DHAVE_SSE2"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/."/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/features"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/../sfmt"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/."/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/../sfmt"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -59,25 +59,25 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 BitBang"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 BitBang"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BitBang/fast">
-				<Option output="/Users/jbsimoes/Documents/bitbang/build/libBitBang.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang/build"/>
+				<Option output="/Users/jbsimoes/Documents/PhD/Project/bitbang/build/libBitBang.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang/build"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add option="-DMEXP=19937"/>
 					<Add option="-DHAVE_SSE2"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/."/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/features"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbang/../sfmt"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/."/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/../sfmt"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -87,24 +87,24 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 BitBang/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 BitBang/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BitBangSEGfx">
-				<Option output="/Users/jbsimoes/Documents/bitbang/build/libBitBangSEGfx.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang/build"/>
+				<Option output="/Users/jbsimoes/Documents/PhD/Project/bitbang/build/libBitBangSEGfx.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang/build"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/."/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/../bitbang"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/../irrlicht/include"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/../bullet/include"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/simpleopt"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/."/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/../bitbang"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/../irrlicht/include"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/../bullet/include"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/simpleopt"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -114,24 +114,24 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 BitBangSEGfx"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 BitBangSEGfx"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BitBangSEGfx/fast">
-				<Option output="/Users/jbsimoes/Documents/bitbang/build/libBitBangSEGfx.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jbsimoes/Documents/bitbang/build"/>
+				<Option output="/Users/jbsimoes/Documents/PhD/Project/bitbang/build/libBitBangSEGfx.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jbsimoes/Documents/PhD/Project/bitbang/build"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/."/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/../bitbang"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/../irrlicht/include"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/../bullet/include"/>
-					<Add directory="/Users/jbsimoes/Documents/bitbang/src/bitbangse/simpleopt"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/."/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/../bitbang"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/../irrlicht/include"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/../bullet/include"/>
+					<Add directory="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/simpleopt"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -141,335 +141,341 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 BitBangSEGfx/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 BitBangSEGfx/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jbsimoes/Documents/PhD/Project/bitbang/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBAction.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBAction.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBAction.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBAction.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBBrain.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBBrain.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBBrain.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBBrain.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBCSVFileLog.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBCSVFileLog.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBCSVFileLog.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBCSVFileLog.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBFeature.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBFeature.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBFeature.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBFeature.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBFileLog.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBFileLog.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBFileLog.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBFileLog.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBInfluence.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBInfluence.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBInfluence.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBInfluence.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBInfluenceMap.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBInfluenceMap.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBInfluenceMap.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBInfluenceMap.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBLog.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBLog.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBLog.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBLog.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBOSMacOSX.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBOSMacOSX.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBObject.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBObject.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBObject.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBObject.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBPerception.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBPerception.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBPerception.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBPerception.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBPerceptionSphere.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBPerceptionSphere.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBPerceptionSphere.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBPerceptionSphere.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRandomGenerator.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRandomGenerator.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRandomGenerator.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRandomGenerator.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRandomRuleList.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRandomRuleList.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRandomRuleList.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRandomRuleList.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRule.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRule.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRule.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRule.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleCondition.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleCondition.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleCondition.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleCondition.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleList.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleList.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleList.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleList.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleListEditor.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleListEditor.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleListEditor.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleListEditor.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleListEditype.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleListEditype.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBRuleListEditype.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBRuleListEditype.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBSchedule.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBSchedule.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBSchedule.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBSchedule.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBTimer.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBTimer.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBTimer.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBTimer.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBVisionReach2DCircle.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBVisionReach2DCircle.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBVisionReach2DCircle.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBVisionReach2DCircle.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBVisionReach3DCone.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBVisionReach3DCone.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBVisionReach3DCone.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBVisionReach3DCone.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBWorld.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBWorld.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/BBWorld.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/BBWorld.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/features/BBFeatureBoolean.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features/BBFeatureBoolean.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/features/BBFeatureBoolean.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features/BBFeatureBoolean.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/features/BBFeatureNumber.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features/BBFeatureNumber.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/features/BBFeatureNumber.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features/BBFeatureNumber.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/features/BBFeatureString.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features/BBFeatureString.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/features/BBFeatureString.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/features/BBFeatureString.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionBoolean.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionBoolean.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionBoolean.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionBoolean.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFeatureBoolean.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFeatureBoolean.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFeatureBoolean.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFeatureBoolean.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFeatureNumber.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFeatureNumber.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFeatureNumber.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFeatureNumber.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFeatureString.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFeatureString.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFeatureString.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFeatureString.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFixedNumber.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFixedNumber.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFixedNumber.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFixedNumber.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFixedString.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFixedString.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionFixedString.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionFixedString.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionNumber.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionNumber.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionNumber.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionNumber.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionRandom.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionRandom.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionRandom.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionRandom.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionRandomNumber.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionRandomNumber.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionRandomNumber.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionRandomNumber.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionRandomProbability.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionRandomProbability.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionRandomProbability.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionRandomProbability.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionReachResource.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionReachResource.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionReachResource.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionReachResource.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionSeeResource.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionSeeResource.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionSeeResource.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionSeeResource.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionString.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionString.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/perceptions/BBPerceptionString.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/perceptions/BBPerceptionString.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/schedules/BBLogSchedule.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/schedules/BBLogSchedule.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/schedules/BBLogSchedule.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/schedules/BBLogSchedule.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/schedules/BBScheduleScriptable.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/schedules/BBScheduleScriptable.cpp">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/schedules/BBScheduleScriptable.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/schedules/BBScheduleScriptable.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CDefaultEventHandler.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CDefaultEventHandler.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CDefaultEventHandler.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CDefaultEventHandler.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CEventHandler.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CEventHandler.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CEventHandler.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CEventHandler.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CEventReceiver.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CEventReceiver.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CEventReceiver.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CEventReceiver.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CFileConfig.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CFileConfig.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CFileConfig.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CFileConfig.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CIrrMotionState.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CIrrMotionState.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CIrrMotionState.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CIrrMotionState.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CObjectLabel.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CObjectLabel.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CObjectLabel.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CObjectLabel.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CPhysicsObject.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CPhysicsObject.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CPhysicsObject.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CPhysicsObject.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CSimObject.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CSimObject.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CSimObject.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CSimObject.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CTimedLabel.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CTimedLabel.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CTimedLabel.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CTimedLabel.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CWorld.cpp">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CWorld.cpp">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CWorld.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CWorld.h">
 			<Option target="BitBangSEGfx"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/sfmt/SFMT.c">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/DebugDraw.cpp">
+			<Option target="BitBangSEGfx"/>
+		</Unit>
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/DebugDraw.h">
+			<Option target="BitBangSEGfx"/>
+		</Unit>
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/sfmt/SFMT.c">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/sfmt/SFMT.h">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/sfmt/SFMT.h">
 			<Option target="BitBang"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/CMakeLists.txt">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbang/CMakeLists.txt">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbang/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\bitbang\"/>
 		</Unit>
-		<Unit filename="/Users/jbsimoes/Documents/bitbang/src/bitbangse/CMakeLists.txt">
+		<Unit filename="/Users/jbsimoes/Documents/PhD/Project/bitbang/src/bitbangse/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\bitbangse\"/>
 		</Unit>
 	</Project>
