@@ -19,7 +19,7 @@
 INCLUDE (${CMAKE_ROOT}/Modules/FindOpenGL.cmake)
 
 # Main source files
-SET (BBSE_SRCS CDefaultEventHandler.cpp CEventHandler.cpp CEventReceiver.cpp CPhysicsObject.cpp CSimObject.cpp CWorld.cpp CFileConfig.cpp CObjectLabel.cpp CTimedLabel.cpp CIrrMotionState.cpp DebugDraw.cpp DebugDraw.h)
+SET (BBSE_SRCS CDefaultEventHandler.cpp CEventHandler.cpp CEventReceiver.cpp CPhysicsObject.cpp CSimObject.cpp CWorld.cpp CFileConfig.cpp CObjectLabel.cpp CTimedLabel.cpp CIrrMotionState.cpp DebugDraw.cpp util/CUtilities.cpp)
 
 INCLUDE_DIRECTORIES (. ../bitbang ../irrlicht/include ../bullet/include simpleopt)
 
