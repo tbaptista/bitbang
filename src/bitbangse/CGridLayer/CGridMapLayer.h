@@ -80,7 +80,6 @@ CGridMapLayer<T>::CGridMapLayer(std::string pName, irr::scene::ISceneNode *paren
 template<class T>
 inline void CGridMapLayer<T>::InitCellGraphics(int x, int z, int index)
 {
-    cerr << "Here!" << endl;
     (*squares)[index] = smgr->addCubeSceneNode();
     (*squares)[index]->setPosition(irr::core::vector3df(x + this->halfOfCellSize, 0, z + this->halfOfCellSize));
     cutilities::ScaleToSize((*squares)[index], this->cellSize, 0, this->cellSize);

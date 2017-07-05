@@ -23,6 +23,7 @@
 #include "BBRandomGenerator.h"
 #include "BBSchedule.h"
 #include "BBObject.h"
+#include "GridLayer/GridMapLayerInterface.h"
 
 #include <math.h>
 #include <stdlib.h>
@@ -282,6 +283,17 @@ void BBWorld::UpdateObjects(double d_elapsed_time)
 		BBObject* pObject = iObject->second;
 		pObject->OnObjectUpdate(d_elapsed_time);
 	}
+}
+
+void BBWorld::RegisterGridLayer(GridMapLayerInterface *pGridLayer)
+{
+	string gridLayerName = pGridLayer->GetName();
+	worldGridLayersMap[gridLayerName] = pGridLayer;
+}
+
+GridMapLayerInterface *BBWorld::GetGridLayer(string pName)
+{
+	return worldGridLayersMap[pName];
 }
 
 

@@ -36,8 +36,10 @@ namespace bitbang
 class BBSchedule;
 class BBObject;
 class BBCSVFileLog;
+class GridMapLayerInterface;
 typedef list<BBSchedule*> BBScheduleList;
 typedef map<int, BBObject*> BBObjectMap;
+typedef map<string, GridMapLayerInterface* > GridLayersMap;
 
 /*!
  * \brief The Bit Bang world.
@@ -80,6 +82,9 @@ public:
 	BBTime GetTime(){return m_Timer.GetTime();};
 	virtual void LogDynamicStats() {};
 	
+	void RegisterGridLayer(GridMapLayerInterface* pGridLayer);
+	GridMapLayerInterface* GetGridLayer(string pName);
+	
 protected:
 	void UpdateObjects(double d_elapsed_time);
 	
@@ -89,6 +94,8 @@ protected:
 	BBTimer m_Timer;
 	int m_nThinkProbability;
 	BBCSVFileLog m_WorldDynamicLog;
+	
+	GridLayersMap worldGridLayersMap;
 };
 }
 #endif // BBWORLD_H_
