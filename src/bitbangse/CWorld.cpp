@@ -179,6 +179,8 @@ void CWorld::Init()
 
 		m_pDebugMaterial.Lighting = false;
 	}
+	
+	cerr << "Finished!" << endl;
 }
 
 /*!
