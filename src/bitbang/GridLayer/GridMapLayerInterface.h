@@ -19,6 +19,7 @@ public:
     virtual int GetNCellsZ() = 0;
     virtual int GetCellSize() = 0;
     virtual int GetCellIndex(float x, float z) = 0;
+    virtual void Update() = 0;
 };
     
 }

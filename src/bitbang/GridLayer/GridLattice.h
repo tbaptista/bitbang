@@ -20,6 +20,10 @@ public:
     
     virtual void SetCenter(const BBPoint &center);
     virtual const BBPoint &GetCenter() const;
+    
+    virtual float GetX() { return center.GetX(); };
+    virtual float GetY() { return center.GetY(); };
+    virtual float GetZ() { return center.GetZ(); };
 
 private:
     BBPoint center;

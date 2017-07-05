@@ -32,6 +32,9 @@ public:
 
     virtual std::string GetName() { return name; };
     virtual void SetName(std::string pName) { name = pName; };
+    
+    // Method for updating grid layer. By default, the grid layer is not updated
+    virtual void Update() {};
 
 protected:
     // Grid dimensions specifications

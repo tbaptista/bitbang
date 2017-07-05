@@ -237,6 +237,7 @@ void CWorld::Run()
 		}
 
 		UpdateObjects(m_dElapsedTime);
+        UpdateGridLayers(m_dElapsedTime);
 		
 		//Stop the simulation if the time limit was reached
 		if (m_TimeLimit != 0)

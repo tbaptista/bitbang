@@ -16,14 +16,16 @@ public:
     FloatLattice() {};
     virtual ~FloatLattice() {};
     
-    void SetValue(float pValue) { value = pValue; };
-    float GetValue() { return value; };
+    void SetCurrentValue(float pValue) { currentValue = pValue; };
+    float GetCurrentValue() { return currentValue; };
+    void SetOldValue(float pValue) { oldValue = pValue; };
+    float GetOldValue() { return oldValue; };
 
 private:
-    float value;
+    float currentValue;
+    float oldValue;
 };
     
 }
-    
 
 #endif //BULLET_TEST_FLOATLATTICE_H

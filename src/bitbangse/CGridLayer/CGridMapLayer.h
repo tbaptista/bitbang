@@ -61,7 +61,7 @@ CGridMapLayer<T>::CGridMapLayer(std::string pName, irr::scene::ISceneNode *paren
                                                                       smgr(mgr), irr::scene::ISceneNode(parent, mgr, id)
 {
     numberOfVertex = this->nCellsX * this->nCellsZ;
-    squares = new vector<irr::scene::IMeshSceneNode *>(this->nCellsX * this->nCellsZ);
+    squares = new std::vector<irr::scene::IMeshSceneNode *>(this->nCellsX * this->nCellsZ);
     
     int cellIndex;
     for (int x = 0; x < this->nCellsX; x++)

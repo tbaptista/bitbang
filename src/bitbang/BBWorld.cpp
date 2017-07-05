@@ -296,5 +296,17 @@ GridMapLayerInterface *BBWorld::GetGridLayer(string pName)
 	return worldGridLayersMap[pName];
 }
 
+void BBWorld::UpdateGridLayers(double d_elapsed_time)
+{
+    GridLayersMap::iterator itGridLayer;
+    GridMapLayerInterface* gridLayer;
+    
+    for (itGridLayer = worldGridLayersMap.begin(); itGridLayer != worldGridLayersMap.end(); ++itGridLayer)
+    {
+        gridLayer = itGridLayer->second;
+        gridLayer->Update();
+    }
+}
+
 
 }

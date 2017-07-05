@@ -87,6 +87,7 @@ public:
 	
 protected:
 	void UpdateObjects(double d_elapsed_time);
+    void UpdateGridLayers(double d_elapsed_time);
 	
 	BBObjectMap m_ObjectMap;
 	BBObjectIDList m_DeadAgentsList;
