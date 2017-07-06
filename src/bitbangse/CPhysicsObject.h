@@ -52,6 +52,7 @@ public:
 	void SetMass(double d_mass){m_dMass = d_mass;};
 
     virtual void ScaleToGivenSize(float sizeX, float sizeY, float sizeZ);
+	
 
     void ApplyConstantForce(float x, float y, float z);
 

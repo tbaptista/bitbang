@@ -79,6 +79,10 @@ bool CPhysicsObject::Init()
 		btVector3 HalfExtents(Extents.X * 0.5f, Extents.Y * 0.5f, Extents.Z * 0.5f);
 		Shape = new btBoxShape(HalfExtents);
 	}
+	else if (m_nNodeType == NODETYPE_SPHERE)
+	{
+		Shape = new btSphereShape(0.5f);
+	}
 	else
 	{
 		return false;

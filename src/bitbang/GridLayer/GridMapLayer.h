@@ -32,6 +32,7 @@ public:
 
     virtual std::string GetName() { return name; };
     virtual void SetName(std::string pName) { name = pName; };
+    int MapTo1D(int x, int z);
     
     // Method for updating grid layer. By default, the grid layer is not updated
     virtual void Update() {};
@@ -112,7 +113,17 @@ int GridMapLayer<T>::GetCellIndex(float x, float z)
     // Convert Z to discrete
     cellZ = int(z / this->cellSize);
 
-    return (cellX * this->nCellsZ) + cellZ;
+    return MapTo1D(cellX, cellZ);
+}
+
+/// Map from 1D given discrete coordinates
+/// \param x Discrete X coordinate
+/// \param z Discrete Z coordinate
+/// \return
+template<class T>
+int GridMapLayer<T>::MapTo1D(int x, int z)
+{
+    return (x * this->nCellsZ) + z;
 }
 
 }

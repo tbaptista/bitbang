@@ -18,13 +18,13 @@ class CGridMapLayer : public GridMapLayer<T>, public irr::scene::ISceneNode
 public:
     CGridMapLayer(std::string pName, irr::scene::ISceneNode *parent, irr::scene::ISceneManager *mgr, irr::s32 id,
                   int sizeX,
-                  int sizeZ, int cellSize);
+                  int sizeZ, int cellSize, bool isVisible);
     
     virtual ~CGridMapLayer() {};
 
 
 protected:
-    void InitCellGraphics(int x, int z, int index);
+    void InitCellGraphics(int x, int z, int index, bool pIsVisible);
     
     irr::u32 getMaterialCount() const;
     
@@ -57,7 +57,7 @@ template<class T>
 inline
 CGridMapLayer<T>::CGridMapLayer(std::string pName, irr::scene::ISceneNode *parent, irr::scene::ISceneManager *mgr,
                                 irr::s32 id,
-                                int sizeX, int sizeZ, int cellSize) : GridMapLayer<T>(pName, sizeX, sizeZ, cellSize),
+                                int sizeX, int sizeZ, int cellSize, bool pIsVisible) : GridMapLayer<T>(pName, sizeX, sizeZ, cellSize),
                                                                       smgr(mgr), irr::scene::ISceneNode(parent, mgr, id)
 {
     numberOfVertex = this->nCellsX * this->nCellsZ;
@@ -69,23 +69,23 @@ CGridMapLayer<T>::CGridMapLayer(std::string pName, irr::scene::ISceneNode *paren
         for (int z = 0; z < this->nCellsZ; z++)
         {
             // Map 2D to 1D
-            cellIndex = (x * this->nCellsZ) + z + 1;
+            cellIndex = (x * this->nCellsZ) + z;
             
             // Draw matrix partition (Graphics)
-            InitCellGraphics(x * this->cellSize, z * this->cellSize, cellIndex);
+            InitCellGraphics(x * this->cellSize, z * this->cellSize, cellIndex, pIsVisible);
         }
     }
 }
 
 template<class T>
-inline void CGridMapLayer<T>::InitCellGraphics(int x, int z, int index)
+inline void CGridMapLayer<T>::InitCellGraphics(int x, int z, int index, bool pIsVisible)
 {
     (*squares)[index] = smgr->addCubeSceneNode();
     (*squares)[index]->setPosition(irr::core::vector3df(x + this->halfOfCellSize, 0, z + this->halfOfCellSize));
     cutilities::ScaleToSize((*squares)[index], this->cellSize, 0, this->cellSize);
-    //(*squares)[k]->setScale( irr::core::vector3df(tenthOfCellSize, 0, tenthOfCellSize) ); // covering the points it's representing
     (*squares)[index]->setRotation(irr::core::vector3df(0, 0, 0)); // no rotation
     (*squares)[index]->setDebugDataVisible(1); //draws white edges in squares, useful for debugging and viewing
+    (*squares)[index]->setVisible(pIsVisible);
 }
 
 template<class T>

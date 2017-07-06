@@ -67,6 +67,7 @@ public:
 	static const int NODETYPE_CUBE = 0;
 	static const int NODETYPE_MESH = 1;
 	static const int NODETYPE_ANIMATEDMESH = 2;
+	static const int NODETYPE_SPHERE = 3;
 	
 	CSimObject(irr::IrrlichtDevice* p_device);
 	CSimObject(irr::IrrlichtDevice* p_device, int n_id);
