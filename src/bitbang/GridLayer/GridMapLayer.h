@@ -10,6 +10,7 @@
 #include <cmath>
 #include "GridLayer/GridMapLayerInterface.h"
 #include "BBPoint.h"
+#include "GridLattice.h"
 
 namespace bitbang
 {
@@ -29,6 +30,8 @@ public:
     virtual int GetNCellsZ() { return nCellsZ; };
     virtual int GetCellSize() { return cellSize; };
     virtual int GetCellIndex(float x, float z);
+    
+    virtual GridLattice* GetCellAt(float x, float z);
 
     virtual std::string GetName() { return name; };
     virtual void SetName(std::string pName) { name = pName; };
@@ -124,6 +127,14 @@ template<class T>
 int GridMapLayer<T>::MapTo1D(int x, int z)
 {
     return (x * this->nCellsZ) + z;
+}
+
+template<class T>
+GridLattice* GridMapLayer<T>::GetCellAt(float x, float z)
+{
+    int cellPos = GetCellIndex(x, z);
+    
+    return &matrix[cellPos];
 }
 
 }

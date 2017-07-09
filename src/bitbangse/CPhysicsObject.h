@@ -21,6 +21,7 @@
 
 #include <iostream>
 #include <string>
+#include <LinearMath/btVector3.h>
 
 #ifdef GetObject
 #undef GetObject
@@ -53,12 +54,15 @@ public:
 
     virtual void ScaleToGivenSize(float sizeX, float sizeY, float sizeZ);
 	
+	void SetOldForce(btVector3& pForce) { m_oldForce = pForce;};
+	btVector3& GetOldForce() { return m_oldForce; };
 
     void ApplyConstantForce(float x, float y, float z);
 
-private:
+protected:
 	btRigidBody* m_pRigidBody;
 	
+	btVector3 m_oldForce;
 	double m_dMass;
 };
 

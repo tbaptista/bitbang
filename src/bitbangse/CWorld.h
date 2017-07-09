@@ -135,6 +135,9 @@ public:
 protected:
     int m_nSeedIndex;
 	
+	// This is protected due to more details may be added to it
+	btDiscreteDynamicsWorld* m_pDynamicsWorld;
+	
 private:
 	virtual std::string GetInfoText();
 	
@@ -177,7 +180,6 @@ private:
 	btDispatcher* m_pDispatcher;
 	btBroadphaseInterface* m_pPairCache;
 	btConstraintSolver* m_pConstraintSolver;
-	btDiscreteDynamicsWorld* m_pDynamicsWorld;
 	bool m_bDrawPhysicsDebug;
 	float m_fGravity;
 };
