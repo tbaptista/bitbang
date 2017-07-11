@@ -30,8 +30,10 @@ public:
     virtual int GetNCellsZ() { return nCellsZ; };
     virtual int GetCellSize() { return cellSize; };
     virtual int GetCellIndex(float x, float z);
+    virtual int GetIndex(float pos);
     
     virtual GridLattice* GetCellAt(float x, float z);
+    virtual GridLattice* GetCellAt(int x, int z);
 
     virtual std::string GetName() { return name; };
     virtual void SetName(std::string pName) { name = pName; };
@@ -135,6 +137,20 @@ GridLattice* GridMapLayer<T>::GetCellAt(float x, float z)
     int cellPos = GetCellIndex(x, z);
     
     return &matrix[cellPos];
+}
+
+template<class T>
+GridLattice* GridMapLayer<T>::GetCellAt(int x, int z)
+{
+    int cellPos = MapTo1D(x, z);
+    
+    return &matrix[cellPos];
+}
+
+template<class T>
+int GridMapLayer<T>::GetIndex(float pos)
+{
+    return int(pos / this->cellSize);
 }
 
 }

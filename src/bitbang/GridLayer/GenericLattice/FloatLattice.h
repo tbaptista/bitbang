@@ -14,6 +14,7 @@ class FloatLattice : public GridLattice
 {
 public:
     FloatLattice() {};
+    FloatLattice(float pX, float pZ) { SetCenter(BBPoint(pX, 0, pZ)); };
     virtual ~FloatLattice() {};
     
     void SetCurrentValue(float pValue) { currentValue = pValue; };
