@@ -208,7 +208,9 @@ void CWorld::Run()
 		
 		if (m_bUsePhysics)
 		{
-			m_pDynamicsWorld->stepSimulation(m_dElapsedTime);
+			int maxSubSteps = (int) ceil(m_dElapsedTime / (1.0 / 60.0));
+			
+			m_pDynamicsWorld->stepSimulation(m_dElapsedTime, maxSubSteps);
 		}
 		
 		if (m_pDevice->isWindowActive() && m_bDrawGraphics)
@@ -237,6 +239,7 @@ void CWorld::Run()
 		}
 
 		UpdateObjects(m_dElapsedTime);
+		// Update grid layers
         UpdateGridLayers(m_dElapsedTime);
 		
 		//Stop the simulation if the time limit was reached
