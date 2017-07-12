@@ -5,8 +5,9 @@
 #ifndef BULLET_TEST_BBPERCEIVELOCATION_H
 #define BULLET_TEST_BBPERCEIVELOCATION_H
 
-#include <BBPerceptionBoolean.h>
 #include <BBPoint.h>
+#include <string>
+#include "BBPerceptionBoolean.h"
 
 namespace bitbang
 {
@@ -18,12 +19,15 @@ class BBPerceiveLocation : public BBPerceptionBoolean
 public:
     BBPerceiveLocation(std::string pPerceptionName, BBWorldInterface* pWorldInterface);
     virtual ~BBPerceiveLocation();
+    
+    BBPoint GetPerceivedLocation() { return perceivedLocation; };
+    bool HasLocation() { return hasLocation; };
 
 protected:
     BBPoint perceivedLocation;
     bool hasLocation;
     
-    BBWorldInterface *worldInterface;
+    BBWorldInterface* worldInterface;
 };
 
 }

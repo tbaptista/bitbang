@@ -7,7 +7,7 @@
 namespace bitbang
 {
 
-BBPerceiveLocation::BBPerceiveLocation(std::string pPerceptionName, BBWorldInterface *pWorldInterface) :
+BBPerceiveLocation::BBPerceiveLocation(std::string pPerceptionName, BBWorldInterface* pWorldInterface)
 {
     hasLocation = false;
     worldInterface = pWorldInterface;

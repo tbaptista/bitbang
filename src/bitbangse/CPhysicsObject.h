@@ -58,6 +58,7 @@ public:
 	btVector3& GetOldForce() { return m_oldForce; };
 
     void ApplyConstantForce(float x, float y, float z);
+	void ApplyConstantForce(btVector3 &pForceDirection);
 
 protected:
 	btRigidBody* m_pRigidBody;

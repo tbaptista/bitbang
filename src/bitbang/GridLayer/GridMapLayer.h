@@ -40,7 +40,7 @@ public:
     int MapTo1D(int x, int z);
     
     // Method for updating grid layer. By default, the grid layer is not updated
-    virtual void Update() {};
+    virtual void Update(double d_elapsed_time = 0) {};
 
 protected:
     // Grid dimensions specifications

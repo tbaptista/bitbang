@@ -101,6 +101,11 @@ bool CPhysicsObject::Init()
 	return true;
 }
 
+void CPhysicsObject::ApplyConstantForce(btVector3& pForceDirection)
+{
+	m_pRigidBody->applyCentralForce(pForceDirection);
+}
+
 void CPhysicsObject::ApplyConstantForce(float x, float y, float z)
 {
 	m_pRigidBody->applyCentralForce(btVector3((btScalar) x, (btScalar) y, (btScalar) z));

@@ -304,7 +304,7 @@ void BBWorld::UpdateGridLayers(double d_elapsed_time)
     for (itGridLayer = worldGridLayersMap.begin(); itGridLayer != worldGridLayersMap.end(); ++itGridLayer)
     {
         gridLayer = itGridLayer->second;
-        gridLayer->Update();
+        gridLayer->Update(d_elapsed_time);
     }
 }
 
