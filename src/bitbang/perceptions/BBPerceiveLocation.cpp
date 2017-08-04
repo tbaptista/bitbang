@@ -13,6 +13,8 @@ BBPerceiveLocation::BBPerceiveLocation(std::string pPerceptionName, BBWorldInter
     worldInterface = pWorldInterface;
     m_strName = pPerceptionName;
     m_bModifiedByNonTerminalActions = false;
+    m_bInt = false;
+    m_dValue = 0.0;
 }
 
 BBPerceiveLocation::~BBPerceiveLocation()

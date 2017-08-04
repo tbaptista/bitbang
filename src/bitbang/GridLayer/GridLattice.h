@@ -24,9 +24,12 @@ public:
     virtual float GetX() { return center.GetX(); };
     virtual float GetY() { return center.GetY(); };
     virtual float GetZ() { return center.GetZ(); };
+    
+    void SetSize(int pSize) { size = pSize; };
 
-private:
+protected:
     BBPoint center;
+    int size;
 };
     
 }

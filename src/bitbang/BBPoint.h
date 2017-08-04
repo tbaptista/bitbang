@@ -19,6 +19,10 @@
 #ifndef _BBPOINT_H_
 #define _BBPOINT_H_
 
+#include <sstream>
+#include <string>
+#include <iostream>
+
 namespace bitbang
 {
 
@@ -126,6 +130,12 @@ class BBPoint
 		 *
 		 */
 		float GetZ(){return m_fZ;};
+		
+		std::string HumanReadable() {
+			std::ostringstream oss;
+			oss << GetX() << " " << GetY() << " " << GetZ();
+			return oss.str();
+		};
 	
 	private:
 	

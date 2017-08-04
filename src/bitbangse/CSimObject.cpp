@@ -111,7 +111,7 @@ bool CSimObject::CreateGraphics()
 {
 	if (m_nNodeType == NODETYPE_CUBE || m_nNodeType == NODETYPE_SPHERE)
 	{
-		m_pNode = m_pSmgr->addCubeSceneNode(1);
+		m_pNode = m_pSmgr->addSphereSceneNode(0.5);
 		m_pNode->getMaterial(0).EmissiveColor = *m_pMaterialColor;		
 	}
 	else if (m_nNodeType == NODETYPE_ANIMATEDMESH)

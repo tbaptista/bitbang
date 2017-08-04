@@ -131,6 +131,9 @@ public:
 	
 	void SetGravity(float f_gravity){m_fGravity = f_gravity;};
 	void AddConstraint(btTypedConstraint* constraint);
+	void RemoveConstraint(btTypedConstraint *constraint);
+	
+	btDiscreteDynamicsWorld* GetPhysicsWorld() { return m_pDynamicsWorld; };
 
 protected:
     int m_nSeedIndex;

@@ -99,4 +99,9 @@ namespace bitbang
 	{
 		return genrand_real1();
 	}
+
+	double BBRandomGenerator::RandDecimal(double n_max)
+	{
+		return gen_rand32() / (RAND_MAX / n_max);
+	}
 }

@@ -254,13 +254,15 @@ BBRuleCondition *BBCustomBrainBuilder::CreateBinaryCondition(vector<string> *bin
     
     if (IsNumber((*binaryPerceptions)[1]))
     {
-        pRuleCondition = new BBRuleCondition((BBPerceptionNumber *) GetPerceptionFromList((*binaryPerceptions)[0]),
-                                             atoi((*binaryPerceptions)[1].c_str()), binaryOperator);
-    } else
+        pRuleCondition = new BBRuleCondition((BBPerceptionNumber*)GetPerceptionFromList((*binaryPerceptions)[0]), atoi((*binaryPerceptions)[1].c_str()), binaryOperator);
+    }
+    else if (IsFloat((*binaryPerceptions)[1]))
     {
-        pRuleCondition = new BBRuleCondition((BBPerceptionNumber *) GetPerceptionFromList((*binaryPerceptions)[0]),
-                                             (BBPerceptionNumber *) GetPerceptionFromList((*binaryPerceptions)[1]),
-                                             binaryOperator);
+        pRuleCondition = new BBRuleCondition((BBPerceptionNumber*)GetPerceptionFromList((*binaryPerceptions)[0]), atof((*binaryPerceptions)[1].c_str()), binaryOperator);
+    }
+    else
+    {
+        pRuleCondition = new BBRuleCondition((BBPerceptionNumber*)GetPerceptionFromList((*binaryPerceptions)[0]), (BBPerceptionNumber*)GetPerceptionFromList((*binaryPerceptions)[1]), binaryOperator);
     }
     
     return pRuleCondition;
@@ -296,6 +298,15 @@ bool BBCustomBrainBuilder::IsNumber(const string &s)
     std::string::const_iterator it = s.begin();
     while (it != s.end() && std::isdigit(*it)) ++it;
     return !s.empty() && it == s.end();
+}
+
+bool BBCustomBrainBuilder::IsFloat(string myString)
+{
+    std::istringstream iss(myString);
+    float f;
+    iss >> noskipws >> f; // noskipws considers leading whitespace invalid
+    // Check the entire string was consumed and if either failbit or badbit is set
+    return iss.eof() && !iss.fail();
 }
 
 /*

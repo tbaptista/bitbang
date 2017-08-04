@@ -41,8 +41,8 @@ CIrrMotionState::CIrrMotionState(scene::ISceneNode *p_node, CPhysicsObject* p_ob
  */
 void CIrrMotionState::getWorldTransform(btTransform &center_of_mass_world_trans) const
 {
-    //center_of_mass_world_trans = m_graphicsWorldTrans * m_centerOfMassOffset.inverse() ;
-    center_of_mass_world_trans = m_graphicsWorldTrans;
+    center_of_mass_world_trans = m_graphicsWorldTrans * m_centerOfMassOffset.inverse() ;
+    //center_of_mass_world_trans = m_graphicsWorldTrans;
 }
 
 /*!
@@ -57,9 +57,9 @@ void CIrrMotionState::getWorldTransform(btTransform &center_of_mass_world_trans)
 void CIrrMotionState::setWorldTransform(const btTransform &center_of_mass_world_trans)
 {
     m_startWorldTrans = center_of_mass_world_trans;
-    m_graphicsWorldTrans = center_of_mass_world_trans;
+    //m_graphicsWorldTrans = center_of_mass_world_trans;
 
-    //m_graphicsWorldTrans = center_of_mass_world_trans * m_centerOfMassOffset ;
+    m_graphicsWorldTrans = center_of_mass_world_trans * m_centerOfMassOffset ;
 
     const btVector3 &Point = center_of_mass_world_trans.getOrigin();
     m_pNode->setPosition(core::vector3df((f32) Point[0], (f32) Point[1], (f32) Point[2]));

@@ -24,6 +24,7 @@ public:
     virtual int GetIndex(float pos) = 0;
     virtual void Update(double d_elapsed_time = 0) = 0;
     virtual GridLattice* GetCellAt(float x, float z) = 0;
+    virtual GridLattice* GetCellAt(int p1DPos) = 0;
 };
     
 }

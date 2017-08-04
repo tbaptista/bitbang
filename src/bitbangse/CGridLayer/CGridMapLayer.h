@@ -17,14 +17,16 @@ class CGridMapLayer : public GridMapLayer<T>, public irr::scene::ISceneNode
 {
 public:
     CGridMapLayer(std::string pName, irr::scene::ISceneNode *parent, irr::scene::ISceneManager *mgr, irr::s32 id,
-                  int sizeX,
-                  int sizeZ, int cellSize, bool isVisible);
+                  int sizeX, int sizeZ, int cellSize, bool pIsVisible);
     
-    virtual ~CGridMapLayer() {};
-
+    virtual ~CGridMapLayer();
+    
+    void SetIsVisible(bool pIsVisible) { m_IsVisible = pIsVisible; };
 
 protected:
     void InitCellGraphics(int x, int z, int index, bool pIsVisible);
+    
+    bool m_IsVisible;
     
     irr::u32 getMaterialCount() const;
     
@@ -56,9 +58,9 @@ protected:
 template<class T>
 inline
 CGridMapLayer<T>::CGridMapLayer(std::string pName, irr::scene::ISceneNode *parent, irr::scene::ISceneManager *mgr,
-                                irr::s32 id,
-                                int sizeX, int sizeZ, int cellSize, bool pIsVisible) : GridMapLayer<T>(pName, sizeX, sizeZ, cellSize),
-                                                                      smgr(mgr), irr::scene::ISceneNode(parent, mgr, id)
+                                irr::s32 id, int sizeX, int sizeZ, int cellSize, bool pIsVisible) :
+                                GridMapLayer<T>(pName, sizeX, sizeZ, cellSize), smgr(mgr), m_IsVisible(pIsVisible),
+                                                irr::scene::ISceneNode(parent, mgr, id)
 {
     numberOfVertex = this->nCellsX * this->nCellsZ;
     squares = new std::vector<irr::scene::IMeshSceneNode *>(this->nCellsX * this->nCellsZ);
@@ -72,9 +74,36 @@ CGridMapLayer<T>::CGridMapLayer(std::string pName, irr::scene::ISceneNode *paren
             cellIndex = (x * this->nCellsZ) + z;
             
             // Draw matrix partition (Graphics)
-            InitCellGraphics(x * this->cellSize, z * this->cellSize, cellIndex, pIsVisible);
+            (this->matrix[cellIndex]).SetParentSceneManager(mgr);
+            (this->matrix[cellIndex]).SetIsVisible(pIsVisible);
+            // Set the size of each lattice. As this is a grid, all cells have the same size
+            (this->matrix[cellIndex]).SetSize(cellSize);
+            // Init cell graphics and physics
+            (this->matrix[cellIndex]).Init();
         }
     }
+}
+
+/// GridMaplayer Destructor
+/// \tparam T
+template<class T>
+inline
+CGridMapLayer<T>::~CGridMapLayer()
+{
+    int cellIndex;
+    for (int x = 0; x < this->nCellsX; x++)
+    {
+        for (int z = 0; z < this->nCellsZ; z++)
+        {
+            // Map 2D to 1D
+            cellIndex = (x * this->nCellsZ) + z;
+            
+            // Draw matrix partition (Graphics). FIXME: Is it right?
+            delete (*squares)[cellIndex];
+        }
+    }
+    
+    delete squares;
 }
 
 template<class T>

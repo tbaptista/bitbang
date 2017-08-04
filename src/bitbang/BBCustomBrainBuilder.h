@@ -44,6 +44,7 @@ private:
     void ConditionsInsideRule(string rule, vector<int> *positions);
     void SplitString(string str, vector<string> *tokens);
     bool IsNumber(const string &s);
+    bool IsFloat(string myString);
 };
 
 }

@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 #include <cmath>
+#include <bitbang/src/bitbang/BBWorldInterface.h>
 #include "GridLayer/GridMapLayerInterface.h"
 #include "BBPoint.h"
 #include "GridLattice.h"
@@ -22,6 +23,8 @@ class GridMapLayer : public GridMapLayerInterface
 public:
     GridMapLayer(std::string pName, int sizeX,
                  int sizeZ, int cellSize);
+    
+    void SetWorld(BBWorldInterface* pWorldInterface) { this->m_worldInterface = pWorldInterface; } ;
 
     virtual ~GridMapLayer() { delete matrix; };
     virtual int GetSizeX() { return sizeX; };
@@ -34,6 +37,7 @@ public:
     
     virtual GridLattice* GetCellAt(float x, float z);
     virtual GridLattice* GetCellAt(int x, int z);
+    virtual GridLattice* GetCellAt(int p1DPos);
 
     virtual std::string GetName() { return name; };
     virtual void SetName(std::string pName) { name = pName; };
@@ -54,6 +58,9 @@ protected:
 
     // Unique name for this grid layer
     std::string name;
+    
+    // Interface for the related world
+    BBWorldInterface* m_worldInterface;
 
     T *matrix;
 };
@@ -65,7 +72,8 @@ protected:
 /// \param cellSize Size of each lattice
 template<class T>
 inline
-GridMapLayer<T>::GridMapLayer(std::string pName, int sizeX, int sizeZ, int cellSize) : name(pName), sizeX(sizeX), sizeZ(sizeZ), cellSize(cellSize)
+GridMapLayer<T>::GridMapLayer(std::string pName, int sizeX, int sizeZ, int cellSize) :
+        name(pName), sizeX(sizeX), sizeZ(sizeZ), cellSize(cellSize)
 {
     // Check whether it is possible to obtain an integer number of cells; If not, an additional cell is considered.
     if ((sizeX % cellSize) == 0)
@@ -114,9 +122,9 @@ int GridMapLayer<T>::GetCellIndex(float x, float z)
     int cellX, cellZ;
 
     // Convert X to discrete
-    cellX = int(x / this->cellSize);
+    cellX = int(x / (float) this->cellSize);
     // Convert Z to discrete
-    cellZ = int(z / this->cellSize);
+    cellZ = int(z / (float) this->cellSize);
 
     return MapTo1D(cellX, cellZ);
 }
@@ -145,6 +153,12 @@ GridLattice* GridMapLayer<T>::GetCellAt(int x, int z)
     int cellPos = MapTo1D(x, z);
     
     return &matrix[cellPos];
+}
+
+template<class T>
+GridLattice* GridMapLayer<T>::GetCellAt(int p1DPos)
+{
+    return &matrix[p1DPos];
 }
 
 template<class T>

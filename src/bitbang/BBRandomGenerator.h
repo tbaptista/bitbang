@@ -19,6 +19,7 @@ public:
 	int RandInt();
 	int RandInt(unsigned int n_max);
 	double RandProb();
+	double RandDecimal(double n_max);
 	
 private:
 	static int RandomSeeds[];

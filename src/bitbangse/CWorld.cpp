@@ -700,3 +700,8 @@ void CWorld::AddConstraint(btTypedConstraint *constraint)
 {
     m_pDynamicsWorld->addConstraint(constraint, false);
 }
+
+void CWorld::RemoveConstraint(btTypedConstraint *constraint)
+{
+	m_pDynamicsWorld->removeConstraint(constraint);
+}

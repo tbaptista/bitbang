@@ -139,6 +139,50 @@ void CPhysicsObject::ScaleToGivenSize(float sizeX, float sizeY, float sizeZ)
 
 	btCollisionShape* collisionShape = m_pRigidBody->getCollisionShape();
 	collisionShape->setLocalScaling(btVector3(m_fScaleX, m_fScaleY, m_fScaleZ));
-
+	
+	btVector3 center;
+	btScalar radius;
+	btSphereShape* sphereShape = static_cast<btSphereShape*>(collisionShape);
+	
 	mesh->setScale(irr::core::vector3df(factorX,factorY,factorZ));
+}
+
+void CPhysicsObject::ScaleSphereToGivenSize(float radius)
+{
+	float sizeX = radius * 2;
+	
+	cout << "Radius: " << radius << endl;
+	
+	irr::scene::ISceneNode* mesh = m_pNode;
+	
+	if (mesh == NULL)
+	{
+		return;
+	}
+	
+	irr::core::vector3d<irr::f32>* edges = new irr::core::vector3d<irr::f32>[8];
+	irr::core::aabbox3d<irr::f32> boundingBox = mesh->getTransformedBoundingBox();
+	
+	boundingBox.getEdges(edges);
+	
+	irr::f32 height = edges[1].Y - edges[0].Y;
+	irr::f32 factor = sizeX / height;
+	
+	m_fScaleX = factor;
+	m_fScaleY = factor;
+	m_fScaleZ = factor;
+	
+	btSphereShape* collisionShape = static_cast<btSphereShape*>(m_pRigidBody->getCollisionShape());
+	collisionShape->setLocalScaling(btVector3(factor, factor, factor));
+	
+	//cout << "Bullet: " << (collisionShape->getLocalScaling()).x() << endl;
+	
+	mesh->setScale(irr::core::vector3d<irr::f32 >(factor, factor, factor));
+}
+
+void CPhysicsObject::SetScale(float f_x, float f_y, float f_z)
+{
+	CSimObject::SetScale(f_x, f_y, f_z);
+	
+	(m_pRigidBody->getCollisionShape())->setLocalScaling(btVector3(f_x, f_y, f_z));
 }

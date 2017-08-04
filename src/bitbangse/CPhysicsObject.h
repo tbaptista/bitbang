@@ -51,8 +51,10 @@ public:
 	btRigidBody* GetRigidBody(){return m_pRigidBody;};
 	double GetMass(){return m_dMass;};
 	void SetMass(double d_mass){m_dMass = d_mass;};
+	virtual void SetScale(float f_x, float f_y, float f_z);
 
     virtual void ScaleToGivenSize(float sizeX, float sizeY, float sizeZ);
+    void ScaleSphereToGivenSize(float radius);
 	
 	void SetOldForce(btVector3& pForce) { m_oldForce = pForce;};
 	btVector3& GetOldForce() { return m_oldForce; };

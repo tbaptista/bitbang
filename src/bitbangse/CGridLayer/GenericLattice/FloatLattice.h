@@ -5,20 +5,20 @@
 #ifndef BULLET_TEST_FLOATLATTICE_H
 #define BULLET_TEST_FLOATLATTICE_H
 
-#include "GridLayer/GridLattice.h"
+#include "CGridLayer/CGridLattice.h"
 
 namespace bitbang
 {
 
-class FloatLattice : public GridLattice
+class FloatLattice : public CGridLattice
 {
 public:
-    FloatLattice() {};
-    FloatLattice(float pX, float pZ) { SetCenter(BBPoint(pX, 0, pZ)); };
+    FloatLattice();
+    FloatLattice(irr::scene::ISceneManager* pParentSceneManager, BBPoint pCenter, int pSize);
     virtual ~FloatLattice() {};
     
-    void SetCurrentValue(float pValue) { currentValue = pValue; };
-    float GetCurrentValue() { return currentValue; };
+    virtual void SetCurrentValue(float pValue) { currentValue = pValue; };
+    virtual float GetCurrentValue() { return currentValue; };
     void SetOldValue(float pValue) { oldValue = pValue; };
     float GetOldValue() { return oldValue; };
 

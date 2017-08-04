@@ -7,14 +7,14 @@
 
 #include <BBPoint.h>
 #include <string>
-#include "BBPerceptionBoolean.h"
+#include "BBPerceptionNumber.h"
 
 namespace bitbang
 {
 
 class BBWorldInterface;
 
-class BBPerceiveLocation : public BBPerceptionBoolean
+class BBPerceiveLocation : public BBPerceptionNumber
 {
 public:
     BBPerceiveLocation(std::string pPerceptionName, BBWorldInterface* pWorldInterface);

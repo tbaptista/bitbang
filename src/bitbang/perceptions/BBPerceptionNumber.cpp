@@ -146,11 +146,11 @@ bool BBPerceptionNumber::Eval(int n_op, BBPerception& c_perception)
 	if (c_perception.IsType(BBPerception::nTYPENUMBER))
 	{
 		double nOtherValue = ((BBPerceptionNumber*)&c_perception)->GetValue();
-
+		
 		switch(n_op)
 		{
 		case nOPEQUAL:
-			return (m_dValue == nOtherValue);
+			return (fabs(m_dValue - nOtherValue) < 0.01);
 
 		case nOPGREATER:
 			return (m_dValue > nOtherValue);
