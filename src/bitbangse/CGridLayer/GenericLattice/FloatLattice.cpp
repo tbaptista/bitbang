@@ -9,7 +9,8 @@ namespace bitbang
 
 FloatLattice::FloatLattice() : CGridLattice()
 {
-
+    currentValue = 0.0;
+    oldValue = 0.0;
 }
 
 FloatLattice::FloatLattice(irr::scene::ISceneManager* pParentSceneManager, BBPoint pCenter, int pSize) : CGridLattice(pParentSceneManager, pCenter, pSize)

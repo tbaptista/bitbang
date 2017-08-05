@@ -8,6 +8,8 @@
 #include <IMeshSceneNode.h>
 #include "GridLayer/GridLattice.h"
 
+class btCollisionObject;
+
 namespace bitbang
 {
 
@@ -23,7 +25,7 @@ public:
     
     void SetIsVisible(bool pIsVisible) { m_isVisible = pIsVisible; };
     bool IsVisible() { return m_isVisible; };
-    void SetIsRigid() {}
+    void SetIsRigid(bool pIsRigid) { m_isRigid = pIsRigid; };
     
     void SetParentSceneManager(irr::scene::ISceneManager* pParentSceneManager) { m_parentSmgr = pParentSceneManager; };
     irr::scene::IMeshSceneNode* GetNode() { return m_sceneNode; };
@@ -35,9 +37,10 @@ protected:
     // Enables visual debug when defined as true
     bool m_isVisible;
     // This cell becomes a rigid object when this flag is true
-    bool m_usePhysics;
+    bool m_isRigid;
     
     // Physical attributes
+    btCollisionObject* m_collisionObject;
 };
 
 }

@@ -23,8 +23,6 @@ class GridMapLayer : public GridMapLayerInterface
 public:
     GridMapLayer(std::string pName, int sizeX,
                  int sizeZ, int cellSize);
-    
-    void SetWorld(BBWorldInterface* pWorldInterface) { this->m_worldInterface = pWorldInterface; } ;
 
     virtual ~GridMapLayer() { delete matrix; };
     virtual int GetSizeX() { return sizeX; };
@@ -35,6 +33,8 @@ public:
     virtual int GetCellIndex(float x, float z);
     virtual int GetIndex(float pos);
     
+    void SetWorld(BBWorldInterface* pWorldInterface) { this->m_worldInterface = pWorldInterface; } ;
+    
     virtual GridLattice* GetCellAt(float x, float z);
     virtual GridLattice* GetCellAt(int x, int z);
     virtual GridLattice* GetCellAt(int p1DPos);
@@ -43,6 +43,7 @@ public:
     virtual void SetName(std::string pName) { name = pName; };
     int MapTo1D(int x, int z);
     
+    void InitGrid();
     // Method for updating grid layer. By default, the grid layer is not updated
     virtual void Update(double d_elapsed_time = 0) {};
 
@@ -91,20 +92,24 @@ GridMapLayer<T>::GridMapLayer(std::string pName, int sizeX, int sizeZ, int cellS
     squaredCellSize = powf(cellSize, 2.0);
 
     matrix = new T[nCellsX * nCellsZ];
+}
 
+template<class T>
+inline void GridMapLayer<T>::InitGrid()
+{
     int cellIndex;
-    for (int x = 0; x < nCellsX; x++)
+    for (int x = 0; x < this->nCellsX; x++)
     {
-        for (int z = 0; z < nCellsZ; z++)
+        for (int z = 0; z < this->nCellsZ; z++)
         {
             // Map 2D to 1D
-            cellIndex = (x * nCellsZ) + z;
-
+            cellIndex = (x * this->nCellsZ) + z;
+            
             // Set the center of GridLayer partition
             BBPoint center;
-            center.SetX(halfOfCellSize + (x * cellSize));
+            center.SetX(this->halfOfCellSize + (x * this->cellSize));
             center.SetY(0); // Only 2 Dimensions
-            center.SetZ(halfOfCellSize + (z * cellSize));
+            center.SetZ(this->halfOfCellSize + (z * this->cellSize));
             matrix[cellIndex].SetCenter(center);
         }
     }

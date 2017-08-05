@@ -3,6 +3,7 @@
 //
 
 #include "CUtilities.h"
+#include "BBPoint.h"
 
 namespace cutilities
 {
@@ -28,6 +29,16 @@ void ScaleToSize(irr::scene::ISceneNode *mesh, irr::f32 sizeX, irr::f32 sizeY, i
     irr::f32 factorZ = sizeZ / depth;
     
     mesh->setScale(irr::core::vector3df(factorX, factorY, factorZ));
+}
+
+btVector3 FromBBPointToBtVector3(bitbang::BBPoint pBBPoint)
+{
+    return btVector3(pBBPoint.GetX(), pBBPoint.GetY(), pBBPoint.GetZ());
+}
+
+bitbang::BBPoint FromBtVectorToBBPoint(btVector3 pVector)
+{
+    return bitbang::BBPoint(pVector.x(), pVector.y(), pVector.z());
 }
 
 }

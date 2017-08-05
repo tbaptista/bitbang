@@ -12,6 +12,8 @@ namespace bitbang
 
 using namespace bitbang;
 
+class BBWorldInterface;
+
 class GridLattice
 {
 public:
@@ -26,10 +28,14 @@ public:
     virtual float GetZ() { return center.GetZ(); };
     
     void SetSize(int pSize) { size = pSize; };
+    
+    void SetWorld(BBWorldInterface* pWorldInterface) { m_worldInterface = pWorldInterface; };
 
 protected:
     BBPoint center;
     int size;
+    
+    BBWorldInterface* m_worldInterface;
 };
     
 }
